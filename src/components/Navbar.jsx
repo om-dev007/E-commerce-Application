@@ -1,17 +1,17 @@
 import React from 'react'
-import logo from '../assets/logo.webp'
+import logo from '../assets/logo (1).webp'
 import cart_icon from '../assets/cart_icon.png'
 
 const Navbar = () => {
   return (
     <div className='flex items-center justify-between  py-5'>
-      <div className='flex items-center gap-5'>
-        <div className='flex items-center'>
+      <div className='flex items-center gap-5 px-2'>
+        <div className='flex items-center gap-1'>
           <div>
-            <img className='h-13' src={logo} alt="" />
+            <img className='h-12' src={logo} alt="" />
           </div>
           <div>
-            <h1 className='font-semibold text-2xl'>Shopify</h1>
+            <h1 className='font-semibold text-3xl'>Shopify</h1>
           </div>
         </div>
         <div>
