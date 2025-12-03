@@ -3,6 +3,8 @@ import Navbar from '../components/Navbar'
 import hand_icon from '../assets/hand_icon.png'
 import logo from '../assets/p8.webp'
 import arrow from '../assets/arrow_icon.png'
+import ProductCard from '../components/ProductCard'
+import Product from './Product'
 
 const Home = () => {
   return (
@@ -44,6 +46,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Product/>
     </>
   )
 }
