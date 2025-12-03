@@ -20,6 +20,7 @@ function Cart() {
           <button onClick={() => removeFromCart(item.id)}>
             Remove
           </button>
+          
         </div>
       ))}
     </div>

@@ -5,6 +5,7 @@ import logo from '../assets/p8.webp'
 import arrow from '../assets/arrow_icon.png'
 import ProductCard from '../components/ProductCard'
 import Product from './Product'
+import Popular from './Popular'
 
 const Home = () => {
   return (
@@ -46,7 +47,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Product/>
+      <Popular/>
     </>
   )
 }
