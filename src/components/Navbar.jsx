@@ -47,10 +47,10 @@ const Navbar = () => {
             <Link to='/'>Home</Link>
           </div>
           <div>
-            <Link to='/man' >Man</Link>
+            <Link to='/mens' >Men</Link>
           </div>
           <div>
-            <Link to='/women'>Women</Link>
+            <Link to='/womens'>Women</Link>
           </div>
           <div>
             <Link to='/kids'>Kids</Link>
