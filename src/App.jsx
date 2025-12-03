@@ -3,12 +3,14 @@ import Product from './pages/Product'
 import { Route, Routes } from "react-router-dom"
 import ProductDetail from "./pages/ProductDetail"
 import Cart from "./pages/Cart"
+import NotFound from './pages/NotFound'
 
 const App = () => {
  
   return (
     <div className='bg-white min-h-screen text-black'>
       <Routes>
+        <Route path="*" element={<NotFound/>} />
         <Route path="/" element={<Home/>} />
         <Route path="/product" element={<Product/>} />
         <Route path="/product/:id" element={<ProductDetail/>} />
