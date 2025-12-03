@@ -18,7 +18,7 @@ export const data = [
     },
     {
         id: 2,
-        title: "Jeans",
+        title: "Formal Shirt",
         rating: 4.2,
         image: jeans,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
@@ -32,7 +32,7 @@ export const data = [
     },
     {
         id: 4,
-        title: 'Jacket',
+        title: 'Formal Pant',
         rating: 4.3,
         image: jacket,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
@@ -53,7 +53,7 @@ export const data = [
     },
     {
         id: 7,
-        title: 'Hoddie',
+        title: 'Lower',
         rating: 4.1,
         image: hoddie,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
