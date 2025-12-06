@@ -7,6 +7,7 @@ import NotFound from './pages/NotFound'
 import Men from "./pages/categories/Men"
 import Women from "./pages/categories/Women"
 import Kids from "./pages/categories/Kids"
+import About from './pages/About'
 
 const App = () => {
  
@@ -15,8 +16,9 @@ const App = () => {
       <Routes>
         <Route path="*" element={<NotFound/>} />
         <Route path="/" element={<Home/>} />
-        <Route path="/product" element={<Product/>} />
-        <Route path="/product/:id" element={<ProductDetail/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/products" element={<Product/>} />
+        <Route path="/products/:id" element={<ProductDetail/>} />
         <Route path="/cart" element={<Cart/>} />
         <Route path="/mens" element={<Men/>} />
         <Route path="/womens" element={<Women/>} />
