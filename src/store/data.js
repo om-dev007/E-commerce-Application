@@ -8,6 +8,14 @@ import leggis from '../assets/women4.webp'
 import kurti from '../assets/kurti.webp'
 import hoodie from '../assets/hoodie.webp'
 import underWear from '../assets/underWear.webp'
+import gown from '../assets/gown.webp'
+import denimMen from '../assets/denimMen.webp'
+import jacketMen from '../assets/jacketMen.webp'
+import jeans from '../assets/jeans.webp'
+import chain from '../assets/chain.avif'
+import palazoo from '../assets/plazo.webp'
+import topWomen from '../assets/topWomen.jpg'
+import kneeDress from '../assets/kneeDress.webp'
 
 export const  data = [
     {
@@ -83,18 +91,67 @@ export const  data = [
 ]
 
 export const collectionData = [
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
+    {
+        id: 1,
+        title: 'Denim',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.5,
+        price: 105,
+        image: denimMen
+    },
+    {
+        id: 2,
+        title: 'Men Jacket',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.2,
+        price: 105,
+        image: jacketMen
+    },
+    {
+        id: 3,
+        title: 'Jeans',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.6,
+        price: 105,
+        image: jeans    
+    },
+    {
+        id: 4,
+        title: 'Chain',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.2,
+        price: 105,
+        image: chain
+    },
+    {
+        id: 5,
+        title: 'Palazoo',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.4,
+        price: 105,
+        image: palazoo
+    },
+    {
+        id: 6,
+        title: 'Top',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.0,
+        price: 105,
+        image: topWomen
+    },
+    {
+        id: 7,
+        title: 'Knee dress',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.3,
+        price: 105,
+        image: kneeDress
+    },
     {
         id: 8,
         title: 'Gown',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
-        rating: 4.2,
+        rating: 4.1,
         price: 105,
         image: gown
     }
