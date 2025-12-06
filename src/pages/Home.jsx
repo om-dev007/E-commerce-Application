@@ -6,6 +6,7 @@ import arrow from '../assets/arrow_icon.png'
 import ProductCard from '../components/ProductCard'
 import Product from './Product'
 import Popular from './Popular'
+import OfferPage from './OfferPage'
 
 const Home = () => {
   return (
@@ -48,6 +49,7 @@ const Home = () => {
         </div>
       </div>
       <Popular/>
+      <OfferPage/>
     </>
   )
 }
