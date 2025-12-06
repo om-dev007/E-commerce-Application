@@ -7,6 +7,7 @@ import OfferPage from './OfferPage'
 import NewCollection from './NewCollection'
 import Hero from './Hero'
 import FooterGreets from './FooterGreets'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <OfferPage/>
       <NewCollection/>
       <FooterGreets/>
+      <Footer/>
     </>
   )
 }
