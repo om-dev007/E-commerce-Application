@@ -2,7 +2,7 @@ import React from 'react'
 
 const FooterGreets = () => {
   return (
-    <div className='py-10 flex flex-col gap-5 justify-center px-20'>
+    <div className='py-20 flex flex-col gap-5 justify-center px-20'>
         <div className=''>
             <h1 className='text-5xl text-center text-[#454545] font-bold'>Get Exclusive Offers on Your Email</h1>
         </div>
