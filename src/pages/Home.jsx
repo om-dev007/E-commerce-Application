@@ -7,6 +7,7 @@ import ProductCard from '../components/ProductCard'
 import Product from './Product'
 import Popular from './Popular'
 import OfferPage from './OfferPage'
+import NewCollection from './NewCollection'
 
 const Home = () => {
   return (
@@ -50,6 +51,7 @@ const Home = () => {
       </div>
       <Popular/>
       <OfferPage/>
+      <NewCollection/>
     </>
   )
 }
