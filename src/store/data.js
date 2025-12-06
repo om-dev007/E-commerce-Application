@@ -18,6 +18,16 @@ import topWomen from '../assets/topWomen.jpg'
 import kneeDress from '../assets/kneeDress.webp'
 import blazer from '../assets/blazer.webp'
 import kurta from '../assets/kurta.jpg'
+import menShirt from '../assets/menShirt.avif'
+import menTshirt from '../assets/menTshirt.webp'
+import menJeans from '../assets/menStraightJeans.jpeg'
+import menKurta from '../assets/menKurta.jpg'
+import menWaist from '../assets/mwnWaistCoat.webp'
+import menShirts from '../assets/menShirt.jpg'
+import rcbJearsy from '../assets/MenJersey.jpg'
+import menLower from '../assets/MenLower.jpeg'
+import menSneaker from '../assets/MenWhiteSneakers.jpg'
+import menBoot from '../assets/MenBoot.avif'
 
 export const  data = [
     {
@@ -173,4 +183,87 @@ export const collectionData = [
         price: 105,
         image: kurta
     }
+]
+
+export const menData = [
+    {
+        id: 1,
+        title: 'Party Wear',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.5,
+        price: 105,
+        image: menShirt
+    },
+    {
+        id: 2,
+        title: 'T-shirt',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.2,
+        price: 105,
+        image: menTshirt
+    },
+    {
+        id: 3,
+        title: 'Jeans',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.7,
+        price: 105,
+        image: menJeans
+    },
+    {
+        id: 4,
+        title: 'Kurta',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.1,
+        price: 105,
+        image: menKurta
+    },
+    {
+        id: 5,
+        title: 'Waistcoat',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.5,
+        price: 105,
+        image: menWaist
+    },
+    {
+        id: 6,
+        title: 'Formal Wear',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.2,
+        price: 105,
+        image: menShirts
+    },
+    {
+        id: 7,
+        title: 'Jearsy',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.6,
+        price: 105,
+        image: rcbJearsy
+    },
+    {
+        id: 8,
+        title: 'Lower',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.3,
+        price: 105,
+        image: menLower
+    },
+    {
+        id: 9,
+        title: 'White Sneaker',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.7,
+        price: 105,
+        image: menSneaker
+    },
+    {
+        id: 19,
+        title: 'Boot',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.8,
+        price: 105,
+        image: menBoot
+    },
 ]
