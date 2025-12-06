@@ -13,6 +13,7 @@ const Product = () => {
                 const raw = await api.get("/products")
                 console.log(raw.data);
                 setProducts(raw.data)
+                setIsLoading(false)
             } catch (error) {
                 console.log(error);
             }
