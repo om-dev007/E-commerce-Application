@@ -4,9 +4,9 @@ import { Route, Routes } from "react-router-dom"
 import ProductDetail from "./pages/ProductDetail"
 import Cart from "./pages/Cart"
 import NotFound from './pages/NotFound'
-import Men from "./pages/categories/Men"
-import Women from "./pages/categories/Women"
-import Kids from "./pages/categories/Kids"
+import Men from "./category/Men"
+import Women from "./category/Women"
+import Kids from "./category/Kids"
 import About from './pages/About'
 import Help from "./pages/Help"
 import Offices from "./pages/Offices"
