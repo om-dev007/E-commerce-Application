@@ -8,6 +8,8 @@ import Men from "./pages/categories/Men"
 import Women from "./pages/categories/Women"
 import Kids from "./pages/categories/Kids"
 import About from './pages/About'
+import Help from "./pages/Help"
+import Offices from "./pages/Offices"
 
 const App = () => {
  
@@ -23,6 +25,8 @@ const App = () => {
         <Route path="/mens" element={<Men/>} />
         <Route path="/womens" element={<Women/>} />
         <Route path="/kids" element={<Kids/>} />
+        <Route path="/help" element={<Help/>} />
+        <Route path="/offices" element={<Offices/>} />
       </Routes>
     </div>
   )
