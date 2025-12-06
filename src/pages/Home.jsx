@@ -6,6 +6,7 @@ import Popular from './Popular'
 import OfferPage from './OfferPage'
 import NewCollection from './NewCollection'
 import Hero from './Hero'
+import FooterGreets from './FooterGreets'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Popular/>
       <OfferPage/>
       <NewCollection/>
+      <FooterGreets/>
     </>
   )
 }
