@@ -3,9 +3,10 @@ import saree from '../assets/women2.jpg'
 import jacket from '../assets/men2.jpg'
 import tshirt from '../assets/men3.webp'
 import dress from '../assets/women3.jpg'
-import hoddie from '../assets/men4.jfif'
+import lower from '../assets/men4.jfif'
 import leggis from '../assets/women4.webp'
 import kurti from '../assets/kurti.webp'
+import hoodie from '../assets/hoodie.webp'
 
 export const  data = [
     {
@@ -54,7 +55,7 @@ export const  data = [
         id: 7,
         title: 'Lower',
         rating: 4.1,
-        image: hoddie,
+        image: lower,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
     },
     {
@@ -64,5 +65,12 @@ export const  data = [
         image: leggis,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
     },
+    {
+        id: 9,
+        title: 'Hoodie', 
+        rating: 4.5,
+        image: hoodie,
+        decription: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
+    }
 ]
 
