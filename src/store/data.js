@@ -82,3 +82,20 @@ export const  data = [
     }
 ]
 
+export const collectionData = [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+        id: 8,
+        title: 'Gown',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.2,
+        price: 105,
+        image: gown
+    }
+]
