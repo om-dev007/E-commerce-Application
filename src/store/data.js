@@ -7,6 +7,7 @@ import lower from '../assets/men4.jfif'
 import leggis from '../assets/women4.webp'
 import kurti from '../assets/kurti.webp'
 import hoodie from '../assets/hoodie.webp'
+import underWear from '../assets/underWear.webp'
 
 export const  data = [
     {
@@ -70,7 +71,14 @@ export const  data = [
         title: 'Hoodie', 
         rating: 4.5,
         image: hoodie,
-        decription: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
+    },
+    {
+        id: 10, 
+        title: 'UnderWear',
+        rating: 4.4,
+        image: underWear,
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
     }
 ]
 
