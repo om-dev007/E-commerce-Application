@@ -28,6 +28,16 @@ import rcbJearsy from '../assets/MenJersey.jpg'
 import menLower from '../assets/MenLower.jpeg'
 import menSneaker from '../assets/MenWhiteSneakers.jpg'
 import menBoot from '../assets/MenBoot.avif'
+import womenLehenga from '../assets/WomenLehenga.jpg'
+import womenKurti from '../assets/WomenDupata.webp'
+import womenSarree from '../assets/WomenSarrree.webp'
+import womenJewel from '../assets/WomenJewel.webp'
+import womenKurtaSharara from '../assets/WomenKurtaSharara.jpg'
+import womenPanty from '../assets/womenPanty.jpg'
+import womenBra from '../assets/womenBra.webp'
+import womenShapeWear from '../assets/womenShapewear.webp'
+import womenBabyDoll from '../assets/womenBabydoll.webp'
+import womenSkirt from '../assets/WomenSkirt.webp'
 
 export const  data = [
     {
@@ -265,5 +275,88 @@ export const menData = [
         rating: 4.8,
         price: 105,
         image: menBoot
+    },
+]
+
+export const womenData = [
+    {
+        id: 1,
+        title: 'Lehenga Choli',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.2,
+        price: 105,
+        image: womenLehenga
+    },
+    {
+        id: 2,
+        title: 'Kurti Dupatta',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.1,
+        price: 105,
+        image: womenKurti
+    },
+    {
+        id: 3,
+        title: 'Saree',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.3,
+        price: 105,
+        image: womenSarree
+    },
+    {
+        id: 4,
+        title: 'Party Wear',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.6,
+        price: 105,
+        image: womenJewel
+    },
+    {
+        id: 5,
+        title: 'Women Kurta Sharara',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.2,
+        price: 105,
+        image: womenKurtaSharara
+    },
+    {
+        id: 6,
+        title: 'Women Panty',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.3,
+        price: 105,
+        image: womenPanty
+    },
+    {
+        id: 7,
+        title: 'Women Bra',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.1,
+        price: 105,
+        image: womenBra
+    },
+    {
+        id: 8,
+        title: 'Women ShapeWear',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.8,
+        price: 105,
+        image: womenShapeWear
+    },
+    {
+        id: 9,
+        title: 'Women Babydoll',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.5,
+        price: 105,
+        image: womenBabyDoll
+    },
+    {
+        id: 10,
+        title: 'Women Skirt',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.9,
+        price: 105,
+        image: womenSkirt
     },
 ]
