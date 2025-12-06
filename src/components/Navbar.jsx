@@ -41,7 +41,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className='flex pr-5 items-center  gap-5'>
+      <div className='flex pr-5 py-2 items-center  gap-5'>
         <div className='flex justify-evenly w-full text-gray-700 font-semibold gap-5'>
           <div>
             <Link to='/'>Home</Link>
