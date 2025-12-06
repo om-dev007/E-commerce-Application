@@ -17,7 +17,6 @@ const Popular = () => {
                 return (<Cards key={item.id} data={item} />)
             })}
         </div>
-        
     </div>
   )
 }
