@@ -1,4 +1,4 @@
-import jeans from '../assets/men1.webp'
+import formalShirt from '../assets/formalShirt.webp'
 import saree from '../assets/women2.jpg'
 import jacket from '../assets/men2.jpg'
 import tshirt from '../assets/men3.webp'
@@ -19,7 +19,7 @@ export const  data = [
         id: 2,
         title: "Formal Shirt",
         rating: 4.2,
-        image: jeans,
+        image: formalShirt,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
     },
     {
