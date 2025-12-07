@@ -38,6 +38,16 @@ import womenBra from '../assets/womenBra.webp'
 import womenShapeWear from '../assets/womenShapewear.webp'
 import womenBabyDoll from '../assets/womenBabydoll.webp'
 import womenSkirt from '../assets/WomenSkirt.webp'
+import kidsTshirt from '../assets/kidsShirt.webp'
+import kidsJersey from '../assets/KidsDhoniJersey.webp'
+import kidsOverSizedTshirt from '../assets/kidsOverSizeTshirt.webp'
+import kidsEthnic from '../assets/kidsEthnic.webp'
+import kidsCasual from '../assets/KidsCasualDress.webp'
+import kidsParty from '../assets/kidsPartyWear.webp'
+import kidsOtherParty from '../assets/kidsOtherPartyWear.webp'
+import kidsCrocks from '../assets/KidsCrocsk.webp'
+import kidsFootwear from '../assets/KidsGirlFootwear.webp'
+import kidsToys from '../assets/KidsTOys.webp'
 
 export const  data = [
     {
@@ -358,5 +368,88 @@ export const womenData = [
         rating: 4.9,
         price: 105,
         image: womenSkirt
+    },
+]
+
+export const kidsData = [
+    {
+        id: 1,
+        title: 'Kids T-shirt',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.5,
+        price: 105,
+        image: kidsTshirt
+    },
+    {
+        id: 2,
+        title: 'Dhoni Jearsey',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.0,
+        price: 105,
+        image: kidsJersey
+    },
+    {
+        id: 3,
+        title: 'OverSized t-shirt',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.1,
+        price: 105,
+        image: kidsOverSizedTshirt
+    },
+    {
+        id: 4,
+        title: 'Kids Kurta',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.2,
+        price: 105,
+        image: kidsEthnic
+    },
+    {
+        id: 5,
+        title: 'Kids Casual ',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.8,
+        price: 105,
+        image: kidsCasual
+    },
+    {
+        id: 6,
+        title: 'Kids Party Wear',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.5,
+        price: 105,
+        image: kidsParty
+    },
+    {
+        id: 7,
+        title: 'Kids party wear',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.6,
+        price: 105,
+        image: kidsOtherParty
+    },
+    {
+        id: 8,
+        title: 'Sling Back Clogs',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.4,
+        price: 105,
+        image: kidsCrocks
+    },
+    {
+        id: 9,
+        title: 'Sling Back Flats',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.2,
+        price: 105,
+        image: kidsFootwear
+    },
+    {
+        id: 10,
+        title: 'Offroad Monster',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+        rating: 4.7,
+        price: 105,
+        image: kidsToys
     },
 ]
