@@ -1,8 +1,6 @@
 import Home from "./pages/Home"
-import Product from './pages/Product'
 import { Route, Routes } from "react-router-dom"
-import ProductDetail from "./pages/ProductDetail"
-import Cart from "./pages/Cart"
+import ProductDetail from "./productDetail/ProductDetail"
 import NotFound from './pages/NotFound'
 import Men from "./category/Men"
 import Women from "./category/Women"
@@ -19,12 +17,12 @@ const App = () => {
         <Route path="*" element={<NotFound/>} />
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
-        <Route path="/products" element={<Product/>} />
-        <Route path="/products/:id" element={<ProductDetail/>} />
-        <Route path="/cart" element={<Cart/>} />
         <Route path="/mens" element={<Men/>} />
+        <Route path="/mens/:id" element={<ProductDetail/>} />
         <Route path="/womens" element={<Women/>} />
+        <Route path="/womens/:id" element={<ProductDetail/>} />
         <Route path="/kids" element={<Kids/>} />
+        <Route path="/kids/:id" element={<ProductDetail/>} />
         <Route path="/help" element={<Help/>} />
         <Route path="/offices" element={<Offices/>} />
       </Routes>
