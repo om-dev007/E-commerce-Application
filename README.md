@@ -1,16 +1,50 @@
-# React + Vite
+# 🛒 E-Commerce Web Application (Frontend Only)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive **frontend-only eCommerce website** built using **React.js** and **Tailwind CSS**. This project was created to **strengthen core React fundamentals** such as component architecture, routing, props, state handling, and UI design.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:**  
+https://frontend-e-commerce-application.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📁 **GitHub Repository:**  
+https://github.com/om-dev007/E-commerce-Application
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Key Features
 
-## Expanding the ESLint configuration
+- ✅ Fully Responsive UI (Mobile, Tablet, Desktop)
+- ✅ Product sections for **Men, Women & Kids**
+- ✅ Dynamic product detail pages using **React Router**
+- ✅ Reusable React Components
+- ✅ Cart UI Structure (Frontend Only)
+- ✅ Modern Tailwind CSS styling
+- ✅ Clean folder structure & scalable design
+- ✅ Optimized loading with component-based rendering
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🎯 Project Objective
+
+This project was built **purely for learning and strengthening React.js concepts** such as:
+
+- Component-based architecture  
+- Props & State management  
+- React Router & Dynamic Routing  
+- Conditional rendering  
+- UI design with Tailwind CSS  
+- Folder & project structure best practices  
+
+⚠️ **Note:**  
+This is a **frontend-only project**. No backend, authentication, or database is connected yet.
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Usage |
+|------------|--------|
+| **React.js** | Frontend Framework |
+| **Tailwind CSS** | Styling |
+| **React Router DOM** | Routing |
+| **Lucide Icons** | Icons |
+| **Vercel** | Deployment |
