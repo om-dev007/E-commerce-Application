@@ -51,70 +51,70 @@ import kidsToys from '../assets/KidsTOys.webp'
 
 export const  data = [
     {
-        id: 1,
+        id: 41,
         title: "Kurti",
         rating: 4.5,
         image: kurti,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
     },
     {
-        id: 2,
+        id: 42,
         title: "Formal Shirt",
         rating: 4.2,
         image: formalShirt,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
     },
     {
-        id: 3,
+        id: 43,
         title: 'Saree',
         rating: 4.3,
         image: saree,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
     },
     {
-        id: 4,
+        id: 44,
         title: 'Formal Pant',
         rating: 4.3,
         image: jacket,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
     },
     {
-        id: 5,
+        id: 45,
         title: 'T-shirt',
         rating: 4.6,
         image: tshirt,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
     },
     {
-        id: 6,
+        id: 46,
         title: 'Dress',
         rating: 4.3,
         image: dress,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
     },
     {
-        id: 7,
+        id: 47,
         title: 'Lower',
         rating: 4.1,
         image: lower,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
     },
     {
-        id: 8,
+        id: 48,
         title: 'Leggies',
         rating: 4.3,
         image: leggis,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
     },
     {
-        id: 9,
+        id: 49,
         title: 'Hoodie', 
         rating: 4.5,
         image: hoodie,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
     },
     {
-        id: 10, 
+        id: 50, 
         title: 'UnderWear',
         rating: 4.4,
         image: underWear,
@@ -124,7 +124,7 @@ export const  data = [
 
 export const collectionData = [
     {
-        id: 1,
+        id: 31,
         title: 'Denim',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.5,
@@ -132,7 +132,7 @@ export const collectionData = [
         image: denimMen
     },
     {
-        id: 2,
+        id: 32,
         title: 'Men Jacket',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.2,
@@ -140,7 +140,7 @@ export const collectionData = [
         image: jacketMen
     },
     {
-        id: 3,
+        id: 33,
         title: 'Jeans',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.6,
@@ -148,7 +148,7 @@ export const collectionData = [
         image: jeans    
     },
     {
-        id: 4,
+        id: 34,
         title: 'Chain',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.2,
@@ -156,7 +156,7 @@ export const collectionData = [
         image: chain
     },
     {
-        id: 5,
+        id: 35,
         title: 'Palazoo',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.4,
@@ -164,7 +164,7 @@ export const collectionData = [
         image: palazoo
     },
     {
-        id: 6,
+        id: 36,
         title: 'Top',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.0,
@@ -172,7 +172,7 @@ export const collectionData = [
         image: topWomen
     },
     {
-        id: 7,
+        id: 37,
         title: 'Knee dress',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.3,
@@ -180,7 +180,7 @@ export const collectionData = [
         image: kneeDress
     },
     {
-        id: 8,
+        id: 38,
         title: 'Gown',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.1,
@@ -188,7 +188,7 @@ export const collectionData = [
         image: gown
     },
     {
-        id: 9,
+        id: 39,
         title: 'Blazer',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.5,
@@ -196,7 +196,7 @@ export const collectionData = [
         image: blazer
     },
     {
-        id: 9,
+        id: 40,
         title: 'Kurta',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.8,
@@ -207,167 +207,187 @@ export const collectionData = [
 
 export const menData = [
     {
-        id: 1,
+        id: 21,
         title: 'Party Wear',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.5,
         price: 105,
-        image: menShirt
+        image: menShirt,
+        category: 'Man'
     },
     {
-        id: 2,
+        id: 22,
         title: 'T-shirt',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.2,
         price: 105,
-        image: menTshirt
+        image: menTshirt,
+        category: 'Man'
     },
     {
-        id: 3,
+        id: 23,
         title: 'Jeans',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.7,
         price: 105,
-        image: menJeans
+        image: menJeans,
+        category: 'Man'
     },
     {
-        id: 4,
+        id: 24,
         title: 'Kurta',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.1,
         price: 105,
-        image: menKurta
+        image: menKurta,
+        category: 'Man'
     },
     {
-        id: 5,
+        id: 25,
         title: 'Waistcoat',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.5,
         price: 105,
-        image: menWaist
+        image: menWaist,
+        category: 'Man'
     },
     {
-        id: 6,
+        id: 26,
         title: 'Formal Wear',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.2,
         price: 105,
-        image: menShirts
+        image: menShirts,
+        category: 'Man'
     },
     {
-        id: 7,
+        id: 27,
         title: 'Jearsy',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.6,
         price: 105,
-        image: rcbJearsy
+        image: rcbJearsy,
+        category: 'Man'
     },
     {
-        id: 8,
+        id: 28,
         title: 'Lower',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.3,
         price: 105,
-        image: menLower
+        image: menLower,
+        category: 'Man'
     },
     {
-        id: 9,
+        id: 29,
         title: 'White Sneaker',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.7,
         price: 105,
-        image: menSneaker
+        image: menSneaker,
+        category: 'Man'
     },
     {
-        id: 19,
+        id: 30,
         title: 'Boot',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.8,
         price: 105,
-        image: menBoot
+        image: menBoot,
+        category: 'Man'
     },
 ]
 
 export const womenData = [
     {
-        id: 1,
+        id: 11,
         title: 'Lehenga Choli',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.2,
         price: 105,
-        image: womenLehenga
+        image: womenLehenga,
+        category: 'Women'
     },
     {
-        id: 2,
+        id: 12,
         title: 'Kurti Dupatta',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.1,
         price: 105,
-        image: womenKurti
+        image: womenKurti,
+        category: 'Women'
     },
     {
-        id: 3,
+        id: 13,
         title: 'Saree',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.3,
         price: 105,
-        image: womenSarree
+        image: womenSarree,
+        category: 'Women'
     },
     {
-        id: 4,
+        id: 14,
         title: 'Party Wear',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.6,
         price: 105,
-        image: womenJewel
+        image: womenJewel,
+        category: 'Women'
     },
     {
-        id: 5,
+        id: 15,
         title: 'Women Kurta Sharara',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.2,
         price: 105,
-        image: womenKurtaSharara
+        image: womenKurtaSharara,
+        category: 'Women'
     },
     {
-        id: 6,
+        id: 16,
         title: 'Women Panty',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.3,
         price: 105,
-        image: womenPanty
+        image: womenPanty,
+        category: 'Women'
     },
     {
-        id: 7,
+        id: 17,
         title: 'Women Bra',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.1,
         price: 105,
-        image: womenBra
+        image: womenBra,
+        category: 'Women'
     },
     {
-        id: 8,
+        id: 18,
         title: 'Women ShapeWear',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.8,
         price: 105,
-        image: womenShapeWear
+        image: womenShapeWear,
+        category: 'Women'
     },
     {
-        id: 9,
+        id: 19,
         title: 'Women Babydoll',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.5,
         price: 105,
-        image: womenBabyDoll
+        image: womenBabyDoll,
+        category: 'Women'
     },
     {
-        id: 10,
+        id: 20,
         title: 'Women Skirt',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.9,
         price: 105,
-        image: womenSkirt
+        image: womenSkirt,
+        category: 'Women'
     },
 ]
 
@@ -378,7 +398,8 @@ export const kidsData = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.5,
         price: 105,
-        image: kidsTshirt
+        image: kidsTshirt,
+        category: 'Kids'
     },
     {
         id: 2,
@@ -386,7 +407,8 @@ export const kidsData = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.0,
         price: 105,
-        image: kidsJersey
+        image: kidsJersey,
+        category: 'Kids'
     },
     {
         id: 3,
@@ -394,7 +416,8 @@ export const kidsData = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.1,
         price: 105,
-        image: kidsOverSizedTshirt
+        image: kidsOverSizedTshirt,
+        category: 'Kids'
     },
     {
         id: 4,
@@ -402,7 +425,8 @@ export const kidsData = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.2,
         price: 105,
-        image: kidsEthnic
+        image: kidsEthnic,
+        category: 'Kids'
     },
     {
         id: 5,
@@ -410,7 +434,8 @@ export const kidsData = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.8,
         price: 105,
-        image: kidsCasual
+        image: kidsCasual,
+        category: 'Kids'
     },
     {
         id: 6,
@@ -418,7 +443,8 @@ export const kidsData = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.5,
         price: 105,
-        image: kidsParty
+        image: kidsParty,
+        category: 'Kids'
     },
     {
         id: 7,
@@ -426,7 +452,8 @@ export const kidsData = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.6,
         price: 105,
-        image: kidsOtherParty
+        image: kidsOtherParty,
+        category: 'Kids'
     },
     {
         id: 8,
@@ -434,7 +461,8 @@ export const kidsData = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.4,
         price: 105,
-        image: kidsCrocks
+        image: kidsCrocks,
+        category: 'Kids'
     },
     {
         id: 9,
@@ -442,7 +470,8 @@ export const kidsData = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.2,
         price: 105,
-        image: kidsFootwear
+        image: kidsFootwear,
+        category: 'Kids'
     },
     {
         id: 10,
@@ -450,6 +479,7 @@ export const kidsData = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
         rating: 4.7,
         price: 105,
-        image: kidsToys
+        image: kidsToys,
+        category: 'Kids'
     },
 ]
