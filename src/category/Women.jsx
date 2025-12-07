@@ -11,10 +11,10 @@ const Women = () => {
         <>
             <Navbar />
             <div>
-                <div className='flex justify-center py-2 px-10'>
-                    <img className='w-[85%] h-100 rounded ' src={creative} alt="" />
+                <div className='flex justify-center py-2 px-4 md:px-10'>
+                    <img className='w-full md:w-[85%] h-auto md:h-100 rounded ' src={creative} alt="" />
                 </div>
-                <div className='flex flex-wrap gap-5 px-15 justify-center py-10'>
+                <div className='flex flex-wrap gap-4 md:gap-5 px-4 md:px-15 justify-center py-10'>
                     {womenData.map((items) => {
                         return <Link to={`/womens/${items.id}`}>
                             <Cards data={items} key={items.id} />

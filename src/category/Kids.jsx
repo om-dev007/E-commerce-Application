@@ -11,10 +11,10 @@ const Kids = () => {
     <>
     <Navbar/>
       <div>
-        <div className='flex px-10 justify-center py-2'>
-          <img className='w-[85%] rounded ' src={kidsSale} alt="" />
+        <div className='flex px-4 md:px-10 justify-center py-2'>
+          <img className='w-full md:w-[85%] rounded ' src={kidsSale} alt="" />
         </div>
-        <div className='flex flex-wrap gap-5 py-10 px-15 justify-center'>
+        <div className='flex flex-wrap gap-4 md:gap-5 py-10 px-4 md:px-15 justify-center'>
           {kidsData.map((item) => {
             return <Link to={`/kids/${item.id}`}>
             <Cards data={item} key={item.id} />

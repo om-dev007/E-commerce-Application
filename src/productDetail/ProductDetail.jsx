@@ -19,54 +19,54 @@ const ProductDetail = () => {
           <h1 className='font-medium text-gray-500 text-center'> Home <span>-</span> Shop <span>-</span> {product.category} <span>-</span> {product.title} </h1>
         </div>
       </div>
-      <div className='flex gap-2 px-15 py-5'>
-        <div className='flex flex-col gap-1'>
+      <div className='flex flex-col md:flex-row gap-4 md:gap-2 px-4 md:px-15 py-5'>
+        <div className='flex flex-row md:flex-col gap-1 justify-center md:justify-start'>
           <div>
-            <img className='w-30 rounded' src={product.image} alt="" />
+            <img className='w-20 md:w-30 rounded' src={product.image} alt="" />
           </div>
           <div>
-            <img className='w-30 rounded' src={product.image} alt="" />
+            <img className='w-20 md:w-30 rounded' src={product.image} alt="" />
           </div>
           <div>
-            <img className='w-30 rounded' src={product.image} alt="" />
+            <img className='w-20 md:w-30 rounded' src={product.image} alt="" />
           </div>
         </div>
-        <div className='rounded'>
-          <img className='h-113 w-150 rounded' src={product.image} alt="" />
+        <div className='rounded mx-auto md:mx-0'>
+          <img className='h-80 md:h-113 w-80 md:w-150 rounded object-cover' src={product.image} alt="" />
         </div>
-        <div className='flex flex-col gap-5 px-5'>
+        <div className='flex flex-col gap-5 px-4 md:px-5 text-center md:text-left'>
           <div>
-            <h1 className=' text-2xl  text-gray-900 font-semibold'> {product.title} </h1>
+            <h1 className=' text-xl md:text-2xl  text-gray-900 font-semibold'> {product.title} </h1>
           </div>
-          <div className='px-2 flex gap-3'>
-            <img className='w-5' src={star} alt="" />
-            <img className='w-5' src={star} alt="" />
-            <img className='w-5' src={star} alt="" />
-            <img className='w-5' src={star} alt="" />
-            <img className='w-5' src={halfstar} alt="" />
-            <h3 className='font-semibold text-gray-700'> {product.rating} </h3>
+          <div className='px-2 flex gap-3 justify-center md:justify-start'>
+            <img className='w-4 md:w-5' src={star} alt="" />
+            <img className='w-4 md:w-5' src={star} alt="" />
+            <img className='w-4 md:w-5' src={star} alt="" />
+            <img className='w-4 md:w-5' src={star} alt="" />
+            <img className='w-4 md:w-5' src={halfstar} alt="" />
+            <h3 className='font-semibold text-gray-700 text-sm md:text-base'> {product.rating} </h3>
           </div>
-          <div className='flex gap-5 '>
-            <h3 className='text-gray-700 text-2xl font-bold px-2'> <del>$130</del> </h3>
-            <h3 className='text-red-500 text-2xl font-bold px-2'> ${product.price} </h3>
+          <div className='flex gap-5 justify-center md:justify-start'>
+            <h3 className='text-gray-700 text-xl md:text-2xl font-bold px-2'> <del>$130</del> </h3>
+            <h3 className='text-red-500 text-xl md:text-2xl font-bold px-2'> ${product.price} </h3>
           </div>
           <div>
-            <h3 className='text-justify text-black font-semibold'>
+            <h3 className='text-justify text-black font-semibold text-sm md:text-base'>
               {product.description}
             </h3>
           </div>
           <div>
-            <h1 className='text-gray-700 font-bold'> Select Size </h1>
+            <h1 className='text-gray-700 font-bold text-sm md:text-base'> Select Size </h1>
           </div>
-          <div className='flex gap-3'>
-            <button className='border border-gray-200 outline-0 cursor-pointer px-5 rounded py-2 '>S</button>
-            <button className='border border-gray-200 outline-0 cursor-pointer px-5 rounded py-2 '>M</button>
-            <button className='border border-gray-200 outline-0 cursor-pointer px-5 rounded py-2 '>L</button>
-            <button className='border border-gray-200 outline-0 cursor-pointer px-5 rounded py-2 '>XL</button>
-            <button className='border border-gray-200 outline-0 cursor-pointer px-5 rounded py-2 '>XXL</button>
+          <div className='flex gap-3 justify-center md:justify-start flex-wrap'>
+            <button className='border border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>S</button>
+            <button className='border border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>M</button>
+            <button className='border border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>L</button>
+            <button className='border border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>XL</button>
+            <button className='border border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>XXL</button>
           </div>
-          <div>
-            <button className='text-white bg-red-500 px-15 py-5 rounded cursor-pointer'>ADD TO CART</button>
+          <div className='flex justify-center md:justify-start'>
+            <button className='text-white bg-red-500 px-8 md:px-15 py-3 md:py-5 rounded cursor-pointer text-sm md:text-base'>ADD TO CART</button>
           </div>
         </div>
       </div>

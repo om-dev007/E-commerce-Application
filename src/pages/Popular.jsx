@@ -12,7 +12,7 @@ const Popular = () => {
         <div>
             <hr className='w-50 bg-gray-900  h-1 rounded-2xl flex justify-self-center font-extrabold' />
         </div>
-        <div className='flex flex-wrap gap-7 py-10 px-5 justify-center'>
+        <div className='flex flex-wrap gap-4 py-10 justify-center px-20 '>
             {data.map((item) => {
                 return (<Cards key={item.id} data={item} />)
             })}
