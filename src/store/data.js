@@ -55,21 +55,24 @@ export const  data = [
         title: "Kurti",
         rating: 4.5,
         image: kurti,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.',
+        category: 'Women'
     },
     {
         id: 42,
         title: "Formal Shirt",
         rating: 4.2,
         image: formalShirt,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.',
+        category: 'Men'
     },
     {
         id: 43,
         title: 'Saree',
         rating: 4.3,
         image: saree,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.',
+        category: 'Women'
     },
     {
         id: 44,
@@ -83,42 +86,48 @@ export const  data = [
         title: 'T-shirt',
         rating: 4.6,
         image: tshirt,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.',
+        category: 'Men'
     },
     {
         id: 46,
         title: 'Dress',
         rating: 4.3,
         image: dress,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.',
+        category: 'Women'
     },
     {
         id: 47,
         title: 'Lower',
         rating: 4.1,
         image: lower,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.',
+        category: 'Men'
     },
     {
         id: 48,
         title: 'Leggies',
         rating: 4.3,
         image: leggis,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.',
+        category: 'Women'
     },
     {
         id: 49,
         title: 'Hoodie', 
         rating: 4.5,
         image: hoodie,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.',
+        category: 'Men'
     },
     {
         id: 50, 
         title: 'UnderWear',
         rating: 4.4,
         image: underWear,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.'
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quas perferendis repudiandae delectus assumenda maxime dignissimos repellat qui est aliquid.',
+        category: 'Women'
     }
 ]
 
