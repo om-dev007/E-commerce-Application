@@ -3,13 +3,14 @@ import { womenData } from '../store/data'
 import { menData } from '../store/data'
 import { kidsData } from '../store/data'
 import { data } from '../store/data'
+import { collectionData } from '../store/data'
 import Navbar from '../components/Navbar'
 import star from '../assets/star_icon.png'
 import halfstar from '../assets/star_dull_icon.png'
 
 const ProductDetail = () => {
   const { id } = useParams()
-  const product = menData.find((item) => item.id == id) || womenData.find((item) => item.id == id) || kidsData.find((item) => item.id == id) || data.find((item) => item.id == id)
+  const product = menData.find((item) => item.id == id) || womenData.find((item) => item.id == id) || kidsData.find((item) => item.id == id) || data.find((item) => item.id == id) || collectionData.find((item) => item.id == id)
 
   return (
     <>
@@ -23,13 +24,13 @@ const ProductDetail = () => {
       <div className='flex flex-col sm:flex-row md:flex-row gap-4 md:gap-2 px-4 md:px-15 py-5'>
         <div className='flex flex-row sm:flex-col order-2 md:order-1 sm:order-1 lg:order-1 md:flex-col gap-1 justify-center md:justify-start sm:justify-start '>
           <div>
-            <img className='w-12 h-10 md:w-20 md:h-15  rounded' src={product.image} alt="" />
+            <img className='w-12 h-10 md:w-20 md:h-15 lg:w-25 lg:h-20  rounded' src={product.image} alt="" />
           </div>
           <div>
             <img className='w-12 h-10 md:w-20 md:h-15 lg:w-25 lg:h-20 rounded' src={product.image} alt="" />
           </div>
           <div>
-            <img className='w-12 h-10 md:w-20 md:h-15  rounded' src={product.image} alt="" />
+            <img className='w-12 h-10 md:w-20 md:h-15 lg:w-25 lg:h-20  rounded' src={product.image} alt="" />
           </div>
         </div>
         <div className='rounded md:order-2 sm:order-2 lg:order-2 order-1 mx-auto md:mx-0'>
@@ -48,7 +49,7 @@ const ProductDetail = () => {
             <h3 className='font-semibold text-gray-700 text-sm md:text-base'> {product.rating} </h3>
           </div>
           <div className='flex gap-5 justify-center md:justify-start'>
-            <h3 className='text-gray-700 text-xl md:text-2xl font-bold px-2'> <del>$130</del> </h3>
+            <h3 className='text-gray-700 text-xl md:text-2xl font-bold px-2'> <del>${product.discountPrice} </del> </h3>
             <h3 className='text-red-500 text-xl md:text-2xl font-bold px-2'> ${product.price} </h3>
           </div>
           <div>
