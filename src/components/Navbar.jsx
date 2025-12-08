@@ -6,7 +6,6 @@ import { Heart } from 'lucide-react';
 import { UserRound } from 'lucide-react';
 import { Search } from 'lucide-react';
 
-
 const Navbar = () => {
   return (
     <>
@@ -14,7 +13,7 @@ const Navbar = () => {
         <div className='flex items-center gap-5 px-2 mb-4 md:mb-0'>
           <div className='flex items-center gap-1'>
             <div>
-              <img className='h-10 w-15 md:w-30 sm:w-25 lg:w-30 md:h-12' src={logoUpdated} alt="" />
+              <img className='h-10 w-15 md:w-40 sm:w-40 lg:w-30' src={logoUpdated} alt="" />
             </div>
             <div>
               <h1 className='font-semibold text-2xl md:text-3xl'>Velnixa</h1>
