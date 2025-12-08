@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../assets/logo (1).webp'
 import logoUpdated from '../assets/logoUpdated.png'
 import { Link } from 'react-router-dom'
 import cart_icon from '../assets/cart_icon.png'
