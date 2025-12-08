@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import cart_icon from '../assets/cart_icon.png'
 import { Heart } from 'lucide-react';
 import { UserRound } from 'lucide-react';
+import { Search } from 'lucide-react';
 
 
 const Navbar = () => {
@@ -20,16 +21,19 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className='flex justify-center mb-4 w-full md:mb-0'>
-          <input className='border-2 border-gray-600 px-4 w-3/4 md:px-8 transition-all focus:border-green-500 py-2 rounded-2xl outline-0 lg:w-3/4 md:w-3/4 ' type="text" placeholder='Search your items here...' />
+        <div className='mb-4 mx-5 w-full md:mb-0'>
+          <div className='flex w-full focus:border-green-500 outline-0 transition-all border-2 rounded-2xl border-gray-600 items-center'>
+            <Search className='px-1 text-gray-500 h-full w-10' />
+            <input className=' px-2 w-full py-2 outline-0 rounded-2xl  ' type="text" placeholder='Search your items here...' />
+          </div>
         </div>
         <div className='flex justify-center'>
           <div className='flex items-center gap-3 md:gap-5'>
             <div>
-              <Heart className='h-6  md:h-8 w-8' />
+              <Heart className='h-6 text-gray-700 md:h-8 w-8' />
             </div>
             <div>
-              <UserRound className='h-6 md:h-8 w-8' />
+              <UserRound className='h-6 text-gray-700 md:h-8 w-8' />
             </div>
             <div>
               <button className='outline-0'>
