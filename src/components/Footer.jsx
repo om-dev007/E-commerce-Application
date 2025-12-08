@@ -11,7 +11,7 @@ const Footer = () => {
             <div className='flex justify-self-center gap-5 flex-col px-4 md:px-10'>
                 <div className='flex flex-col md:flex-row py-5 justify-center gap-5 items-center'>
                     <div>
-                        <img className='w-8 md:w-10' src={logo} alt="" />
+                        <img className='w-20' src={logo} alt="" />
                     </div>
                     <div>
                         <h3 className='text-2xl md:text-4xl text-[#454545] font-bold '>Velnixa</h3>
