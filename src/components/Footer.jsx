@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/logo (1).webp'
+import logo from '../assets/logoUpdated.png'
 import { Link } from 'react-router-dom'
 import whatsapp from '../assets/whatsapp.png'
 import facebook from '../assets/facebook.png'
@@ -14,7 +14,7 @@ const Footer = () => {
                         <img className='w-8 md:w-10' src={logo} alt="" />
                     </div>
                     <div>
-                        <h3 className='text-2xl md:text-4xl text-[#454545] font-bold '>Shopify</h3>
+                        <h3 className='text-2xl md:text-4xl text-[#454545] font-bold '>Velnixa</h3>
                     </div>
                 </div>
                 <div className='flex flex-wrap gap-5 text-gray-700 font-medium text-base md:text-lg justify-center'>
