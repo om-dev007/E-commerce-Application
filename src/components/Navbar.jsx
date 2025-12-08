@@ -38,7 +38,7 @@ const Navbar = () => {
             <div>
               <button className='outline-0'>
                 <div>
-                  <img className='h-8 w-8 md:w-25 lg:w-20 sm:w-20 md:h-10' src={cart_icon} alt="" />
+                  <img className='h-8 w-8 md:w-30 lg:w-20 sm:w-25 md:h-10' src={cart_icon} alt="" />
                 </div>
               </button>
             </div>
