@@ -5,7 +5,7 @@ import arrow from '../assets/arrow_icon.png'
 
 const Hero = () => {
     return (
-        <div className='bg-linear-to-b from-green-300 to-white flex py-5 flex-col md:flex-row items-center justify-center md:justify-evenly min-h-screen px-4 md:px-0'>
+        <div className='bg-linear-to-b from-green-300 to-white flex py-5 flex-col md:flex-row items-center justify-center md:justify-evenly min-h-screen px-4 md:px-10'>
             <div className='text-center md:text-left mb-8 sm:order-1 md:order-1 lg:order-1 order-2 md:mb-0'>
                 <div className='py-1 px-1'>
                     <h2 className='font-semibold text-xl md:text-2xl'>Best Deals ! Best Prices ! </h2>
