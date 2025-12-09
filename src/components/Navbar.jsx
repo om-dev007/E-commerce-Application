@@ -5,6 +5,7 @@ import cart_icon from '../assets/cart_icon.png'
 import { Heart } from 'lucide-react';
 import { UserRound } from 'lucide-react';
 import { Search } from 'lucide-react';
+import Login from '../LoginSignUp/Login';
 
 const Navbar = () => {
   return (
@@ -32,7 +33,7 @@ const Navbar = () => {
               <Heart className='h-6 text-gray-700 md:h-8 w-8' />
             </div>
             <div>
-              <UserRound className='h-6 text-gray-700 md:h-8 w-8' />
+              <Link to='/login'> <UserRound className='h-6 text-gray-700 md:h-8 w-8' /> </Link>
             </div>
             <div>
               <button className='outline-0'>
