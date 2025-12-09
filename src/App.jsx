@@ -9,6 +9,7 @@ import About from './pages/About'
 import Help from "./pages/Help"
 import Offices from "./pages/Offices"
 import ScrollToTop from "./components/ScrollToTop"
+import Login from "./LoginSignUp/Login"
 
 const App = () => {
  
@@ -18,6 +19,7 @@ const App = () => {
       <Routes>
         <Route path="*" element={<NotFound/>} />
         <Route path="/" element={<Home/>} />
+        <Route path="/login" element={<Login/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/mens" element={<Men/>} />
         <Route path="/mens/:id" element={<ProductDetail/>} />
