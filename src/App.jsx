@@ -8,11 +8,13 @@ import Kids from "./category/Kids"
 import About from './pages/About'
 import Help from "./pages/Help"
 import Offices from "./pages/Offices"
+import ScrollToTop from "./components/ScrollToTop"
 
 const App = () => {
  
   return (
     <div className='bg-white min-h-screen text-black'>
+      <ScrollToTop/>
       <Routes>
         <Route path="*" element={<NotFound/>} />
         <Route path="/" element={<Home/>} />
