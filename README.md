@@ -3,7 +3,7 @@
 A modern, responsive **frontend-only eCommerce website** built using **React.js** and **Tailwind CSS**. This project was created to **strengthen core React fundamentals** such as component architecture, routing, props, state handling, and UI design.
 
 🔗 **Live Demo:**  
-https://frontend-e-commerce-application.vercel.app/
+https://velnixa.vercel.app/
 
 📁 **GitHub Repository:**  
 https://github.com/om-dev007/E-commerce-Application
