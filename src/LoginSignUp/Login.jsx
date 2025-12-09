@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import Toast from "../components/Toast";
 import { useState } from 'react'
 
 const Login = () => {
@@ -8,7 +9,23 @@ const Login = () => {
         email: '',
         password: ''
     })
-    const [errorMsg, setErrorMsg] = useState('')
+
+    const [toasts, setToasts] = useState([]);
+
+    const showToast = (message, type) => {
+        const id = Date.now();
+
+        setToasts(prev => [...prev, { id, message, type }]);
+
+        setTimeout(() => {
+            setToasts(prev => prev.filter(toast => toast.id !== id));
+        }, 3000);
+    };
+
+    const removeToast = (id) => {
+        setToasts(prev => prev.filter(toast => toast.id !== id));
+    };
+
 
     const commonHandler = (e) => {
         setInput({
@@ -18,24 +35,28 @@ const Login = () => {
     }
 
     const formHandler = (e) => {
-        e.preventDefault()
-        if(!input.email.includes('gmail.com') || (!/\d/.test(input.password) && !input.password.includes("@"))) {
-            setErrorMsg('Please enter valid value')
-            return ; 
+        e.preventDefault();
+
+        if (!input.email.includes("gmail.com") ||
+            (!/\d/.test(input.password) && !input.password.includes("@"))) {
+            showToast("Please enter a valid value", "error");
+            return;
         }
-        setErrorMsg('')
+
+        showToast("Login Successful!", "success");
 
         setInput({
             email: '',
             password: ''
-        })
-    }
-    
+        });
+    };
+
+
     return (
         <> <Navbar />
             <div className='h-screen bg-linear-to-b from-green-300 to-white flex items-center justify-center '>
                 <div>
-                    <form onSubmit={formHandler}  className='border w-150 bg-white rounded-2xl border-gray-400 px-5 py-2'>
+                    <form onSubmit={formHandler} className='border w-150 bg-white rounded-2xl border-gray-400 px-5 py-2'>
                         <div className='mt-5'>
                             <h1 className='font-bold text-3xl text-center text-gray-600'>Login</h1>
                         </div>
@@ -49,15 +70,23 @@ const Login = () => {
                             <div>
                                 <button type='submit' className='bg-green-500 text-white px-5 py-2 w-full cursor-pointer hover:scale-101 transition-all outline-0 rounded'>Login</button>
                             </div>
-                            <div>
-                                {errorMsg ? <h2 className='text-red-600'> {errorMsg} </h2> : ''}
-                            </div>
                         </div>
                     </form>
                     <div>
-                        
+
                     </div>
                 </div>
+                <div className="fixed top-5 right-5 flex flex-col gap-3 z-50">
+                    {toasts.map(t => (
+                        <Toast
+                            key={t.id}
+                            message={t.message}
+                            type={t.type}
+                            onClose={() => removeToast(t.id)}
+                        />
+                    ))}
+                </div>
+
             </div>
         </>
     )
