@@ -17,7 +17,11 @@ const Navbar = () => {
               <img className='h-10 w-15 md:w-40 sm:w-40 lg:w-30' src={logoUpdated} alt="" />
             </div>
             <div>
-              <h1 className='font-semibold text-2xl md:text-3xl'>Velnixa</h1>
+              <h1 className="font-semibold text-2xl md:text-3xl 
+             bg-gradient-to-r from-emerald-500 to-green-700 
+             bg-clip-text text-transparent">
+                Velnixa
+              </h1>
             </div>
           </div>
         </div>

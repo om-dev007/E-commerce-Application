@@ -14,7 +14,9 @@ const Footer = () => {
                         <img className='w-20' src={logo} alt="" />
                     </div>
                     <div>
-                        <h3 className='text-2xl md:text-4xl text-[#454545] font-bold '>Velnixa</h3>
+                        <h3 className='font-semibold text-2xl md:text-3xl 
+             bg-gradient-to-r from-emerald-500 to-green-700 
+             bg-clip-text text-transparent '>Velnixa</h3>
                     </div>
                 </div>
                 <div className='flex flex-wrap gap-5 text-gray-700 font-medium text-base md:text-lg justify-center'>
