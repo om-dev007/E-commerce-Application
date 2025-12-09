@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/logoUpdated.png'
+import logo from '../assets/newLogo.png'
 import { Link } from 'react-router-dom'
 import whatsapp from '../assets/whatsapp.png'
 import facebook from '../assets/facebook.png'

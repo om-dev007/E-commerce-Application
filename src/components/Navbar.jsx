@@ -1,5 +1,5 @@
 import React from 'react'
-import logoUpdated from '../assets/logoUpdated.png'
+import logoUpdated from '../assets/newLogo.png'
 import { Link } from 'react-router-dom'
 import cart_icon from '../assets/cart_icon.png'
 import { Heart } from 'lucide-react';
