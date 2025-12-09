@@ -19,7 +19,7 @@ const Footer = () => {
                 </div>
                 <div className='flex flex-wrap gap-5 text-gray-700 font-medium text-base md:text-lg justify-center'>
                     <Link to='/about' >About</Link>
-                    <Link to='/products' >Products</Link>
+                    <Link to='/mens' >Products</Link>
                     <Link to='/offices' >Offices</Link>
                     <Link to='/help'>Help</Link>
                 </div>
