@@ -54,9 +54,9 @@ const Login = () => {
 
     return (
         <> <Navbar />
-            <div className='h-screen bg-linear-to-b from-green-300 to-white flex items-center justify-center '>
+            <div className='h-screen bg-linear-to-b from-green-300 to-white flex items-center justify-center px-4'>
                 <div>
-                    <form onSubmit={formHandler} className='border w-150 bg-white rounded-2xl border-gray-400 px-5 py-2'>
+                    <form onSubmit={formHandler} className='border w-full sm:w-150 bg-white rounded-2xl border-gray-400 px-5 py-2'>
                         <div className='mt-5'>
                             <h1 className='font-bold text-3xl text-center text-gray-600'>Login</h1>
                         </div>
@@ -86,7 +86,6 @@ const Login = () => {
                         />
                     ))}
                 </div>
-
             </div>
         </>
     )
