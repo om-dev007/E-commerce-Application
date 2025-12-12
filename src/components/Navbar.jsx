@@ -1,5 +1,5 @@
 import React from 'react'
-import logoUpdated from '../assets/newLogo.png'
+import logoUpdated from '../assets/updatedLogo.jpg'
 import { Link } from 'react-router-dom'
 import cart_icon from '../assets/cart_icon.png'
 import { Heart } from 'lucide-react';
@@ -12,9 +12,9 @@ const Navbar = () => {
     <>
       <div className='flex flex-col sm:flex-row sm:py-2 md:flex-row items-center justify-between px-5 py-5'>
         <div className='flex items-center gap-5 px-2 mb-4 md:mb-0'>
-          <div className='flex items-center gap-1'>
+          <div className='flex items-center'>
             <div>
-              <img className='h-10 w-15 md:w-40 sm:w-40 lg:w-30' src={logoUpdated} alt="" />
+              <img className='w-10 sm:w-30 md:w-35 lg:w-40 ' src={logoUpdated} alt="logo" />
             </div>
             <div>
               <h1 className="font-semibold text-2xl md:text-3xl 
@@ -26,7 +26,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className='mb-4 mx-5 w-full md:mb-0'>
-          <div className='flex w-full focus-within:border-green-500 outline-0 transition-all border-2 rounded-2xl border-gray-600 items-center'>
+          <div className='flex w-full focus-within:border-green-500 outline-0 transition-all border-3 rounded-2xl border-gray-600 items-center'>
             <Search className='px-1 text-gray-500 h-full w-10' />
             <input className=' px-2 w-full py-2 outline-0 rounded-2xl  ' type="text" placeholder='Search your items here...' />
           </div>
