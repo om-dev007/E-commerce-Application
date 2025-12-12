@@ -1,21 +1,21 @@
 import formalShirt from '../assets/formalShirt.webp'
 import saree from '../assets/women2.jpg'
-import jacket from '../assets/men2.jpg'
+import jacket from '../assets/menFormalPant.jpg'
 import tshirt from '../assets/men3.webp'
-import dress from '../assets/women3.jpg'
-import lower from '../assets/men4.jfif'
-import leggis from '../assets/women4.webp'
+import dress from '../assets/womenDress.webp'
+import lower from '../assets/menLower.webp'
+import leggis from '../assets/womenHeels.webp'
 import womenSkirts from '../assets/womenSkirtts.webp'
 import kurti from '../assets/kurti.webp'
 import hoodie from '../assets/hoodie.webp'
-import underWear from '../assets/underWear.webp'
+import KidsDresses from '../assets/KidsDresses.webp'
 import gown from '../assets/gown.webp'
 import denimMen from '../assets/denimMen.webp'
 import jacketMen from '../assets/jacketMen.webp'
 import jeans from '../assets/jeans.webp'
 import chain from '../assets/chain.avif'
 import palazoo from '../assets/plazo.webp'
-import topWomen from '../assets/topWomen.jpg'
+import topWomen from '../assets/topWomen.webp'
 import kneeDress from '../assets/kneeDress.webp'
 import blazer from '../assets/blazer.webp'
 import kurta from '../assets/kurta.jpg'
@@ -32,21 +32,21 @@ import menBoot from '../assets/MenBoot.avif'
 import womenLehenga from '../assets/WomenLehenga.jpg'
 import womenKurti from '../assets/WomenDupata.webp'
 import womenSarree from '../assets/WomenSarrree.webp'
-import womenJewel from '../assets/WomenJewel.webp'
+import womenJewel from '../assets/womenJewel.webp'
 import womenKurtaSharara from '../assets/WomenKurtaSharara.jpg'
 import womenBlouse2 from '../assets/womenBlouse2.webp'
 import womenJeans from '../assets/WomenJeans2.webp'
 import womenRRSa from '../assets/WomenRRSa.webp'
-import kidsTshirt from '../assets/kidsShirt.webp'
+import kidsTshirt from '../assets/kidsTshirts.webp'
 import kidsJersey from '../assets/KidsDhoniJersey.webp'
 import kidsOverSizedTshirt from '../assets/kidsOverSizeTshirt.webp'
-import kidsEthnic from '../assets/kidsEthnic.webp'
-import kidsCasual from '../assets/KidsCasualDress.webp'
+import kidsEthnic from '../assets/kidsEthenic.webp'
+import kidsCasual from '../assets/kidsCasual.webp'
 import kidsParty from '../assets/kidsPartyWear.webp'
-import kidsOtherParty from '../assets/kidsOtherPartyWear.webp'
-import kidsCrocks from '../assets/KidsCrocsk.webp'
-import kidsFootwear from '../assets/KidsGirlFootwear.webp'
-import kidsToys from '../assets/KidsTOys.webp'
+import kidsOtherParty from '../assets/kidsPartywearBoys.webp'
+import kidsCrocks from '../assets/KidsCrocks.webp'
+import kidsFootwear from '../assets/kidsSandles.webp'
+import kidsToys from '../assets/kidsTOys.webp'
 import womenTrouser from '../assets/WomenLooseTrousers.webp'
 
 export const data = [
@@ -102,7 +102,7 @@ export const data = [
   },
   {
     id: 46,
-    title: 'Dress',
+    title: 'Women Dress',
     rating: 4.3,
     image: dress,
     description: "Stylish women dress with smooth fall and modern fitting for parties and casual events.",
@@ -122,7 +122,7 @@ export const data = [
   },
   {
     id: 48,
-    title: 'Leggies',
+    title: 'Women Heels Sandal',
     rating: 4.3,
     image: leggis,
     description: "Stretchable leggings with smooth fabric for perfect comfort and daily flexibility.",
@@ -132,7 +132,7 @@ export const data = [
   },
   {
     id: 49,
-    title: 'Hoodie', 
+    title: 'Hoodie',
     rating: 4.5,
     image: hoodie,
     description: "Warm winter hoodie with premium fleece lining for street style and winter protection.",
@@ -141,10 +141,10 @@ export const data = [
     discountPrice: 54
   },
   {
-    id: 50, 
-    title: 'UnderWear',
+    id: 50,
+    title: 'Tunic Pant Co-ords Set',
     rating: 4.4,
-    image: underWear,
+    image: KidsDresses,
     description: "Ultra-soft breathable women innerwear designed for daily comfort and hygiene.",
     category: 'Women',
     price: 15,
@@ -258,106 +258,106 @@ export const collectionData = [
 
 
 export const menData = [
-    {
-        id: 21,
-        title: 'Party Wear',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
-        rating: 4.5,
-        price: 20,
-        image: menShirt,
-        category: 'Man',
-        discountPrice: 31
-    },
-    {
-        id: 22,
-        title: 'T-shirt',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
-        rating: 4.2,
-        price: 15,
-        image: menTshirt,
-        category: 'Man',
-        discountPrice: 31
-    },
-    {
-        id: 23,
-        title: 'Jeans',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
-        rating: 4.7,
-        price: 28,
-        image: menJeans,
-        category: 'Man',
-        discountPrice: 38
-    },
-    {
-        id: 24,
-        title: 'Kurta',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
-        rating: 4.1,
-        price: 35,
-        image: menKurta,
-        category: 'Man',
-        discountPrice: 54
-    },
-    {
-        id: 25,
-        title: 'Waistcoat',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
-        rating: 4.5,
-        price: 42,
-        image: menWaist,
-        category: 'Man',
-        discountPrice: 65
-    },
-    {
-        id: 26,
-        title: 'Formal Wear',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
-        rating: 4.2,
-        price: 31,
-        image: menShirts,
-        category: 'Man',
-        discountPrice: 47
-    },
-    {
-        id: 27,
-        title: 'Jearsy',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
-        rating: 4.6,
-        price: 10,
-        image: rcbJearsy,
-        category: 'Man',
-        discountPrice: 15
-    },
-    {
-        id: 28,
-        title: 'Lower',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
-        rating: 4.3,
-        price: 25,
-        image: menLower,
-        category: 'Man',
-        discountPrice: 28
-    },
-    {
-        id: 29,
-        title: 'White Sneaker',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
-        rating: 4.7,
-        price: 31,
-        image: menSneaker,
-        category: 'Man',
-        discountPrice: 55
-    },
-    {
-        id: 30,
-        title: 'Boot',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
-        rating: 4.8,
-        price: 42,
-        image: menBoot,
-        category: 'Man',
-        discountPrice: 45
-    },
+  {
+    id: 21,
+    title: 'Party Wear',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+    rating: 4.5,
+    price: 20,
+    image: menShirt,
+    category: 'Man',
+    discountPrice: 31
+  },
+  {
+    id: 22,
+    title: 'T-shirt',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+    rating: 4.2,
+    price: 15,
+    image: menTshirt,
+    category: 'Man',
+    discountPrice: 31
+  },
+  {
+    id: 23,
+    title: 'Jeans',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+    rating: 4.7,
+    price: 28,
+    image: menJeans,
+    category: 'Man',
+    discountPrice: 38
+  },
+  {
+    id: 24,
+    title: 'Kurta',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+    rating: 4.1,
+    price: 35,
+    image: menKurta,
+    category: 'Man',
+    discountPrice: 54
+  },
+  {
+    id: 25,
+    title: 'Waistcoat',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+    rating: 4.5,
+    price: 42,
+    image: menWaist,
+    category: 'Man',
+    discountPrice: 65
+  },
+  {
+    id: 26,
+    title: 'Formal Wear',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+    rating: 4.2,
+    price: 31,
+    image: menShirts,
+    category: 'Man',
+    discountPrice: 47
+  },
+  {
+    id: 27,
+    title: 'Jersey',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+    rating: 4.6,
+    price: 10,
+    image: rcbJearsy,
+    category: 'Man',
+    discountPrice: 15
+  },
+  {
+    id: 28,
+    title: 'Lower',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+    rating: 4.3,
+    price: 25,
+    image: menLower,
+    category: 'Man',
+    discountPrice: 28
+  },
+  {
+    id: 29,
+    title: 'White Sneaker',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+    rating: 4.7,
+    price: 31,
+    image: menSneaker,
+    category: 'Man',
+    discountPrice: 55
+  },
+  {
+    id: 30,
+    title: 'Boots',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque. Amet reiciendis minus modi eum soluta hic autem, rem corrupti quibusdam? Quam omnis saepe et expedita ratione, quasi unde repudiandae.',
+    rating: 4.8,
+    price: 42,
+    image: menBoot,
+    category: 'Man',
+    discountPrice: 45
+  },
 ]
 
 export const womenData = [
@@ -393,7 +393,7 @@ export const womenData = [
   },
   {
     id: 14,
-    title: 'Party Wear',
+    title: 'Alloy GreenSilver',
     description: "Elegant designer jewelry set for parties, weddings, and festive looks.",
     rating: 4.6,
     price: 26,
@@ -465,14 +465,33 @@ export const womenData = [
 
 
 export const kidsData = [
-  { id: 1, title: 'Kids T-shirt', description: "Soft cotton printed kids t-shirt.", rating: 4.5, price: 18, discountPrice: 25, image: kidsTshirt, category: 'Kids' },
-  { id: 2, title: 'Dhoni Jearsey', description: "Breathable cricket jersey for kids.", rating: 4.0, price: 20, discountPrice: 28, image: kidsJersey, category: 'Kids' },
-  { id: 3, title: 'OverSized t-shirt', description: "Oversized trendy kids street wear.", rating: 4.1, price: 22, discountPrice: 30, image: kidsOverSizedTshirt, category: 'Kids' },
+  { id: 1, title: 'Kids T-shirt', 
+    description: "Soft cotton printed kids t-shirt.",
+    rating: 4.5, price: 18,
+    discountPrice: 25, 
+    image: kidsTshirt, 
+    category: 'Kids' 
+  },
+
+  { 
+    id: 2, 
+    title: 'Dhoni Jearsey', 
+    description: "Breathable cricket jersey for kids.", 
+    rating: 4.0, 
+    price: 20, 
+    discountPrice: 28, 
+    image: kidsJersey, 
+    category: 'Kids' },
+
+  { 
+    id: 3, 
+    title: 'OverSized t-shirt', description: "Oversized trendy kids street wear.", rating: 4.1, price: 22, discountPrice: 30, image: kidsOverSizedTshirt, category: 'Kids' },
+
   { id: 4, title: 'Kids Kurta', description: "Festive traditional kurta for kids.", rating: 4.2, price: 24, discountPrice: 32, image: kidsEthnic, category: 'Kids' },
   { id: 5, title: 'Kids Casual', description: "Comfortable daily wear casual dress.", rating: 4.8, price: 26, discountPrice: 34, image: kidsCasual, category: 'Kids' },
   { id: 6, title: 'Kids Party Wear', description: "Stylish party wear outfit for kids.", rating: 4.5, price: 28, discountPrice: 36, image: kidsParty, category: 'Kids' },
   { id: 7, title: 'Kids party wear', description: "Premium birthday wear for kids.", rating: 4.6, price: 30, discountPrice: 38, image: kidsOtherParty, category: 'Kids' },
-  { id: 8, title: 'Sling Back Clogs', description: "Lightweight kids clogs with grip.", rating: 4.4, price: 32, discountPrice: 40, image: kidsCrocks, category: 'Kids' },
-  { id: 9, title: 'Sling Back Flats', description: "Stylish flat sandals for girls.", rating: 4.2, price: 34, discountPrice: 42, image: kidsFootwear, category: 'Kids' },
+  { id: 8, title: 'Sports Sandals', description: "Lightweight kids sandle.", rating: 4.4, price: 32, discountPrice: 40, image: kidsCrocks, category: 'Kids' },
+  { id: 9, title: 'Sling Back Flats', description: "Stylish flat clogs for girls.", rating: 4.2, price: 34, discountPrice: 42, image: kidsFootwear, category: 'Kids' },
   { id: 10, title: 'Offroad Monster', description: "High-speed monster toy racing car.", rating: 4.7, price: 38, discountPrice: 45, image: kidsToys, category: 'Kids' }
 ]
