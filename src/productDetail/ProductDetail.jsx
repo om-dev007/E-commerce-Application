@@ -34,7 +34,7 @@ const ProductDetail = () => {
           </div>
         </div>
         <div className='rounded object-contain md:order-2 sm:order-2 lg:order-2 order-1 mx-auto md:mx-0'>
-          <img className='h-90 md:h-100 lg:w-120 lg:h-120 w-80 md:w-100 rounded' src={product.image} alt="img" />
+          <img className='h-100 md:h-100 lg:w-120 lg:h-120 w-80 md:w-100 rounded' src={product.image} alt="img" />
         </div>
         <div className='flex order-3 sm:order-3 lg:order-3 md:order-3 flex-col gap-5 px-4 md:px-5 text-center md:text-left'>
           <div>
