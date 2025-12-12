@@ -5,6 +5,7 @@ import tshirt from '../assets/men3.webp'
 import dress from '../assets/women3.jpg'
 import lower from '../assets/men4.jfif'
 import leggis from '../assets/women4.webp'
+import womenSkirts from '../assets/womenSkirtts.webp'
 import kurti from '../assets/kurti.webp'
 import hoodie from '../assets/hoodie.webp'
 import underWear from '../assets/underWear.webp'
@@ -33,8 +34,9 @@ import womenKurti from '../assets/WomenDupata.webp'
 import womenSarree from '../assets/WomenSarrree.webp'
 import womenJewel from '../assets/WomenJewel.webp'
 import womenKurtaSharara from '../assets/WomenKurtaSharara.jpg'
-import womenPanty from '../assets/womenPanty.jpg'
-import womenBra from '../assets/womenBra.webp'
+import womenBlouse2 from '../assets/womenBlouse2.webp'
+import womenJeans from '../assets/WomenJeans2.webp'
+import womenRRSa from '../assets/WomenRRSa.webp'
 import womenShapeWear from '../assets/womenShapewear.webp'
 import womenBabyDoll from '../assets/womenBabydoll.webp'
 import womenSkirt from '../assets/WomenSkirt.webp'
@@ -48,6 +50,7 @@ import kidsOtherParty from '../assets/kidsOtherPartyWear.webp'
 import kidsCrocks from '../assets/KidsCrocsk.webp'
 import kidsFootwear from '../assets/KidsGirlFootwear.webp'
 import kidsToys from '../assets/KidsTOys.webp'
+import womenTrouser from '../assets/WomenLooseTrousers.webp'
 
 export const data = [
   {
@@ -413,42 +416,42 @@ export const womenData = [
   },
   {
     id: 16,
-    title: 'Women Panty',
+    title: 'Round Neck Blouse',
     description: "Breathable cotton daily wear panty for soft skin comfort and hygiene.",
     rating: 4.3,
     price: 15,
     discountPrice: 25,
-    image: womenPanty,
+    image: womenBlouse2,
     category: 'Women'
   },
   {
     id: 17,
-    title: 'Women Bra',
+    title: 'RR SA KURTIS ',
     description: "Comfortable padded bra for daily support and smooth fitting.",
     rating: 4.1,
     price: 18,
     discountPrice: 28,
-    image: womenBra,
+    image: womenRRSa,
     category: 'Women'
   },
   {
     id: 18,
-    title: 'Women ShapeWear',
+    title: 'Women Jeans',
     description: "Body-shaping shapewear for tummy control and perfect outfit fitting.",
     rating: 4.8,
     price: 24,
     discountPrice: 29,
-    image: womenShapeWear,
+    image: womenJeans,
     category: 'Women'
   },
   {
     id: 19,
-    title: 'Women Babydoll',
+    title: 'Women Loose Trouser',
     description: "Soft satin babydoll nightwear with lace finish for luxury comfort.",
     rating: 4.5,
     price: 31,
     discountPrice: 43,
-    image: womenBabyDoll,
+    image: womenTrouser,
     category: 'Women'
   },
   {
@@ -458,7 +461,7 @@ export const womenData = [
     rating: 4.9,
     price: 21,
     discountPrice: 35,
-    image: womenSkirt,
+    image: womenSkirts,
     category: 'Women'
   },
 ]
