@@ -33,12 +33,12 @@ const ProductDetail = () => {
             <img className='w-12 h-10 md:w-20 md:h-15 lg:w-25 lg:h-20  rounded' src={product.image} alt="" />
           </div>
         </div>
-        <div className='rounded md:order-2 sm:order-2 lg:order-2 order-1 mx-auto md:mx-0'>
-          <img className='h-80 md:h-113 w-80 md:w-150 rounded object-cover' src={product.image} alt="" />
+        <div className='rounded object-contain md:order-2 sm:order-2 lg:order-2 order-1 mx-auto md:mx-0'>
+          <img className='h-80 md:h-100 lg:w-120 lg:h-120 w-80 md:w-100 rounded' src={product.image} alt="img" />
         </div>
         <div className='flex order-3 sm:order-3 lg:order-3 md:order-3 flex-col gap-5 px-4 md:px-5 text-center md:text-left'>
           <div>
-            <h1 className=' text-xl md:text-2xl  text-gray-900 font-semibold'> {product.title} </h1>
+            <h1 className=' text-xl md:text-2xl text-gray-900 font-semibold'> {product.title} </h1>
           </div>
           <div className='px-2 flex gap-3 justify-center md:justify-start'>
             <img className='w-4 md:w-5' src={star} alt="" />
@@ -61,14 +61,14 @@ const ProductDetail = () => {
             <h1 className='text-gray-700 font-bold text-sm md:text-base'> Select Size </h1>
           </div>
           <div className='flex gap-3 justify-center md:justify-start flex-wrap'>
-            <button className='border border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>S</button>
-            <button className='border border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>M</button>
-            <button className='border border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>L</button>
-            <button className='border border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>XL</button>
-            <button className='border border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>XXL</button>
+            <button className='border border-gray-200 hover:scale-105 transition-all hover:bg-green-500 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>S</button>
+            <button className='border hover:scale-105 transition-all hover:bg-green-500 border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>M</button>
+            <button className='border hover:scale-105 transition-all hover:bg-green-500 border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>L</button>
+            <button className='border hover:scale-105 transition-all hover:bg-green-500 border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>XL</button>
+            <button className='border hover:scale-105 transition-all hover:bg-green-500 border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>XXL</button>
           </div>
           <div className='flex justify-center md:justify-start'>
-            <button className='text-white bg-red-500 px-8 md:px-15 py-3 md:py-5 rounded cursor-pointer text-sm md:text-base'>ADD TO CART</button>
+            <button className='text-white outline-0 hover:scale-105 transition-all bg-red-500 px-8 md:px-15 py-3 md:py-5 rounded cursor-pointer text-sm md:text-base'>ADD TO CART</button>
           </div>
         </div>
       </div>
