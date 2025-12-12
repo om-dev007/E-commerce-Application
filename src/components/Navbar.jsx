@@ -1,5 +1,5 @@
 import React from 'react'
-import logoUpdated from '../assets/updatedLogo.jpg'
+import logoUpdated from '../assets/updatedLogo (Edited).jpg'
 import { Link } from 'react-router-dom'
 import cart_icon from '../assets/cart_icon.png'
 import { Heart } from 'lucide-react';
@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className='flex items-center gap-5 px-2 mb-4 md:mb-0'>
           <div className='flex items-center'>
             <div>
-              <img className='w-10 sm:w-30 md:w-35 lg:w-40 ' src={logoUpdated} alt="logo" />
+              <img className='w-9 md:w-34 lg:w-22 sm:w-30 ' src={logoUpdated} alt="logo" />
             </div>
             <div>
               <h1 className="font-semibold text-2xl md:text-3xl 
