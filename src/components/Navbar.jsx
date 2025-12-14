@@ -19,7 +19,7 @@ const Navbar = () => {
             </div>
             <div>
               <h1 className="font-semibold text-2xl md:text-3xl 
-             bg-gradient-to-r from-emerald-500 to-green-700 
+             bg-linear-to-r from-emerald-500 to-green-700 
              bg-clip-text text-transparent">
                 Velnixa
               </h1>
