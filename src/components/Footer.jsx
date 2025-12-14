@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../assets/updatedLogo.jpg'
 import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import whatsapp from '../assets/whatsapp.png'
 import facebook from '../assets/facebook.png'
 import instagram from '../assets/instagram.png'
@@ -15,15 +16,19 @@ const Footer = () => {
                     </div>
                     <div>
                         <h3 className='font-semibold text-2xl md:text-3xl 
-             bg-gradient-to-r from-emerald-500 to-green-700 
+             bg-linear-to-r from-emerald-500 to-green-700 
              bg-clip-text text-transparent '>Velnixa</h3>
                     </div>
                 </div>
-                <div className='flex flex-wrap gap-5 text-gray-700 font-medium text-base md:text-lg justify-center'>
-                    <Link to='/about' >About</Link>
-                    <Link to='/mens' >Products</Link>
-                    <Link to='/offices' >Offices</Link>
-                    <Link to='/help'>Help</Link>
+                <div className='flex flex-wrap gap-5 font-semibold text-base md:text-lg justify-center'>
+                    <NavLink className={({ isActive }) => ` hover:text-green-600 transition-all ${isActive ? 'text-green-600 font-bold' : 'text-gray-600'}`
+                    } to='/about' >About</NavLink>
+                    <NavLink className={({ isActive }) => ` hover:text-green-600 transition-all ${isActive ? 'text-green-600 font-bold' : 'text-gray-600'}`
+                    } to='/mens' >Products</NavLink>
+                    <NavLink className={({ isActive }) => ` hover:text-green-600 transition-all ${isActive ? 'text-green-600 font-bold' : 'text-gray-600'}`
+                    } to='/offices' >Offices</NavLink>
+                    <NavLink className={({ isActive }) => ` hover:text-green-600 transition-all ${isActive ? 'text-green-600 font-bold' : 'text-gray-600'}`
+                    } to='/help'>Help</NavLink> 
                 </div>
                 <div className='flex gap-5 py-5 justify-center'>
                     <div>
