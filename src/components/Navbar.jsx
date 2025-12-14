@@ -1,6 +1,7 @@
 import React from 'react'
 import logoUpdated from '../assets/updatedLogo.jpg'
 import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import cart_icon from '../assets/cart_icon.png'
 import { Heart } from 'lucide-react';
 import { UserRound } from 'lucide-react';
@@ -37,7 +38,7 @@ const Navbar = () => {
               <Heart className='h-6 text-gray-700 md:h-8 w-8' />
             </div>
             <div>
-              <Link to='/login'> <UserRound className='h-6 text-gray-700 md:h-8 w-8' /> </Link>
+              <Link to='/login'> <UserRound className='h-6 outline-0 text-gray-700 md:h-8 w-8' /> </Link>
             </div>
             <div>
               <button className='outline-0'>
@@ -52,16 +53,24 @@ const Navbar = () => {
       <div className='flex pr-5 sm:pt-0 py-2 items-center gap-5'>
         <div className='flex flex-wrap justify-center w-full text-gray-700 font-semibold gap-5'>
           <div>
-            <Link to='/'>Home</Link>
+            <NavLink className={({ isActive }) => ` hover:text-green-600 transition-all ${isActive? 'text-green-600 font-bold': 'text-gray-600'}`
+            }
+              to='/'>Home</NavLink>
           </div>
           <div>
-            <Link to='/mens' >Men</Link>
+            <NavLink className={({ isActive }) => ` hover:text-green-600 transition-all ${isActive? 'text-green-600 font-bold': 'text-gray-600'}`
+            }
+              to='/mens' >Men</NavLink>
           </div>
           <div>
-            <Link to='/womens'>Women</Link>
+            <NavLink className={({ isActive }) => ` hover:text-green-600 transition-all ${isActive? 'text-green-600 font-bold': 'text-gray-600'}`
+            }
+              to='/womens'>Women</NavLink>
           </div>
           <div>
-            <Link to='/kids'>Kids</Link>
+            <NavLink className={({ isActive }) => ` hover:text-green-600 transition-all ${isActive? 'text-green-600 font-bold': 'text-gray-600'}`
+            }
+              to='/kids'>Kids</NavLink>
           </div>
         </div>
       </div>
