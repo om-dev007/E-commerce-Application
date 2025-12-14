@@ -7,7 +7,7 @@ const About = () => {
     <>
       <Navbar />
 
-      <div className="min-h-screen bg-linear-to-b from-green-500 to-white px-4 sm:px-6 md:px-16 lg:px-24 py-16">
+      <div className="min-h-screen bg-linear-to-b from-green-50 to-white px-4 sm:px-6 md:px-16 lg:px-24 py-16">
                 <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800">
             About Velnixa
@@ -42,7 +42,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-md p-6 sm:p-8 border">
+          <div className="bg-white rounded-2xl shadow-md p-6 sm:p-8 border border-gray-500">
             <h3 className="text-lg sm:text-xl font-semibold text-green-700 mb-6">
               Project Highlights
             </h3>
