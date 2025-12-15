@@ -10,6 +10,7 @@ import Help from "./pages/Help"
 import Offices from "./pages/Offices"
 import ScrollToTop from "./components/ScrollToTop"
 import Login from "./LoginSignUp/Login"
+import Cart from "./pages/Cart"
 
 const App = () => {
  
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/kids" element={<Kids/>} />
         <Route path="/kids/:id" element={<ProductDetail/>} />
         <Route path="/help" element={<Help/>} />
+        <Route path="/cart" element={<Cart/>} />
         <Route path="/offices" element={<Offices/>} />
       </Routes>
     </div>
