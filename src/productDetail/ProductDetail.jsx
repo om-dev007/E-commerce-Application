@@ -53,7 +53,7 @@ const ProductDetail = () => {
             <h3 className='text-red-500 text-xl md:text-2xl font-bold px-2'> ${product.price} </h3>
           </div>
           <div>
-            <h3 className='text-justify text-black font-semibold text-sm md:text-base'>
+            <h3 className='text-center text-black font-semibold text-sm md:text-base'>
               {product.description}
             </h3>
           </div>
