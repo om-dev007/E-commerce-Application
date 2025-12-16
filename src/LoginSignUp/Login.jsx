@@ -58,7 +58,7 @@ const Login = () => {
                 <div>
                     <form onSubmit={formHandler} className='border w-full sm:w-150 bg-white rounded-2xl border-gray-400 px-5 py-2'>
                         <div className='mt-5'>
-                            <h1 className='font-bold text-3xl text-center text-gray-600'>Login</h1>
+                            <h1 className='font-bold text-3xl text-center text-gray-800'>Login</h1>
                         </div>
                         <div className='input-sec mb-10 gap-5 px-5 py-5 text- justify-center flex flex-col'>
                             <div>
