@@ -8,12 +8,12 @@ const Navbar = () => {
     <>
       <div className='flex flex-col sm:flex-row sm:py-2 md:flex-row items-center justify-between px-2 py-2'>
 
-        <div className='flex items-center gap-5 justify-between px-2 mb-2 w-full sm:w-auto md:mb-0'>
+        <div className='flex items-center gap-5 justify-between sm:justify-center px-2 mb-1 w-full sm:w-auto md:mb-0'>
           <NavLink to="/">
             <div className='flex items-center'>
               <div>
                 <img
-                  className='w-9 md:w-34 lg:w-22 sm:w-30'
+                  className='w-9 sm:w-33 md:w-35 lg:w-28'
                   src={logoUpdated}
                   alt="logo"
                 />
@@ -30,19 +30,31 @@ const Navbar = () => {
             </div>
           </NavLink>
            <div className="flex items-center gap-3 sm:hidden">
-              <NavLink to="/like">
-                <Heart />
+              <NavLink to="/like" className={({ isActive }) =>
+                  `flex items-center transition-all font-bold hover:text-green-600 text-gray-700 h-10 ${
+                    isActive ? "text-green-600" : "text-gray-700"
+                  }`
+                }>
+                <Heart  />
               </NavLink>
-              <NavLink to="/login">
+              <NavLink to="/login" className={({ isActive }) =>
+                  `flex items-center transition-all font-bold hover:text-green-600 text-gray-700 h-10 ${
+                    isActive ? "text-green-600" : "text-gray-700"
+                  }`
+                }>
                 <UserRound />
               </NavLink>
-              <NavLink to="/cart">
+              <NavLink to="/cart" className={({ isActive }) =>
+                  `flex items-center transition-all font-bold hover:text-green-600 text-gray-700 h-10 ${
+                    isActive ? "text-green-600" : "text-gray-700"
+                  }`
+                }>
                 <ShoppingCart />
               </NavLink>
             </div>
         </div>
 
-        <div className='mb-1 mx-10 w-full md:mb-0'>
+        <div className='mb-1 mx-5 w-full md:mb-0'>
           <div className='flex w-full focus-within:border-green-500 outline-0 transition-all border-3 rounded-2xl border-gray-600 items-center'>
             <Search className='px-1 text-gray-500 h-full w-10' />
             <input
@@ -53,9 +65,9 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className='sm:flex hidden items-center justify-center'>
-          <div className='flex items-center gap-3 md:gap-5'>
-            <div className='items-center flex'>
+        <div className='sm:flex hidden  justify-center'>
+          <div className='flex items-center gap-3'>
+            <div>
               <NavLink
                 to="/like"
                 className={({ isActive }) =>
@@ -68,7 +80,7 @@ const Navbar = () => {
               </NavLink>
             </div>
 
-            <div className='items-center flex'>
+            <div>
               <NavLink
                 to='/login'
                 className={({ isActive }) =>
@@ -81,7 +93,7 @@ const Navbar = () => {
               </NavLink>
             </div>
 
-            <div className='flex items-center'>
+            <div>
               <button className="outline-none">
                 <NavLink
                   to="/cart"
