@@ -17,7 +17,7 @@ const Cart = () => {
             <ShoppingCart className="h-12 w-12" />
           </div>
 
-          <h1 className="text-2xl sm:text-3xl font-bold text-gray-600 mb-3">
+          <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-3">
             Cart is Under Development
           </h1>
 
