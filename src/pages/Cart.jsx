@@ -11,7 +11,7 @@ const Cart = () => {
 
       <div className="min-h-screen bg-linear-to-b from-green-50 to-white flex items-center justify-center px-4">
         
-        <div className="bg-white rounded-2xl shadow-md border-2 border-gray-400 hover:-translate-y-3 transition-all p-8 sm:p-12 max-w-md w-full text-center">
+        <div className="bg-white rounded-2xl shadow-md border border-gray-400 hover:-translate-y-3 transition-all p-8 sm:p-12 max-w-md w-full text-center">
           
           <div className="flex justify-center mb-6 text-green-600">
             <ShoppingCart className="h-12 w-12" />
