@@ -11,6 +11,7 @@ import Offices from "./pages/Offices"
 import ScrollToTop from "./components/ScrollToTop"
 import Login from "./LoginSignUp/Login"
 import Cart from "./pages/Cart"
+import Like from "./pages/Like"
 
 const App = () => {
  
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/kids/:id" element={<ProductDetail/>} />
         <Route path="/help" element={<Help/>} />
         <Route path="/cart" element={<Cart/>} />
+        <Route path="/like" element={<Like/>} />
         <Route path="/offices" element={<Offices/>} />
       </Routes>
     </div>
