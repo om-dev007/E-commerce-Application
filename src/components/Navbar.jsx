@@ -11,18 +11,20 @@ const Navbar = () => {
     <>
       <div className='flex flex-col sm:flex-row sm:py-2 md:flex-row items-center justify-between px-5 py-5'>
         <div className='flex items-center gap-5 px-2 mb-4 md:mb-0'>
-          <div className='flex items-center'>
-            <div>
-              <img className='w-9 md:w-34 lg:w-22 sm:w-30 ' src={logoUpdated} alt="logo" />
-            </div>
-            <div>
-              <h1 className="font-semibold text-2xl md:text-3xl 
+          <NavLink to="/">
+            <div className='flex items-center'>
+              <div>
+                <img className='w-9 md:w-34 lg:w-22 sm:w-30 ' src={logoUpdated} alt="logo" />
+              </div>
+              <div>
+                <h1 className="font-semibold text-2xl md:text-3xl 
              bg-linear-to-r from-emerald-500 to-green-700 
              bg-clip-text text-transparent">
-                Velnixa
-              </h1>
+                  Velnixa
+                </h1>
+              </div>
             </div>
-          </div>
+          </NavLink>
         </div>
         <div className='mb-4 mx-5 w-full md:mb-0'>
           <div className='flex w-full focus-within:border-green-500 outline-0 transition-all border-3 rounded-2xl border-gray-600 items-center'>
@@ -33,7 +35,7 @@ const Navbar = () => {
         <div className='flex justify-center'>
           <div className='flex items-center gap-3 md:gap-5'>
             <div>
-              <NavLink to="/like" className={({isActive}) => `flex items-center transition-all font-bold hover:text-green-600 text-gray-700 h-10 ${isActive ? "text-green-600": "text-gray-700"}`} >
+              <NavLink to="/like" className={({ isActive }) => `flex items-center transition-all font-bold hover:text-green-600 text-gray-700 h-10 ${isActive ? "text-green-600" : "text-gray-700"}`} >
                 <Heart className='w-10 h-6 md:h-8' />
               </NavLink>
             </div>
