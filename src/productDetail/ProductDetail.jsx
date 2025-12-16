@@ -69,7 +69,7 @@ const ProductDetail = () => {
             <button className='border focus:bg-green-500 hover:scale-105 transition-all hover:bg-green-500 border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>XXL</button>
           </div>
           <div className='flex justify-center md:justify-start'>
-            <button className='text-white outline-0 hover:scale-105 transition-all bg-red-500 px-8 md:px-15 py-3 md:py-5 rounded cursor-pointer text-sm md:text-base'>ADD TO CART</button>
+            <button className='text-white focus:bg-green-500 outline-0 hover:scale-105 transition-all bg-red-500 px-8 md:px-15 py-3 md:py-5 rounded cursor-pointer text-sm md:text-base'>ADD TO CART</button>
           </div>
         </div>
       </div>
