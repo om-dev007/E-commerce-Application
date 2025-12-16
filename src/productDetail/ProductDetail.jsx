@@ -7,6 +7,7 @@ import { collectionData } from '../store/data'
 import Navbar from '../components/Navbar'
 import star from '../assets/star_icon.png'
 import halfstar from '../assets/star_dull_icon.png'
+import Footer from '../components/Footer'
 
 const ProductDetail = () => {
   const { id } = useParams()
@@ -15,13 +16,13 @@ const ProductDetail = () => {
   return (
     <>
       <Navbar />
-      <hr className='bg-gray-600 border-0 h-1 rounded-4xl outline-0 font-bold' />
+      <hr className='bg-gray-100 border-0 h-0.5 rounded-4xl outline-0 font-bold' />
       <div className='py-4'>
         <div className='py-2 px-2'>
           <h1 className='font-medium text-gray-500 text-center'> Home <span>-</span> Shop <span>-</span> {product.category} <span>-</span> {product.title} </h1>
         </div>
       </div>
-      <div className='flex flex-col sm:flex-row md:flex-row gap-4 md:gap-2 px-4 md:px-15 py-5'>
+      <div className='flex flex-col sm:flex-row md:flex-row gap-4 md:gap-2 px-4 md:px-15 py-10 '>
         <div className='flex flex-row sm:flex-col order-2 md:order-1 sm:order-1 lg:order-1 md:flex-col gap-1 justify-center md:justify-start sm:justify-start '>
           <div>
             <img className='w-12 h-10 md:w-20 md:h-15 lg:w-25 lg:h-20  rounded' src={product.image} alt="" />
@@ -61,17 +62,18 @@ const ProductDetail = () => {
             <h1 className='text-gray-700 font-bold text-sm md:text-base'> Select Size </h1>
           </div>
           <div className='flex gap-3 justify-center md:justify-start flex-wrap'>
-            <button className='border border-gray-200 hover:scale-105 transition-all hover:bg-green-500 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>S</button>
-            <button className='border hover:scale-105 transition-all hover:bg-green-500 border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>M</button>
-            <button className='border hover:scale-105 transition-all hover:bg-green-500 border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>L</button>
-            <button className='border hover:scale-105 transition-all hover:bg-green-500 border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>XL</button>
-            <button className='border hover:scale-105 transition-all hover:bg-green-500 border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>XXL</button>
+            <button className='border focus:bg-green-500 border-gray-200 hover:scale-105 transition-all hover:bg-green-500 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>S</button>
+            <button className='border focus:bg-green-500 hover:scale-105 transition-all hover:bg-green-500 border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>M</button>
+            <button className='border focus:bg-green-500 hover:scale-105 transition-all hover:bg-green-500 border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>L</button>
+            <button className='border focus:bg-green-500 hover:scale-105 transition-all hover:bg-green-500 border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>XL</button>
+            <button className='border focus:bg-green-500 hover:scale-105 transition-all hover:bg-green-500 border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>XXL</button>
           </div>
           <div className='flex justify-center md:justify-start'>
             <button className='text-white outline-0 hover:scale-105 transition-all bg-red-500 px-8 md:px-15 py-3 md:py-5 rounded cursor-pointer text-sm md:text-base'>ADD TO CART</button>
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   )
 }
