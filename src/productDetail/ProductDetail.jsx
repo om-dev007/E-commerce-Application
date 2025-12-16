@@ -8,6 +8,7 @@ import Navbar from '../components/Navbar'
 import star from '../assets/star_icon.png'
 import halfstar from '../assets/star_dull_icon.png'
 import Footer from '../components/Footer'
+import { ArrowRight } from 'lucide-react'
 
 const ProductDetail = () => {
   const { id } = useParams()
@@ -19,7 +20,7 @@ const ProductDetail = () => {
       <hr className='bg-gray-100 border-0 h-0.5 rounded-4xl outline-0 font-bold' />
       <div className='py-4'>
         <div className='py-2 px-2'>
-          <h1 className='font-medium text-gray-500 text-center'> Home <span>-</span> Shop <span>-</span> {product.category} <span>-</span> {product.title} </h1>
+          <h1 className='font-medium flex justify-center-safe text-gray-500 text-center'> Home <span> <ArrowRight className='w-4'/> </span> Shop <span> <ArrowRight className='w-4'/> </span> {product.category} <span><ArrowRight className='w-4'/></span> {product.title} </h1>
         </div>
       </div>
       <div className='flex flex-col sm:flex-row md:flex-row gap-4 md:gap-2 px-4 md:px-15 py-10 '>
