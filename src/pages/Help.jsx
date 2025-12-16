@@ -20,7 +20,7 @@ const Help = () => {
 
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
 
-          <div className="bg-white rounded-2xl hover:-translate-y-2 transition-all shadow-md p-6 sm:p-8 border border-gray-500">
+          <div className="bg-white rounded-2xl hover:-translate-y-2 transition-all shadow-md p-6 sm:p-8 border border-gray-400">
             <h3 className="text-lg sm:text-xl font-semibold text-green-700 mb-4">
               How to Use Velnixa
             </h3>
@@ -31,7 +31,7 @@ const Help = () => {
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl hover:-translate-y-2 transition-all shadow-md p-6 sm:p-8 border border-gray-500">
+          <div className="bg-white rounded-2xl hover:-translate-y-2 transition-all shadow-md p-6 sm:p-8 border border-gray-400">
             <h3 className="text-lg sm:text-xl font-semibold text-green-700 mb-4">
               Orders & Checkout
             </h3>
@@ -42,7 +42,7 @@ const Help = () => {
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl hover:-translate-y-2 transition-all shadow-md p-6 sm:p-8 border border-gray-500">
+          <div className="bg-white rounded-2xl hover:-translate-y-2 transition-all shadow-md p-6 sm:p-8 border border-gray-400">
             <h3 className="text-lg sm:text-xl font-semibold text-green-700 mb-4">
               Account & Authentication
             </h3>
@@ -53,7 +53,7 @@ const Help = () => {
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-md hover:-translate-y-2 transition-all p-6 sm:p-8 border border-gray-500">
+          <div className="bg-white rounded-2xl shadow-md hover:-translate-y-2 transition-all p-6 sm:p-8 border border-gray-400">
             <h3 className="text-lg sm:text-xl font-semibold text-green-700 mb-4">
               Support & Feedback
             </h3>
