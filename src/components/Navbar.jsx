@@ -33,11 +33,13 @@ const Navbar = () => {
         <div className='flex justify-center'>
           <div className='flex items-center gap-3 md:gap-5'>
             <div>
-              <Heart className='h-6 text-gray-700 md:h-8 w-8' />
+              <NavLink to="/like" className={({isActive}) => `flex items-center transition-all font-bold hover:text-green-600 text-gray-700 h-10 ${isActive ? "text-green-600": "text-gray-700"}`} >
+                <Heart className='w-10 h-6 md:h-8' />
+              </NavLink>
             </div>
             <div>
               <NavLink to='/login' className={({ isActive }) =>
-                `flex items-center transition-all font-bold hover:text-green-600  text-gray-700 h-10  ${isActive ? "text-green-600 font-bold" : "text-gray-700"
+                `flex items-center transition-all font-bold w-8 hover:text-green-600  text-gray-700 h-10  ${isActive ? "text-green-600 font-bold" : "text-gray-700"
                 }`
               } > <UserRound className='w-10 h-6 md:h-8' /> </NavLink>
             </div>
