@@ -13,7 +13,7 @@ const Navbar = () => {
             <div className='flex items-center'>
               <div>
                 <img
-                  className='w-9 sm:w-33 md:w-35 lg:w-28'
+                  className='w-9 sm:w-33 md:w-35 lg:w-25'
                   src={logoUpdated}
                   alt="logo"
                 />
