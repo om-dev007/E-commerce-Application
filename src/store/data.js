@@ -122,7 +122,7 @@ export const data = [
   },
   {
     id: 48,
-    title: 'Women Heels Sandal',
+    title: 'Heels Sandal',
     rating: 4.3,
     image: leggis,
     description: "Stretchable leggings with smooth fabric for perfect comfort and daily flexibility.",
@@ -142,7 +142,7 @@ export const data = [
   },
   {
     id: 50,
-    title: 'Tunic Pant Co-ords Set',
+    title: 'Tunic Pant Set',
     rating: 4.4,
     image: KidsDresses,
     description: "Ultra-soft breathable women innerwear designed for daily comfort and hygiene.",
