@@ -26,13 +26,13 @@ const ProductDetail = () => {
       <div className='flex flex-col sm:flex-row md:flex-row gap-4 md:gap-2 px-4 md:px-15 py-10 '>
         <div className='flex flex-row sm:flex-col order-2 md:order-1 sm:order-1 lg:order-1 md:flex-col gap-1 justify-center md:justify-start sm:justify-start '>
           <div>
-            <img className='w-12 h-10 md:w-20 md:h-15 lg:w-25 lg:h-20  rounded' src={product.image} alt="" />
+            <img className='w-12 h-10 md:w-20 md:h-15 lg:w-20 lg:h-20  rounded' src={product.image} alt="" />
           </div>
           <div>
-            <img className='w-12 h-10 md:w-20 md:h-15 lg:w-25 lg:h-20 rounded' src={product.image} alt="" />
+            <img className='w-12 h-10 md:w-20 md:h-15 lg:w-20 lg:h-20 rounded' src={product.image} alt="" />
           </div>
           <div>
-            <img className='w-12 h-10 md:w-20 md:h-15 lg:w-25 lg:h-20  rounded' src={product.image} alt="" />
+            <img className='w-12 h-10 md:w-20 md:h-15 lg:w-20 lg:h-20  rounded' src={product.image} alt="" />
           </div>
         </div>
         <div className='rounded object-contain md:order-2 sm:order-2 lg:order-2 order-1 mx-auto md:mx-0'>
