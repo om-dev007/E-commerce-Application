@@ -54,7 +54,7 @@ const Login = () => {
 
     return (
         <> <Navbar />
-            <div className='h-screen bg-linear-to-b from-green-300 to-white flex items-center justify-center px-4'>
+            <div className='h-screen bg-linear-to-b from-green-50 to-white flex items-center justify-center px-4'>
                 <div>
                     <form onSubmit={formHandler} className='border w-full sm:w-150 bg-white rounded-2xl border-gray-400 px-5 py-2'>
                         <div className='mt-5'>
@@ -68,7 +68,7 @@ const Login = () => {
                                 <input name='password' value={input.password} onChange={(e) => commonHandler(e)} className='border w-full border-gray-500 px-4 py-2 outline-0 rounded' type="text" placeholder='Enter your password here...' />
                             </div>
                             <div>
-                                <button type='submit' className='bg-green-500 text-white px-5 py-2 w-full cursor-pointer hover:scale-101 transition-all outline-0 rounded'>Login</button>
+                                <button type='submit' className='bg-green-500 focus:bg-green-600 text-white px-5 py-2 w-full cursor-pointer hover:scale-101 transition-all outline-0 rounded'>Login</button>
                             </div>
                         </div>
                     </form>
