@@ -36,7 +36,7 @@ const Popular = () => {
                     freeModeMomentumRatio={0.9}
 
                     grabCursor={true}
-                    className="!ease-linear"
+                    className="ease-linear!"
                 >
                     {data.map((item) => (
                         <SwiperSlide key={item.id}>
