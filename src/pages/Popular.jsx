@@ -13,27 +13,22 @@ const Popular = () => {
             <div className='px-22'>
                 <h1 className='text-4xl text-[#c08327f2] font-bold'>POPULAR IN TRENDING</h1>
             </div>
-            {/* <div>
-                <hr className='w-50 bg-gray-900  h-1 rounded-2xl flex justify-self-center font-extrabold' />
-            </div> */}
-            <div className="block md:hidden py-10 px-4">
+            <div className="block md:hidden sm:hidden py-10 px-4">
                 <Swiper
                     modules={[Autoplay, FreeMode]}
                     spaceBetween={20}
                     slidesPerView={1.15}
                     loop={true}
 
-                    // 🔥 AUTOPLAY
                     autoplay={{
                         delay: 0,
                         disableOnInteraction: false,
                     }}
 
-                    // 🧈 SMOOTHNESS
-                    speed={4500}
-                    freeMode={true}
-                    freeModeMomentum={true}
-                    freeModeMomentumRatio={0.9}
+                    speed={6000}
+                    freeMode={false}
+                    freemodemomentum={true}
+                    freemodemomentumratio={1.2}
 
                     grabCursor={true}
                     className="ease-linear!"
@@ -48,7 +43,7 @@ const Popular = () => {
                 </Swiper>
             </div>
 
-            <div className='hidden md:grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-5 gap-y-5 py-10 px-8 sm:px-10 md:px-16 lg:px-20 '>
+            <div className='hidden md:grid sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-5 py-10 px-8 sm:px-10 md:px-16 lg:px-20 '>
                 {data.map((item) => {
                     return <Link key={item.id} to={`/product/${item.id}`}>
                         <Cards data={item} />
