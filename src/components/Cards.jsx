@@ -2,7 +2,7 @@ import React from "react";
 
 const Cards = ({ data }) => {
     return (
-        <div className="cards rounded-2xl border border-gray-100 bg-white transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl max-w-xs mx-auto">
+        <div className="cards rounded-2xl border border-gray-100 shadow-xl bg-white/80 backdrop-blur-md transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl max-w-xs mx-auto">
             <div className="object-cover">
                 <img
                     className="w-full h-48 md:h-56 lg:h-64 rounded-2xl overflow-hidden object-cover"

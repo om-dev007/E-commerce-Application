@@ -12,6 +12,7 @@ const Home = () => {
     <>
       <Navbar />
       <Hero/>
+      <hr className='h-1 border-0 bg-[#af773e] font-bold ' />
       <Popular/>
       <OfferPage/>
       <NewCollection/>

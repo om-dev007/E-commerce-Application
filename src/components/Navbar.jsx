@@ -1,27 +1,23 @@
 import React from 'react'
-import logoUpdated from '../assets/updatedLogo.jpg'
+// import logoUpdated from '../assets/updatedLogo.jpg'
 import { NavLink } from 'react-router-dom'
 import { Heart, ShoppingCart, UserRound, Search } from 'lucide-react'
 
 const Navbar = () => {
   return (
     <>
-      <div className='flex flex-col sm:flex-row sm:py-2 md:flex-row items-center justify-between px-2 py-2'>
+      <div className='flex bg-linear-to-r from-[#0f2f2e] via-[#2f3a33] to-[#8a633c] flex-col sm:flex-row md:flex-row items-center justify-between px-2 py-1'>
 
         <div className='flex items-center gap-5 justify-between sm:justify-center px-2 mb-1 w-full sm:w-auto md:mb-0'>
           <NavLink to="/">
-            <div className='flex items-center'>
+            <div className='flex gap-1 items-center'>
               <div>
-                <img
-                  className='w-9 sm:w-33 md:w-35 lg:w-25'
-                  src={logoUpdated}
-                  alt="logo"
-                />
+                <h1 className='font-serif text-5xl text-[#8a633c] '> V </h1>
               </div>
               <div>
                 <h1
                   className="font-semibold text-2xl md:text-3xl 
-                  bg-linear-to-r from-emerald-500 to-green-700 
+                  bg-linear-to-r from-gray-400 to-gray-300 
                   bg-clip-text text-transparent"
                 >
                   Velnixa
@@ -29,39 +25,69 @@ const Navbar = () => {
               </div>
             </div>
           </NavLink>
-           <div className="flex items-center gap-3 sm:hidden">
-              <NavLink to="/like" className={({ isActive }) =>
-                  `flex items-center transition-all font-bold hover:text-green-600 text-gray-700 h-10 ${
-                    isActive ? "text-green-600" : "text-gray-700"
-                  }`
-                }>
-                <Heart  />
-              </NavLink>
-              <NavLink to="/login" className={({ isActive }) =>
-                  `flex items-center transition-all font-bold hover:text-green-600 text-gray-700 h-10 ${
-                    isActive ? "text-green-600" : "text-gray-700"
-                  }`
-                }>
-                <UserRound />
-              </NavLink>
-              <NavLink to="/cart" className={({ isActive }) =>
-                  `flex items-center transition-all font-bold hover:text-green-600 text-gray-700 h-10 ${
-                    isActive ? "text-green-600" : "text-gray-700"
-                  }`
-                }>
-                <ShoppingCart />
-              </NavLink>
-            </div>
+          <div className="flex items-center gap-3 sm:hidden">
+            <NavLink to="/like" className={({ isActive }) =>
+              `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#c7802f]" : "text-gray-200"
+              }`
+            }>
+              <Heart />
+            </NavLink>
+            <NavLink to="/login" className={({ isActive }) =>
+              `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#c7802f]" : "text-gray-200"
+              }`
+            }>
+              <UserRound />
+            </NavLink>
+            <NavLink to="/cart" className={({ isActive }) =>
+              `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#c7802f]" : "text-gray-200"
+              }`
+            }>
+              <ShoppingCart />
+            </NavLink>
+          </div>
         </div>
 
-        <div className='mb-1 mx-5 w-full md:mb-0'>
-          <div className='flex w-full focus-within:border-green-500 outline-0 transition-all border-3 rounded-2xl border-gray-600 items-center'>
-            <Search className='px-1 text-gray-500 h-full w-10' />
-            <input
-              className='px-2 w-full py-2 outline-0 rounded-2xl'
-              type="text"
-              placeholder='Search your items here...'
-            />
+        <div className='flex pr-5 sm:pt-0 py-2 items-center gap-5'>
+          <div className='flex flex-wrap justify-center w-full text-gray-200 font-semibold gap-5'>
+            <NavLink
+              to='/'
+              className={({ isActive }) =>
+                `hover:text-[#c7802f] transition-all ${isActive ? 'text-[#c7802f] font-bold' : 'text-gray-200'
+                }`
+              }
+            >
+              Home
+            </NavLink>
+
+            <NavLink
+              to='/mens'
+              className={({ isActive }) =>
+                `hover:text-[#c7802f] transition-all ${isActive ? 'text-[#c7802f] font-bold' : 'text-gray-200'
+                }`
+              }
+            >
+              Men
+            </NavLink>
+
+            <NavLink
+              to='/womens'
+              className={({ isActive }) =>
+                `hover:text-[#c7802f] transition-all ${isActive ? 'text-[#c7802f] font-bold' : 'text-gray-200'
+                }`
+              }
+            >
+              Women
+            </NavLink>
+
+            <NavLink
+              to='/kids'
+              className={({ isActive }) =>
+                `hover:text-[#c7802f] transition-all ${isActive ? 'text-[#c7802f] font-bold' : 'text-gray-200'
+                }`
+              }
+            >
+              Kids
+            </NavLink>
           </div>
         </div>
 
@@ -71,8 +97,7 @@ const Navbar = () => {
               <NavLink
                 to="/like"
                 className={({ isActive }) =>
-                  `flex items-center transition-all font-bold hover:text-green-600 text-gray-700 h-10 ${
-                    isActive ? "text-green-600" : "text-gray-700"
+                  `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#c7802f]" : "text-gray-200"
                   }`
                 }
               >
@@ -84,8 +109,7 @@ const Navbar = () => {
               <NavLink
                 to='/login'
                 className={({ isActive }) =>
-                  `flex items-center transition-all font-bold w-8 hover:text-green-600 text-gray-700 h-10 ${
-                    isActive ? "text-green-600 font-bold" : "text-gray-700"
+                  `flex items-center transition-all font-bold w-8 hover:text-[#c7802f] h-10 ${isActive ? "text-[#c7802f] font-bold" : "text-gray-200"
                   }`
                 }
               >
@@ -98,8 +122,7 @@ const Navbar = () => {
                 <NavLink
                   to="/cart"
                   className={({ isActive }) =>
-                    `flex h-6 text-gray-700 font-bold md:h-8 w-8 items-center transition-all hover:text-green-600 ${
-                      isActive ? "text-green-600" : "text-gray-700"
+                    `flex h-6 font-bold md:h-8 w-8 items-center transition-all hover:text-[#c7802f] ${isActive ? "text-[#c7802f]" : "text-gray-200"
                     }`
                   }
                 >
@@ -111,54 +134,9 @@ const Navbar = () => {
         </div>
 
       </div>
+      <hr className='text-[#8a633c] border-2 ' />
 
-      <div className='flex pr-5 sm:pt-0 py-2 items-center gap-5'>
-        <div className='flex flex-wrap justify-center w-full text-gray-700 font-semibold gap-5'>
-          <NavLink
-            to='/'
-            className={({ isActive }) =>
-              `hover:text-green-600 transition-all ${
-                isActive ? 'text-green-600 font-bold' : 'text-gray-600'
-              }`
-            }
-          >
-            Home
-          </NavLink>
 
-          <NavLink
-            to='/mens'
-            className={({ isActive }) =>
-              `hover:text-green-600 transition-all ${
-                isActive ? 'text-green-600 font-bold' : 'text-gray-600'
-              }`
-            }
-          >
-            Men
-          </NavLink>
-
-          <NavLink
-            to='/womens'
-            className={({ isActive }) =>
-              `hover:text-green-600 transition-all ${
-                isActive ? 'text-green-600 font-bold' : 'text-gray-600'
-              }`
-            }
-          >
-            Women
-          </NavLink>
-
-          <NavLink
-            to='/kids'
-            className={({ isActive }) =>
-              `hover:text-green-600 transition-all ${
-                isActive ? 'text-green-600 font-bold' : 'text-gray-600'
-              }`
-            }
-          >
-            Kids
-          </NavLink>
-        </div>
-      </div>
     </>
   )
 }
