@@ -3,7 +3,6 @@ import Cards from '../components/Cards'
 import { data } from '../store/data'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination } from 'swiper/modules'
 import { Autoplay } from 'swiper/modules'
 import { FreeMode } from 'swiper/modules'
 
