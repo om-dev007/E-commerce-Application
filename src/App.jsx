@@ -13,22 +13,22 @@ import Login from "./LoginSignUp/Login"
 import Cart from "./pages/Cart"
 import Like from "./pages/Like"
 
+const isMaintenance = import.meta.env.VITE_MAINTENANCE === "true";
+
 
 const App = () => {
 
-  const isMaintenance = import.meta.env.VITE_MAINTENANCE === "true";
-
   if (isMaintenance) {
     return (
-      <div className="h-screen flex flex-col items-center justify-center bg-black text-white text-center px-4">
+      <div className="h-screen flex flex-col items-center justify-center bg-[#0f172a] text-white text-center px-4">
         <h1 className="text-4xl font-bold">🚧 Site Under Development</h1>
         <p className="mt-3 text-gray-400">
-          We are working on something awesome.
-          Please check back soon.
+          We are working on the store. Please check back soon.
         </p>
       </div>
     );
   }
+
 
   return (
     <div className='bg-white min-h-screen text-black'>
