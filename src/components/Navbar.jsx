@@ -6,7 +6,7 @@ import { Heart, ShoppingCart, UserRound, Search } from 'lucide-react'
 const Navbar = () => {
   return (
     <>
-      <div className='flex bg-linear-to-r from-[#0f2f2e] via-[#2f3a33] to-[#8a633c] flex-col sm:flex-row md:flex-row items-center justify-between px-2 py-1'>
+      <div className='flex flex-col sm:flex-row md:flex-row items-center justify-between px-2 py-1'>
 
         <div className='flex items-center gap-5 justify-between sm:justify-center px-2 mb-1 w-full sm:w-auto md:mb-0'>
           <NavLink to="/">
@@ -17,7 +17,7 @@ const Navbar = () => {
               <div>
                 <h1
                   className="font-semibold text-2xl md:text-3xl 
-                  bg-linear-to-r from-gray-400 to-gray-300 
+                  bg-linear-to-r from-gray-600 to-gray-900 
                   bg-clip-text text-transparent"
                 >
                   Velnixa
@@ -27,19 +27,19 @@ const Navbar = () => {
           </NavLink>
           <div className="flex items-center gap-3 sm:hidden">
             <NavLink to="/like" className={({ isActive }) =>
-              `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#c7802f]" : "text-gray-200"
+              `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#c7802f]" : "text-gray-800"
               }`
             }>
               <Heart />
             </NavLink>
             <NavLink to="/login" className={({ isActive }) =>
-              `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#c7802f]" : "text-gray-200"
+              `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#c7802f]" : "text-gray-800"
               }`
             }>
               <UserRound />
             </NavLink>
             <NavLink to="/cart" className={({ isActive }) =>
-              `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#c7802f]" : "text-gray-200"
+              `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#c7802f]" : "text-gray-800"
               }`
             }>
               <ShoppingCart />
@@ -52,7 +52,7 @@ const Navbar = () => {
             <NavLink
               to='/'
               className={({ isActive }) =>
-                `hover:text-[#c7802f] transition-all ${isActive ? 'text-[#c7802f] font-bold' : 'text-gray-200'
+                `hover:text-[#c7802f] font-medium transition-all ${isActive ? 'text-[#c7802f] font-bold' : 'text-gray-700'
                 }`
               }
             >
@@ -62,7 +62,7 @@ const Navbar = () => {
             <NavLink
               to='/mens'
               className={({ isActive }) =>
-                `hover:text-[#c7802f] transition-all ${isActive ? 'text-[#c7802f] font-bold' : 'text-gray-200'
+                `hover:text-[#c7802f] font-medium transition-all ${isActive ? 'text-[#c7802f] font-bold' : 'text-gray-700'
                 }`
               }
             >
@@ -72,7 +72,7 @@ const Navbar = () => {
             <NavLink
               to='/womens'
               className={({ isActive }) =>
-                `hover:text-[#c7802f] transition-all ${isActive ? 'text-[#c7802f] font-bold' : 'text-gray-200'
+                `hover:text-[#c7802f] font-medium transition-all ${isActive ? 'text-[#c7802f] font-bold' : 'text-gray-700'
                 }`
               }
             >
@@ -82,7 +82,7 @@ const Navbar = () => {
             <NavLink
               to='/kids'
               className={({ isActive }) =>
-                `hover:text-[#c7802f] transition-all ${isActive ? 'text-[#c7802f] font-bold' : 'text-gray-200'
+                `hover:text-[#c7802f] font-medium transition-all ${isActive ? 'text-[#c7802f] font-bold' : 'text-gray-700'
                 }`
               }
             >
@@ -134,9 +134,6 @@ const Navbar = () => {
         </div>
 
       </div>
-      <hr className='text-[#8a633c] border-2 ' />
-
-
     </>
   )
 }

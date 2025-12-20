@@ -7,9 +7,9 @@ import { Autoplay, FreeMode } from 'swiper/modules'
 
 const Popular = () => {
     return (
-        <div className='py-10 bg-linear-to-r from-[#0f2f2e] via-[#2f3a33] to-[#8a633c]'>
-            <div>
-                <h1 className='text-center text-3xl text-orange-500'>TRENDING NOW</h1>
+        <div className='py-10 px-10 bg-linear-to-r from-[#0f2f2e] via-[#2f3a33] to-[#8a633c]'>
+            <div className='px-5 sm:px-15'>
+                <h1 className='text-3xl text-orange-500'>TRENDING NOW</h1>
             </div>
 
             <div className="block md:hidden py-10 px-4">
