@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+body {
+  font-family: Inter;
+}
 
 .swiper-linear .swiper-wrapper {
   transition-timing-function: linear !important;
@@ -11,4 +14,9 @@
     width: 100%;
     height: auto;
   }
+}
+
+
+.hero-page {
+  font-family: playfair;
 }
