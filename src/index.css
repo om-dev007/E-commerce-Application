@@ -4,19 +4,6 @@ body {
   font-family: Inter;
 }
 
-.swiper-linear .swiper-wrapper {
-  transition-timing-function: linear !important;
-  background-position: ;
-}
-
-@media (max-width: 768px) {
-  .hero-image {
-    width: 100%;
-    height: auto;
-  }
-}
-
-
 .hero-page {
   font-family: playfair;
 }
