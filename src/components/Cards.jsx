@@ -4,11 +4,8 @@ const Cards = ({ data }) => {
   return (
     <div
       className="
-        cards group rounded-2xl
-        bg-[#1f2f2b] shadow-[0_12px_30px_rgba(0,0,0,0.6)] hover:shadow-[0_28px_50px_rgba(0,0,0,0.8)] transition-all duration-300 ease-in-out hover:-translate-y-2 max-w-xs mx-auto
-      "
+        cards group rounded-2xl bg-black transition-all duration-300 ease-in-out hover:-translate-y-2 max-w-xs mx-auto h-full "
     >
-      {/* IMAGE */}
       <div className="overflow-hidden rounded-t-2xl">
         <img
           className="
@@ -21,7 +18,6 @@ const Cards = ({ data }) => {
         />
       </div>
 
-      {/* CONTENT */}
       <div className="text-center py-3 px-3 text-[#e6e3dc]">
         <h3 className="py-1 text-sm md:text-base font-semibold">
           {data.title}

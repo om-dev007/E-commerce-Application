@@ -7,3 +7,35 @@ body {
 .hero-page {
   font-family: playfair;
 }
+
+.popular-swiper-wrapper {
+  position: relative;
+}
+
+.swiper-button-next {
+  position: relative;
+  left: 50px;
+}
+
+/* 🔒 arrows ALWAYS card ke neeche */
+.popular-swiper-wrapper .swiper-button-next,
+.popular-swiper-wrapper .swiper-button-prev {
+  top: auto !important;
+  bottom: 12px !important;   /* slide ke bottom se */
+  transform: none !important;
+  color: rgb(139, 135, 135);
+}
+
+/* left / right */
+.popular-swiper-wrapper .swiper-button-prev {
+  left: 8px;
+}
+
+.popular-swiper-wrapper .swiper-button-next {
+  right: 8px;
+}
+
+/* disabled hide */
+.swiper-button-disabled {
+  display: none !important;
+}
