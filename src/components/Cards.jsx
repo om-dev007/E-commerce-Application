@@ -9,7 +9,7 @@ const Cards = ({ data }) => {
         <img
           src={data.image}
           alt={data.title}
-          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-active:scale-110 "
         />
       </div>
 
