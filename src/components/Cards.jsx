@@ -9,7 +9,7 @@ const Cards = ({ data }) => {
       <div className="overflow-hidden rounded-t-2xl">
         <img
           className="
-            w-full h-48 md:h-56 lg:h-64 object-cover
+            w-50 h-48 md:h-56 lg:h-64 object-cover items-start flex
             transition-transform duration-700 ease-out
             group-hover:scale-110
           "
