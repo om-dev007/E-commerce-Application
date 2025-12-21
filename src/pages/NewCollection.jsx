@@ -9,7 +9,7 @@ const NewCollection = () => {
       <div className='text-center'>
         <h1 className='text-3xl text-gray-800'>NEW OFFERS</h1>
       </div>
-      <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-5 gap-y-5 py-10 px-8 sm:px-10 md:px-16 lg:px-20'>
+      <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-5 gap-y-5 py-10 px-8 sm:px-10 md:px-16 lg:px-20'>
         {
           collectionData.map((items) => {
             return <Link to={`/product/${items.id}`}> <Cards data={items} key={items.id} /> </Link>
