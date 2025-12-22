@@ -141,7 +141,7 @@ const ProductDetail = () => {
               src={product.image}
               alt={product.title}
               className="w-full max-w-[260px] sm:max-w-[300px] md:max-w-[320px] lg:max-w-[380px]
-                   aspect-3/4 object-contain rounded-2xl"
+                   aspect-3/4 object-contain rounded-xl"
             />
           </div>
 
