@@ -136,13 +136,12 @@ const ProductDetail = () => {
             ))}
           </div>
 
-          {/* Main Image */}
           <div className="flex order-1 lg:order-2 justify-center items-center">
             <img
               src={product.image}
               alt={product.title}
               className="w-full max-w-[260px] sm:max-w-[300px] md:max-w-[320px] lg:max-w-[380px]
-                   aspect-3/4 object-contain rounded-xl"
+                   aspect-3/4 object-contain rounded-2xl"
             />
           </div>
 
