@@ -28,7 +28,7 @@ const ProductDetail = () => {
     <>
       <Navbar />
 
-      <div className="bg-[#FAF8F5] py-4 text-sm text-gray-500 px-6 md:px-16">
+      <div className="bg-[#FAF8F5] py-4text-sm text-gray-500 px-6 md:px-16">
         <div className="flex items-center gap-2 flex-wrap">
           Home <ArrowRight className="w-4" /> Shop{" "}
           <ArrowRight className="w-4" /> {product.category}{" "}
@@ -42,7 +42,7 @@ const ProductDetail = () => {
       <section className="bg-[#FAF8F5] px-4 md:px-16 py-12">
         <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-sm p-6 md:p-10 grid grid-cols-1 md:grid-cols-3 gap-10">
 
-          <div className="flex md:flex-col gap-3 justify-center md:justify-start">
+          <div className="flex md:flex-col gap-3 order-2 sm:order-1 justify-center md:justify-start">
             {[1, 2, 3].map((_, i) => (
               <img
                 key={i}
@@ -53,7 +53,7 @@ const ProductDetail = () => {
             ))}
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex order-1 sm:order-2 justify-center">
             <img
               src={product.image}
               alt={product.title}
@@ -61,7 +61,7 @@ const ProductDetail = () => {
             />
           </div>
 
-          <div className="space-y-5 text-center md:text-left">
+          <div className="space-y-5 order-3 sm:order-3 text-center md:text-left">
 
             <h1 className="text-2xl md:text-3xl font-semibold text-gray-900">
               {product.title}
