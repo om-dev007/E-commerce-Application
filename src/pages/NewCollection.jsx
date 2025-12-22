@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const NewCollection = () => {
   return (
-    <div className='pt-10'>
+    <div className='pt-10 bg-[#FAF8F5] '>
       <div className='text-center'>
         <h1 className='text-3xl text-gray-800'>NEW OFFERS</h1>
       </div>

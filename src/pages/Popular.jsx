@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Popular = () => {
     return (
-        <div className="py-10 px-5 sm:px-10 ">
+        <div className="py-10 px-5 sm:px-10 bg-[#F5F1EB] ">
             <div className=" text-center">
                 <h1 className="text-3xl text-gray-800">TRENDING NOW</h1>
             </div>
