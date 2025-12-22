@@ -50,7 +50,7 @@ const NavItem = ({ to, label }) => (
       relative transition-all duration-300
       ${isActive ? "text-[#1F3D2B] font-semibold" : "text-[#6B7280]"}
       hover:text-[#2F6B4F]
-      after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full
+      after:absolute after:left-0 after:-bottom-1 after:h after:w-full
       after:bg-[#1F3D2B] after:scale-x-0 after:origin-left
       after:transition-transform after:duration-300
       ${isActive ? "after:scale-x-100" : "hover:after:scale-x-100"}
