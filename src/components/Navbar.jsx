@@ -27,19 +27,19 @@ const Navbar = () => {
           </NavLink>
           <div className="flex items-center gap-3 sm:hidden">
             <NavLink to="/like" className={({ isActive }) =>
-              `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#c7802f]" : "text-gray-800"
+              `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#1F3D2B]" : "text-gray-800"
               }`
             }>
               <Heart />
             </NavLink>
             <NavLink to="/login" className={({ isActive }) =>
-              `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#c7802f]" : "text-gray-800"
+              `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#1F3D2B]" : "text-gray-800"
               }`
             }>
               <UserRound />
             </NavLink>
             <NavLink to="/cart" className={({ isActive }) =>
-              `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#c7802f]" : "text-gray-800"
+              `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#1F3D2B]" : "text-gray-800"
               }`
             }>
               <ShoppingCart />
@@ -52,7 +52,7 @@ const Navbar = () => {
             <NavLink
               to='/'
               className={({ isActive }) =>
-                `hover:text-[#c7802f] font-medium transition-all ${isActive ? 'text-[#c7802f] font-bold' : 'text-gray-700'
+                `hover:text-[#c7802f] font-medium transition-all ${isActive ? 'text-[#1F3D2B] font-bold' : 'text-gray-700'
                 }`
               }
             >
@@ -62,7 +62,7 @@ const Navbar = () => {
             <NavLink
               to='/mens'
               className={({ isActive }) =>
-                `hover:text-[#c7802f] font-medium transition-all ${isActive ? 'text-[#c7802f] font-bold' : 'text-gray-700'
+                `hover:text-[#c7802f] font-medium transition-all ${isActive ? 'text-[#1F3D2B] font-bold' : 'text-gray-700'
                 }`
               }
             >
@@ -72,7 +72,7 @@ const Navbar = () => {
             <NavLink
               to='/womens'
               className={({ isActive }) =>
-                `hover:text-[#c7802f] font-medium transition-all ${isActive ? 'text-[#c7802f] font-bold' : 'text-gray-700'
+                `hover:text-[#c7802f] font-medium transition-all ${isActive ? 'text-[#1F3D2B] font-bold' : 'text-gray-700'
                 }`
               }
             >
@@ -82,7 +82,7 @@ const Navbar = () => {
             <NavLink
               to='/kids'
               className={({ isActive }) =>
-                `hover:text-[#c7802f] font-medium transition-all ${isActive ? 'text-[#c7802f] font-bold' : 'text-gray-700'
+                `hover:text-[#c7802f] font-medium transition-all ${isActive ? 'text-[#1F3D2B] font-bold' : 'text-gray-700'
                 }`
               }
             >
@@ -97,7 +97,7 @@ const Navbar = () => {
               <NavLink
                 to="/like"
                 className={({ isActive }) =>
-                  `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#c7802f]" : "text-gray-200"
+                  `flex items-center transition-all font-medium hover:text-[#c7802f] h-10 ${isActive ? "text-[#1F3D2B]" : "text-gray-600"
                   }`
                 }
               >
@@ -109,7 +109,7 @@ const Navbar = () => {
               <NavLink
                 to='/login'
                 className={({ isActive }) =>
-                  `flex items-center transition-all font-bold w-8 hover:text-[#c7802f] h-10 ${isActive ? "text-[#c7802f] font-bold" : "text-gray-200"
+                  `flex items-center transition-all font-medium w-8 hover:text-[#c7802f] h-10 ${isActive ? "text-[#1F3D2B] font-bold" : "text-gray-600"
                   }`
                 }
               >
@@ -122,7 +122,7 @@ const Navbar = () => {
                 <NavLink
                   to="/cart"
                   className={({ isActive }) =>
-                    `flex h-6 font-bold md:h-8 w-8 items-center transition-all hover:text-[#c7802f] ${isActive ? "text-[#c7802f]" : "text-gray-200"
+                    `flex h-6 font-medium md:h-8 w-8 items-center transition-all hover:text-[#c7802f] ${isActive ? "text-[#1F3D2B]" : "text-gray-600"
                     }`
                   }
                 >
