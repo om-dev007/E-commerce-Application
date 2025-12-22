@@ -1,24 +1,54 @@
-import React from 'react'
+import React from "react";
 
 const FooterGreets = () => {
   return (
-    <div className='py-10 md:pt-20 flex flex-col gap-5 justify-center px-4 md:px-20'>
-      <div className=''>
-        <h1 className='text-3xl md:text-5xl text-center text-[#454545] font-bold'>Get Exclusive Offers on Your Email</h1>
-      </div>
-      <div>
-        <h1 className='text-lg md:text-xl text-center font-semibold text-[#454545] '>Subscibe to our newsletter and stay updated</h1>
-      </div>
-      <div className='flex flex-col md:flex-row justify-center gap-2'>
-        <div className='w-full flex justify-center sm:w-auto px-10 sm:px-0'>
-          <input className='border-2 border-gray-400 w-50 rounded-2xl outline-0 focus:border-green-500 px-5 py-2 md:w-auto' type="text" placeholder='Enter your email here...' />
-        </div>
-        <div className='w-full sm:w-auto flex justify-center'>
-          <button className='bg-green-600 focus:bg-green-500 w-20 outline-0 text-white px-4 py-2 rounded cursor-pointer hover:scale-105 transition-all mt-2 md:mt-0'>Search</button>
-        </div>
-      </div>
-    </div>
-  )
-}
+    <section className="bg-[#FAF8F5] py-14 md:py-20 px-4 md:px-20">
 
-export default FooterGreets
+      <div className="max-w-3xl mx-auto text-center space-y-4">
+
+        {/* HEADING */}
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-[#1F3D2B]">
+          Get Exclusive Offers on Your Email
+        </h1>
+
+        {/* SUBTEXT */}
+        <p className="text-sm sm:text-base md:text-lg text-[#6B7280]">
+          Subscribe to our newsletter and stay updated
+        </p>
+
+        {/* INPUT + BUTTON */}
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-3 mt-6">
+
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            className="
+              w-full sm:w-[320px]
+              px-5 py-3
+              rounded-full
+              border border-[#CBD5E1]
+              outline-none
+              text-sm
+              focus:ring-0 focus:border-[#CBD5E1]
+              placeholder:text-[#9CA3AF]
+              transition
+            "
+          />
+
+          <button
+            className="
+              w-full sm:w-auto px-8 py-3 rounded-full bg-[#1F3D2B] text-white font-medium hover:bg-[#2F6B4F]
+              transition-all cursor-pointer"
+          >
+            Subscribe
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+};
+
+export default FooterGreets;
