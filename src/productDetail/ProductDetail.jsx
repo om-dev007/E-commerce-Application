@@ -1,82 +1,128 @@
-import { useParams } from 'react-router-dom'
-import { womenData } from '../store/data'
-import { menData } from '../store/data'
-import { kidsData } from '../store/data'
-import { data } from '../store/data'
-import { collectionData } from '../store/data'
-import Navbar from '../components/Navbar'
-import star from '../assets/star_icon.png'
-import halfstar from '../assets/star_dull_icon.png'
-import Footer from '../components/Footer'
-import { ArrowRight } from 'lucide-react'
+import { useParams } from "react-router-dom";
+import {
+  menData,
+  womenData,
+  kidsData,
+  data,
+  collectionData,
+} from "../store/data";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import star from "../assets/star_icon.png";
+import halfstar from "../assets/star_dull_icon.png";
+import { ArrowRight } from "lucide-react";
 
 const ProductDetail = () => {
-  const { id } = useParams()
-  const product = menData.find((item) => item.id == id) || womenData.find((item) => item.id == id) || kidsData.find((item) => item.id == id) || data.find((item) => item.id == id) || collectionData.find((item) => item.id == id)
+  const { id } = useParams();
+
+  const product =
+    menData.find((item) => item.id == id) ||
+    womenData.find((item) => item.id == id) ||
+    kidsData.find((item) => item.id == id) ||
+    data.find((item) => item.id == id) ||
+    collectionData.find((item) => item.id == id);
+
+  if (!product) return null;
 
   return (
     <>
       <Navbar />
-      <hr className='bg-gray-100 border-0 h-0.5 rounded-4xl outline-0 font-bold' />
-      <div className='py-4'>
-        <div className='py-2 px-2'>
-          <h1 className='font-medium flex justify-center-safe text-gray-500 text-center'> Home <span> <ArrowRight className='w-4'/> </span> Shop <span> <ArrowRight className='w-4'/> </span> {product.category} <span><ArrowRight className='w-4'/></span> {product.title} </h1>
-        </div>
-      </div>
-      <div className='flex flex-col sm:flex-row md:flex-row gap-4 md:gap-2 px-4 md:px-15 py-10 '>
-        <div className='flex flex-row sm:flex-col order-2 md:order-1 sm:order-1 lg:order-1 md:flex-col gap-1 justify-center md:justify-start sm:justify-start '>
-          <div>
-            <img className='w-12 h-10 md:w-20 md:h-15 lg:w-20 lg:h-20  rounded' src={product.image} alt="" />
-          </div>
-          <div>
-            <img className='w-12 h-10 md:w-20 md:h-15 lg:w-20 lg:h-20 rounded' src={product.image} alt="" />
-          </div>
-          <div>
-            <img className='w-12 h-10 md:w-20 md:h-15 lg:w-20 lg:h-20  rounded' src={product.image} alt="" />
-          </div>
-        </div>
-        <div className='rounded object-contain md:order-2 sm:order-2 lg:order-2 order-1 mx-auto md:mx-0'>
-          <img className='h-100 md:h-100 lg:w-110 lg:h-120 w-80 md:w-100 rounded' src={product.image} alt="img" />
-        </div>
-        <div className='flex order-3 sm:order-3 lg:order-3 md:order-3 flex-col gap-5 px-4 md:px-5 text-center md:text-left'>
-          <div>
-            <h1 className=' text-xl md:text-2xl text-gray-900 font-semibold'> {product.title} </h1>
-          </div>
-          <div className='px-2 flex gap-3 justify-center md:justify-start'>
-            <img className='w-4 md:w-5' src={star} alt="" />
-            <img className='w-4 md:w-5' src={star} alt="" />
-            <img className='w-4 md:w-5' src={star} alt="" />
-            <img className='w-4 md:w-5' src={star} alt="" />
-            <img className='w-4 md:w-5' src={halfstar} alt="" />
-            <h3 className='font-semibold text-gray-700 text-sm md:text-base'> {product.rating} </h3>
-          </div>
-          <div className='flex gap-5 justify-center md:justify-start'>
-            <h3 className='text-gray-700 text-xl md:text-2xl font-bold px-2'> <del>${product.discountPrice} </del> </h3>
-            <h3 className='text-red-500 text-xl md:text-2xl font-bold px-2'> ${product.price} </h3>
-          </div>
-          <div>
-            <h3 className='text-center sm:text-justify text-black font-semibold text-sm md:text-base'>
-              {product.description}
-            </h3>
-          </div>
-          <div>
-            <h1 className='text-gray-700 font-bold text-sm md:text-base'> Select Size </h1>
-          </div>
-          <div className='flex gap-3 justify-center md:justify-start flex-wrap'>
-            <button className='border focus:bg-green-500 border-gray-200 hover:scale-105 transition-all hover:bg-green-500 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>S</button>
-            <button className='border focus:bg-green-500 hover:scale-105 transition-all hover:bg-green-500 border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>M</button>
-            <button className='border focus:bg-green-500 hover:scale-105 transition-all hover:bg-green-500 border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>L</button>
-            <button className='border focus:bg-green-500 hover:scale-105 transition-all hover:bg-green-500 border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>XL</button>
-            <button className='border focus:bg-green-500 hover:scale-105 transition-all hover:bg-green-500 border-gray-200 outline-0 cursor-pointer px-3 md:px-5 rounded py-2 text-sm md:text-base'>XXL</button>
-          </div>
-          <div className='flex justify-center md:justify-start'>
-            <button className='text-white focus:bg-green-500 outline-0 hover:scale-105 transition-all bg-red-500 px-8 md:px-15 py-3 md:py-5 rounded cursor-pointer text-sm md:text-base'>ADD TO CART</button>
-          </div>
-        </div>
-      </div>
-      <Footer/>
-    </>
-  )
-}
 
-export default ProductDetail
+      <div className="bg-[#FAF8F5] py-4 text-sm text-gray-500 px-6 md:px-16">
+        <div className="flex items-center gap-2 flex-wrap">
+          Home <ArrowRight className="w-4" /> Shop{" "}
+          <ArrowRight className="w-4" /> {product.category}{" "}
+          <ArrowRight className="w-4" />{" "}
+          <span className="text-[#1F3D2B] font-medium">
+            {product.title}
+          </span>
+        </div>
+      </div>
+
+      <section className="bg-[#FAF8F5] px-4 md:px-16 py-12">
+        <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-sm p-6 md:p-10 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+          <div className="flex md:flex-col gap-3 justify-center md:justify-start">
+            {[1, 2, 3].map((_, i) => (
+              <img
+                key={i}
+                src={product.image}
+                alt=""
+                className="w-16 h-16 md:w-20 md:h-20 rounded-lg object-cover hover:border-[#1F3D2B] cursor-pointer"
+              />
+            ))}
+          </div>
+
+          <div className="flex justify-center">
+            <img
+              src={product.image}
+              alt={product.title}
+              className="w-72 md:w-96 rounded-xl object-contain"
+            />
+          </div>
+
+          <div className="space-y-5 text-center md:text-left">
+
+            <h1 className="text-2xl md:text-3xl font-semibold text-gray-900">
+              {product.title}
+            </h1>
+
+            <div className="flex gap-2 items-center justify-center md:justify-start">
+              <img src={star} className="w-4" />
+              <img src={star} className="w-4" />
+              <img src={star} className="w-4" />
+              <img src={star} className="w-4" />
+              <img src={halfstar} className="w-4" />
+              <span className="text-sm text-gray-600 font-medium">
+                {product.rating}
+              </span>
+            </div>
+
+            <div className="flex gap-4 justify-center md:justify-start items-center">
+              <span className="text-gray-400 line-through text-lg">
+                ${product.discountPrice}
+              </span>
+              <span className="text-[#1F3D2B] text-2xl font-bold">
+                ${product.price}
+              </span>
+            </div>
+
+            <p className="text-gray-600 text-sm leading-relaxed">
+              {product.description}
+            </p>
+
+            <div>
+              <p className="font-semibold text-gray-700 mb-2">
+                Select Size
+              </p>
+              <div className="flex gap-3 flex-wrap justify-center md:justify-start">
+                {["S", "M", "L", "XL", "XXL"].map((size) => (
+                  <button
+                    key={size}
+                    className="border border-gray-300 px-4 py-2 rounded-lg text-sm
+                               hover:border-[#1F3D2B] hover:bg-[#E6EEE8]
+                               transition-all cursor-pointer outline-0"
+                  >
+                    {size}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <button
+              className="mt-4 bg-[#2F6B4F] hover:bg-[#24563F] 
+                         text-white px-8 py-3 rounded-lg font-medium
+                         transition-all cursor-pointer outline-0"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </>
+  );
+};
+
+export default ProductDetail;
