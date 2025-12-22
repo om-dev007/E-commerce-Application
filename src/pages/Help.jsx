@@ -8,8 +8,7 @@ const Help = () => {
       <Navbar />
 
       <div className="min-h-screen bg-linear-to-b from-green-50 to-white px-4 sm:px-6 md:px-16 lg:px-24 py-16">
-        
-        {/* HEADER */}
+
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#1F3D2B]">
             Help & Support
@@ -19,7 +18,6 @@ const Help = () => {
           </p>
         </div>
 
-        {/* CARDS */}
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
 
           {[
@@ -62,7 +60,6 @@ const Help = () => {
 
         </div>
 
-        {/* FOOT NOTE */}
         <div className="mt-16 text-center text-gray-500 text-xs sm:text-sm max-w-2xl mx-auto">
           Velnixa is a learning-focused project. Support features will expand as
           the platform grows into a full-scale e-commerce application.

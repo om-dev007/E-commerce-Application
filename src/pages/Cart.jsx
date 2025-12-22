@@ -9,7 +9,7 @@ const Cart = () => {
     <>
       <Navbar />
 
-      <div className="min-h-screen bg-[#FAF8F5] flex items-center justify-center px-4">
+      <div className="min-h-screen bg-linear-to-b from-green-50 to-white flex items-center justify-center px-4">
 
         <div className="bg-white rounded-2xl shadow-xl border border-black/5 p-8 sm:p-12 max-w-md w-full text-center">
           

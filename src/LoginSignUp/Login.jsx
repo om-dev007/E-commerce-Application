@@ -41,7 +41,7 @@ const Login = () => {
         <>
             <Navbar />
 
-            <div className="min-h-screen bg-[#FAF8F5] flex items-center justify-center px-4">
+            <div className="min-h-screen bg-linear-to-b from-green-50 to-white flex items-center justify-center px-4">
 
                 <form
                     onSubmit={formHandler}
