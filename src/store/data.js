@@ -465,7 +465,7 @@ export const womenData = [
 
 
 export const kidsData = [
-  { id: 1, title: 'Kids T-shirt', 
+  { id: 1, title: 'T-shirt', 
     description: "Soft cotton printed kids t-shirt.",
     rating: 4.5, price: 18,
     discountPrice: 25, 
@@ -487,10 +487,10 @@ export const kidsData = [
     id: 3, 
     title: 'OverSized t-shirt', description: "Oversized trendy kids street wear.", rating: 4.1, price: 22, discountPrice: 30, image: kidsOverSizedTshirt, category: 'Kids' },
 
-  { id: 4, title: 'Kids Kurta', description: "Festive traditional kurta for kids.", rating: 4.2, price: 24, discountPrice: 32, image: kidsEthnic, category: 'Kids' },
+  { id: 4, title: 'Kurta', description: "Festive traditional kurta for kids.", rating: 4.2, price: 24, discountPrice: 32, image: kidsEthnic, category: 'Kids' },
   { id: 5, title: 'Kids Casual', description: "Comfortable daily wear casual dress.", rating: 4.8, price: 26, discountPrice: 34, image: kidsCasual, category: 'Kids' },
-  { id: 6, title: 'Kids Party Wear', description: "Stylish party wear outfit for kids.", rating: 4.5, price: 28, discountPrice: 36, image: kidsParty, category: 'Kids' },
-  { id: 7, title: 'Kids party wear', description: "Premium birthday wear for kids.", rating: 4.6, price: 30, discountPrice: 38, image: kidsOtherParty, category: 'Kids' },
+  { id: 6, title: 'Party Wear', description: "Stylish party wear outfit for kids.", rating: 4.5, price: 28, discountPrice: 36, image: kidsParty, category: 'Kids' },
+  { id: 7, title: 'Party Wear', description: "Premium birthday wear for kids.", rating: 4.6, price: 30, discountPrice: 38, image: kidsOtherParty, category: 'Kids' },
   { id: 8, title: 'Sports Sandals', description: "Lightweight kids sandle.", rating: 4.4, price: 32, discountPrice: 40, image: kidsCrocks, category: 'Kids' },
   { id: 9, title: 'Sling Back Flats', description: "Stylish flat clogs for girls.", rating: 4.2, price: 34, discountPrice: 42, image: kidsFootwear, category: 'Kids' },
   { id: 10, title: 'Offroad Monster', description: "High-speed monster toy racing car.", rating: 4.7, price: 38, discountPrice: 45, image: kidsToys, category: 'Kids' }

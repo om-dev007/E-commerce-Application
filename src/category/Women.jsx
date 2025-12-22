@@ -11,8 +11,8 @@ const Women = () => {
         <>
             <Navbar />
             <div>
-                <div className='flex justify-center py-2 px-4 md:px-10'>
-                    <img className='w-full md:w-[85%] h-auto md:h-100 rounded ' src={creative} alt="" />
+                <div className='bg-[#FAF8F5] flex justify-center py-2 px-4 md:px-10'>
+                    <img className='w-full sm:w-[85%] rounded-2xl h-[30vh] sm:h-[70vh] shadow-sm' src={creative} alt="" />
                 </div>
                 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-5 gap-y-5 py-10 px-8 sm:px-10 md:px-16 lg:px-20'>
                     {womenData.map((items) => {
