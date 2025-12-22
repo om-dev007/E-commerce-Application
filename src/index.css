@@ -7,3 +7,18 @@ body {
 .hero-page {
   font-family: playfair;
 }
+
+@keyframes heroText {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-heroText {
+  animation: heroText 1.2s ease-out forwards;
+}
