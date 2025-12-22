@@ -122,7 +122,7 @@ export const data = [
   },
   {
     id: 48,
-    title: 'Heels Sandal',
+    title: 'Heels',
     rating: 4.3,
     image: leggis,
     description: "Stretchable leggings with smooth fabric for perfect comfort and daily flexibility.",
@@ -196,7 +196,7 @@ export const collectionData = [
   },
   {
     id: 35,
-    title: 'Palazoo',
+    title: 'Plazoo',
     description: "Loose-fit palazzo pants with breathable fabric for summer fashion.",
     rating: 4.4,
     price: 25,
@@ -216,7 +216,7 @@ export const collectionData = [
   },
   {
     id: 37,
-    title: 'Knee dress',
+    title: 'Girl Dress',
     description: "Elegant knee-length dress for parties, dinner dates, and events.",
     rating: 4.3,
     price: 29,
