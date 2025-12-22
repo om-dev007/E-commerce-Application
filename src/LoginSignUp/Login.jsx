@@ -1,94 +1,119 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
+import React, { useState } from "react";
+import Navbar from "../components/Navbar";
 import Toast from "../components/Toast";
-import { useState } from 'react'
 
 const Login = () => {
-
     const [input, setInput] = useState({
-        email: '',
-        password: ''
-    })
+        email: "",
+        password: "",
+    });
 
     const [toasts, setToasts] = useState([]);
 
     const showToast = (message, type) => {
         const id = Date.now();
-
-        setToasts(prev => [...prev, { id, message, type }]);
-
+        setToasts((prev) => [...prev, { id, message, type }]);
         setTimeout(() => {
-            setToasts(prev => prev.filter(toast => toast.id !== id));
+            setToasts((prev) => prev.filter((t) => t.id !== id));
         }, 3000);
     };
 
-    const removeToast = (id) => {
-        setToasts(prev => prev.filter(toast => toast.id !== id));
-    };
-
-
     const commonHandler = (e) => {
-        setInput({
-            ...input,
-            [e.target.name]: e.target.value
-        })
-    }
+        setInput({ ...input, [e.target.name]: e.target.value });
+    };
 
     const formHandler = (e) => {
         e.preventDefault();
 
-        if (!input.email.includes("gmail.com") ||
-            (!/\d/.test(input.password) && !input.password.includes("@"))) {
-            showToast("Please enter a valid value", "error");
+        if (
+            !input.email.includes("gmail.com") ||
+            (!/\d/.test(input.password) && !input.password.includes("@"))
+        ) {
+            showToast("Please enter valid credentials", "error");
             return;
         }
 
         showToast("Login Successful!", "success");
-
-        setInput({
-            email: '',
-            password: ''
-        });
+        setInput({ email: "", password: "" });
     };
 
-
     return (
-        <> <Navbar />
-            <div className='h-screen bg-linear-to-b from-green-50 to-white flex items-center justify-center px-4'>
-                <div>
-                    <form onSubmit={formHandler} className='border w-full sm:w-150 bg-white rounded-2xl border-gray-400 px-5 py-2'>
-                        <div className='mt-5'>
-                            <h1 className='font-bold text-3xl text-center text-gray-800'>Login</h1>
+        <>
+            <Navbar />
+
+            <div className="min-h-screen bg-[#FAF8F5] flex items-center justify-center px-4">
+
+                <form
+                    onSubmit={formHandler}
+                    className="w-full max-w-md bg-white rounded-2xl shadow-xl border border-black/5 px-6 py-8 sm:px-10 sm:py-10"
+                >
+                    <h1 className="text-3xl font-semibold text-center text-[#1F3D2B] mb-8">
+                        Login
+                    </h1>
+
+                    <div className="space-y-6">
+
+                        <div className="flex flex-col gap-1">
+                            <label
+                                htmlFor="email"
+                                className="text-sm font-medium text-[#4B5B52]"
+                            >
+                                Email
+                            </label>
+                            <input
+                                id="email"
+                                type="email"
+                                name="email"
+                                value={input.email}
+                                onChange={commonHandler}
+                                placeholder="Enter your email address"
+                                className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm outline-none focus:border-[#2F6B4F]"
+                            />
                         </div>
-                        <div className='input-sec mb-10 gap-5 px-5 py-5 text- justify-center flex flex-col'>
-                            <div>
-                                <input name='email' value={input.email} onChange={(e) => commonHandler(e)} className='border w-full border-gray-500 px-4 py-2 outline-0 rounded' type="email" placeholder='Enter your email address...' />
-                            </div>
-                            <div>
-                                <input name='password' value={input.password} onChange={(e) => commonHandler(e)} className='border w-full border-gray-500 px-4 py-2 outline-0 rounded' type="text" placeholder='Enter your password here...' />
-                            </div>
-                            <div>
-                                <button type='submit' className='bg-green-500 focus:bg-green-600 text-white px-5 py-2 w-full cursor-pointer hover:scale-101 transition-all outline-0 rounded'>Login</button>
-                            </div>
+
+                        <div className="flex flex-col gap-1">
+                            <label
+                                htmlFor="password"
+                                className="text-sm font-medium text-[#4B5B52]"
+                            >
+                                Password
+                            </label>
+                            <input
+                                id="password"
+                                type="password"
+                                name="password"
+                                value={input.password}
+                                onChange={commonHandler}
+                                placeholder="Enter your password"
+                                className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm outline-none focus:border-[#2F6B4F]"
+                            />
                         </div>
-                    </form>
-                    <div>
+
+                        <button
+                            type="submit"
+                            className="w-full mt-4 bg-[#2F6B4F] text-white py-3 rounded-lg font-medium hover:bg-[#24563F] transition-all cursor-pointer"
+                        >
+                            Login
+                        </button>
 
                     </div>
-                </div>
+                </form>
+
                 <div className="fixed top-5 right-5 flex flex-col gap-3 z-50">
-                    {toasts.map(t => (
+                    {toasts.map((t) => (
                         <Toast
                             key={t.id}
                             message={t.message}
                             type={t.type}
-                            onClose={() => removeToast(t.id)}
+                            onClose={() =>
+                                setToasts((prev) => prev.filter((toast) => toast.id !== t.id))
+                            }
                         />
                     ))}
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default Login
+export default Login;
