@@ -17,8 +17,8 @@ const useScrollReveal = (ref) => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: ref.current,
-          start: "top 85%",
-          once: true,
+          start: "top 80%",
+          once: false,
         },
       });
     }, ref);
