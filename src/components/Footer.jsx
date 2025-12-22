@@ -1,54 +1,61 @@
-import React from 'react'
-import logo from '../assets/updatedLogo.jpg'
-import { Link } from 'react-router-dom'
-import { NavLink } from 'react-router-dom'
-import whatsapp from '../assets/whatsapp.png'
-import facebook from '../assets/facebook.png'
-import instagram from '../assets/instagram.png'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { Facebook, Instagram, Twitter } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
-    return (
-        <>
-            <div className='flex justify-self-center gap-5 flex-col px-4 md:px-10'>
-                <div className='flex justify-center items-center'>
-                    <div>
-                        <img className='w-9' src={logo} alt="" />
-                    </div>
-                    <div>
-                        <h3 className='font-semibold text-2xl md:text-3xl 
-             bg-linear-to-r from-emerald-500 to-green-700 
-             bg-clip-text text-transparent '>Velnixa</h3>
-                    </div>
-                </div>
-                <div className='flex flex-wrap gap-5 font-semibold text-base md:text-lg justify-center'>
-                    <NavLink className={({ isActive }) => ` hover:text-green-600 transition-all ${isActive ? 'text-green-600 font-bold' : 'text-gray-600'}`
-                    } to='/about' >About</NavLink>
-                    <NavLink className={({ isActive }) => ` hover:text-green-600 transition-all ${isActive ? 'text-green-600 font-bold' : 'text-gray-600'}`
-                    } to='/mens' >Products</NavLink>
-                    <NavLink className={({ isActive }) => ` hover:text-green-600 transition-all ${isActive ? 'text-green-600 font-bold' : 'text-gray-600'}`
-                    } to='/offices' >Offices</NavLink>
-                    <NavLink className={({ isActive }) => ` hover:text-green-600 transition-all ${isActive ? 'text-green-600 font-bold' : 'text-gray-600'}`
-                    } to='/help'>Help</NavLink> 
-                </div>
-                <div className='flex gap-5 py-5 justify-center'>
-                    <div>
-                        <img className='w-6 md:w-7' src={instagram} alt="" />
-                    </div>
-                    <div>
-                        <img className='w-6 md:w-7' src={facebook} alt="" />
-                    </div>
-                    <div>
-                        <img className='w-6 md:w-7' src={whatsapp} alt="" />
-                    </div>
-                </div>
-            </div>
-            <div>
-            </div>
-            <div className='text-center py-1 text-gray-500 font-semibold'>
-                Copyright @2025 - All Right Reserved
-            </div>
-        </>
-    )
-}
+  return (
+    <footer className="bg-[#163025] text-[#CFE1D6]">
 
-export default Footer
+      <div className="max-w-7xl mx-auto px-6 py-12 grid gap-10 sm:grid-cols-2 md:grid-cols-3">
+
+        <div className="space-y-4">
+          <div className="flex items-center gap-2">
+            <span className="font-serif text-4xl sm:text-5xl text-white">
+              V
+            </span>
+            <h2 className="text-2xl font-semibold text-white">Velnixa</h2>
+          </div>
+          <p className="text-sm leading-relaxed max-w-xs">
+            Premium fashion for everyday lifestyle.  
+            Discover styles that match your confidence.
+          </p>
+        </div>
+
+        <div>
+          <h3 className="text-white font-semibold mb-4">Quick Links</h3>
+          <ul className="space-y-2 text-sm">
+            <li><NavLink to="/about" className="hover:text-white">About Us</NavLink></li>
+            <li><NavLink to="/help" className="hover:text-white">Help & Support</NavLink></li>
+            <li><NavLink to="/offices" className="hover:text-white">Offices</NavLink></li>
+            <li><NavLink to="/contact" className="hover:text-white">Contact</NavLink></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="text-white font-semibold mb-4">Categories</h3>
+          <ul className="space-y-2 text-sm">
+            <li><NavLink to="/mens" className="hover:text-white">Men</NavLink></li>
+            <li><NavLink to="/womens" className="hover:text-white">Women</NavLink></li>
+            <li><NavLink to="/kids" className="hover:text-white">Kids</NavLink></li>
+            <li><NavLink to="/" className="hover:text-white">New Arrivals</NavLink></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div className="flex justify-center gap-6 pb-6">
+        <Instagram className="cursor-pointer hover:text-white transition-all" />
+        <Facebook className="cursor-pointer hover:text-white transition-all"/>
+        <FaWhatsapp className="cursor-pointer hover:text-white transition-all text-2xl"/>
+      </div>
+
+      <div className="border-t border-white/10 py-3 text-center text-xs text-[#AFC5B8]">
+        © 2025 Velnixa. All rights reserved.
+      </div>
+
+    </footer>
+  );
+};
+
+export default Footer;
