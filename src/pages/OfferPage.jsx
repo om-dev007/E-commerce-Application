@@ -3,8 +3,8 @@ import offerGirl from "../assets/offerGirl.webp";
 
 const OfferPage = () => {
   return (
-    <section className="bg-[#F5F1EB] px-4 sm:px-8 md:px-16 py-14 md:py-20">
-      <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+    <section className="bg-[#F5F1EB] px-4 sm:px-8 md:px-16 lg:px-25 py-14 md:py-20">
+      <div className="max-w-7xl mx-auto px-10 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
 
         <div className="text-center md:text-left max-w-xl">
 
