@@ -2,7 +2,7 @@ import logo from '../assets/heroImg.png'
 
 const Hero = () => {
     return (
-        <div className="min-h-screen px-5 sm:px-10 md:px-20 lg:px-30 bg-[#0f2f2e] flex justify-start items-center  bg-no-repeat bg-center bg-cover w-full" style={{
+        <div className="md:min-h-screen px-5 sm:px-10 md:px-20 lg:px-30 bg-[#0f2f2e] flex justify-start items-center py-20 md:py-0 bg-no-repeat bg-center bg-cover w-full" style={{
             backgroundImage: `url(${logo})`,
         }}>
             <div className='flex hero-page flex-col font-playfair gap-1 sm:gap-3'>
