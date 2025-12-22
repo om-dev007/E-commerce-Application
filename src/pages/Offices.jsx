@@ -7,7 +7,7 @@ const Offices = () => {
     <>
       <Navbar />
 
-      <div className="min-h-screen bg-linear-to-b from-green-50 to-white px-4 sm:px-6 md:px-16 lg:px-24 py-16">
+      <div className="min-h-[80vh] bg-linear-to-b from-green-50 to-white px-4 sm:px-6 md:px-16 lg:px-24 py-16">
 
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#1F3D2B]">

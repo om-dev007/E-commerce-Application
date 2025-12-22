@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Toast from "../components/Toast";
+import Footer from "../components/Footer";
 
 const Login = () => {
     const [input, setInput] = useState({
@@ -41,7 +42,7 @@ const Login = () => {
         <>
             <Navbar />
 
-            <div className="min-h-screen bg-linear-to-b from-green-50 to-white flex items-center justify-center px-4">
+            <div className="min-h-[80vh] bg-linear-to-b from-green-50 to-white flex items-center justify-center px-4">
 
                 <form
                     onSubmit={formHandler}
@@ -112,6 +113,7 @@ const Login = () => {
                     ))}
                 </div>
             </div>
+            <Footer/>
         </>
     );
 };
