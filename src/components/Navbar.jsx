@@ -1,141 +1,79 @@
-import React from 'react'
-// import logoUpdated from '../assets/updatedLogo.jpg'
-import { NavLink } from 'react-router-dom'
-import { Heart, ShoppingCart, UserRound, Search } from 'lucide-react'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { Heart, ShoppingCart, UserRound } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <>
-      <div className='flex flex-col sm:flex-row md:flex-row items-center justify-between px-2 py-1'>
+    <header className="w-full bg-white sticky top-0 z-50 border-b border-black/5">
+      <nav className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between px-4 sm:px-6 lg:px-10 py-3">
 
-        <div className='flex items-center gap-5 justify-between sm:justify-center px-2 mb-1 w-full sm:w-auto md:mb-0'>
-          <NavLink to="/">
-            <div className='flex gap-1 items-center'>
-              <div>
-                <h1 className='font-serif text-5xl text-[#8a633c] '> V </h1>
-              </div>
-              <div>
-                <h1
-                  className="font-semibold text-2xl md:text-3xl 
-                  bg-linear-to-r from-gray-600 to-gray-900 
-                  bg-clip-text text-transparent"
-                >
-                  Velnixa
-                </h1>
-              </div>
-            </div>
+        <div className="flex items-center justify-between w-full sm:w-auto">
+          <NavLink to="/" className="flex items-center gap-1">
+            <span className="font-serif text-4xl sm:text-5xl text-[#1F3D2B]">
+              V
+            </span>
+            <span className="font-semibold text-xl sm:text-2xl text-[#1F3D2B]">
+              Velnixa
+            </span>
           </NavLink>
-          <div className="flex items-center gap-3 sm:hidden">
-            <NavLink to="/like" className={({ isActive }) =>
-              `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#1F3D2B]" : "text-gray-800"
-              }`
-            }>
-              <Heart />
-            </NavLink>
-            <NavLink to="/login" className={({ isActive }) =>
-              `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#1F3D2B]" : "text-gray-800"
-              }`
-            }>
-              <UserRound />
-            </NavLink>
-            <NavLink to="/cart" className={({ isActive }) =>
-              `flex items-center transition-all font-bold hover:text-[#c7802f] h-10 ${isActive ? "text-[#1F3D2B]" : "text-gray-800"
-              }`
-            }>
-              <ShoppingCart />
-            </NavLink>
+
+          <div className="flex sm:hidden items-center gap-4">
+            <NavIcon to="/like" icon={<Heart />} />
+            <NavIcon to="/login" icon={<UserRound />} />
+            <NavIcon to="/cart" icon={<ShoppingCart />} />
           </div>
         </div>
 
-        <div className='flex pr-5 sm:pt-0 py-2 items-center gap-5'>
-          <div className='flex flex-wrap justify-center w-full text-gray-200 font-semibold gap-5'>
-            <NavLink
-              to='/'
-              className={({ isActive }) =>
-                `hover:text-[#c7802f] font-medium transition-all ${isActive ? 'text-[#1F3D2B] font-bold' : 'text-gray-700'
-                }`
-              }
-            >
-              Home
-            </NavLink>
-
-            <NavLink
-              to='/mens'
-              className={({ isActive }) =>
-                `hover:text-[#c7802f] font-medium transition-all ${isActive ? 'text-[#1F3D2B] font-bold' : 'text-gray-700'
-                }`
-              }
-            >
-              Men
-            </NavLink>
-
-            <NavLink
-              to='/womens'
-              className={({ isActive }) =>
-                `hover:text-[#c7802f] font-medium transition-all ${isActive ? 'text-[#1F3D2B] font-bold' : 'text-gray-700'
-                }`
-              }
-            >
-              Women
-            </NavLink>
-
-            <NavLink
-              to='/kids'
-              className={({ isActive }) =>
-                `hover:text-[#c7802f] font-medium transition-all ${isActive ? 'text-[#1F3D2B] font-bold' : 'text-gray-700'
-                }`
-              }
-            >
-              Kids
-            </NavLink>
-          </div>
+        <div className="flex gap-6 sm:gap-8 mt-3 sm:mt-0 text-sm sm:text-base font-medium">
+          <NavItem to="/" label="Home" />
+          <NavItem to="/mens" label="Men" />
+          <NavItem to="/womens" label="Women" />
+          <NavItem to="/kids" label="Kids" />
         </div>
 
-        <div className='sm:flex hidden  justify-center'>
-          <div className='flex items-center gap-3'>
-            <div>
-              <NavLink
-                to="/like"
-                className={({ isActive }) =>
-                  `flex items-center transition-all font-medium hover:text-[#c7802f] h-10 ${isActive ? "text-[#1F3D2B]" : "text-gray-600"
-                  }`
-                }
-              >
-                <Heart className='w-10 h-6 md:h-8' />
-              </NavLink>
-            </div>
-
-            <div>
-              <NavLink
-                to='/login'
-                className={({ isActive }) =>
-                  `flex items-center transition-all font-medium w-8 hover:text-[#c7802f] h-10 ${isActive ? "text-[#1F3D2B] font-bold" : "text-gray-600"
-                  }`
-                }
-              >
-                <UserRound className='w-10 h-6 md:h-8' />
-              </NavLink>
-            </div>
-
-            <div>
-              <button className="outline-none">
-                <NavLink
-                  to="/cart"
-                  className={({ isActive }) =>
-                    `flex h-6 font-medium md:h-8 w-8 items-center transition-all hover:text-[#c7802f] ${isActive ? "text-[#1F3D2B]" : "text-gray-600"
-                    }`
-                  }
-                >
-                  <ShoppingCart className='w-10 h-6 md:h-8' />
-                </NavLink>
-              </button>
-            </div>
-          </div>
+        <div className="hidden sm:flex items-center gap-5">
+          <NavIcon to="/like" icon={<Heart />} />
+          <NavIcon to="/login" icon={<UserRound />} />
+          <NavIcon to="/cart" icon={<ShoppingCart />} />
         </div>
 
-      </div>
-    </>
-  )
-}
+      </nav>
+    </header>
+  );
+};
 
-export default Navbar
+const NavItem = ({ to, label }) => (
+  <NavLink
+    to={to}
+    className={({ isActive }) =>
+      `
+      relative transition-all duration-300
+      ${isActive ? "text-[#1F3D2B] font-semibold" : "text-[#6B7280]"}
+      hover:text-[#2F6B4F]
+      after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full
+      after:bg-[#1F3D2B] after:scale-x-0 after:origin-left
+      after:transition-transform after:duration-300
+      ${isActive ? "after:scale-x-100" : "hover:after:scale-x-100"}
+      `
+    }
+  >
+    {label}
+  </NavLink>
+);
+
+const NavIcon = ({ to, icon }) => (
+  <NavLink
+    to={to}
+    className={({ isActive }) =>
+      `
+      transition-colors duration-300
+      ${isActive ? "text-[#1F3D2B]" : "text-[#6B7280]"}
+      hover:text-[#2F6B4F]
+      `
+    }
+  >
+    {icon}
+  </NavLink>
+);
+
+export default Navbar;
