@@ -20,7 +20,7 @@ const Offices = () => {
 
         <div className="mt-14 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
 
-          <div className="bg-white rounded-2xl shadow-md border border-gray-400 hover:-translate-y-3 transition-all p-6 sm:p-8">
+          <div className="bg-white rounded-2xl shadow-md border border-gray-100 transition-all p-6 sm:p-8">
             <h3 className="text-lg sm:text-xl font-semibold text-green-700 mb-4">
               Remote Development Office
             </h3>
@@ -31,7 +31,7 @@ const Offices = () => {
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-md border border-gray-400 hover:-translate-y-3 transition-all p-6 sm:p-8">
+          <div className="bg-white rounded-2xl shadow-md border border-gray-100 transition-all p-6 sm:p-8">
             <h3 className="text-lg sm:text-xl font-semibold text-green-700 mb-4">
               Planned Physical Offices
             </h3>

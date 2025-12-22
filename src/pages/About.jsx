@@ -42,7 +42,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-md p-6 sm:p-8 border border-gray-400">
+          <div className="bg-white rounded-2xl shadow-md p-6 sm:p-8 border border-gray-100">
             <h3 className="text-lg sm:text-xl font-semibold text-green-700 mb-6">
               Project Highlights
             </h3>
