@@ -29,17 +29,17 @@ const ProductDetail = () => {
       <Navbar />
 
       <div className="bg-[#FAF8F5] py-4text-sm text-gray-500 px-6 md:px-16">
-        <div className="flex items-center gap-2 flex-wrap">
-          Home <ArrowRight className="w-4" /> Shop{" "}
-          <ArrowRight className="w-4" /> {product.category}{" "}
-          <ArrowRight className="w-4" />{" "}
+        <div className="flex text-[10px] sm:text-sm items-center gap-2 flex-wrap">
+          Home <ArrowRight className="w-2" /> Shop{" "}
+          <ArrowRight className="w-2" /> {product.category}{" "}
+          <ArrowRight className="w-2" />{" "}
           <span className="text-[#1F3D2B] font-medium">
             {product.title}
           </span>
         </div>
       </div>
 
-      <section className="bg-[#FAF8F5] px-4 md:px-16 py-12">
+      <section className="bg-[#FAF8F5] px-4 md:px-16 py-10 sm:py-12">
         <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-sm p-6 md:p-10 grid grid-cols-1 md:grid-cols-3 gap-10">
 
           <div className="flex md:flex-col gap-3 order-2 sm:order-1 justify-center md:justify-start">
