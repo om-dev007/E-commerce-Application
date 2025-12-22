@@ -11,10 +11,10 @@ const useScrollReveal = (ref) => {
     const ctx = gsap.context(() => {
       gsap.from(ref.current.children, {
         opacity: 0,
-        y: 40,
-        duration: 1.4,
+        y: 30,
+        duration: 1.6,
         stagger: 0.18,
-        ease: "power4.out",
+        ease: "power3.out",
         scrollTrigger: {
           trigger: ref.current,
           start: "top 85%",
