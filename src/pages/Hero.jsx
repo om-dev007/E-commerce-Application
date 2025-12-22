@@ -11,17 +11,17 @@ const Hero = () => {
       "
       style={{ backgroundImage: `url(${logo})` }}
     >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-linear-to-b from-black/30 via-black/15 to-black/5"></div>
 
-      {/* Content */}
+      <div className="absolute inset-0 bg-linear-to-b from-black/30 via-black/30 to-black/5"></div>
+
+
       <div className="relative z-10 flex flex-col font-playfair gap-2 sm:gap-3 md:pt-0 max-w-xl">
 
-        <h1 className="text-2xl sm:text-4xl lg:text-6xl xl:text-7xl font-extrabold leading-tight text-[#7A5A3A]">
+        <h1 className="text-2xl sm:text-4xl lg:text-6xl xl:text-7xl font-extrabold leading-tight text-[#f3f2f2ea]">
           Effortlessly Chic.
         </h1>
 
-        <h2 className="text-sm sm:text-xl lg:text-3xl font-semibold leading-snug text-[#A67C52]">
+        <h2 className="text-sm sm:text-xl lg:text-3xl font-semibold leading-snug text-[#f3f2f2ea]">
           Explore New Collections
         </h2>
 
@@ -29,7 +29,7 @@ const Hero = () => {
           Fashion that fits your life
         </p>
 
-        <button className="mt-5 w-fit px-6 py-2.5 text-sm sm:text-base font-medium bg-[#2F6B4F] hover:bg-[#24563F] transition-all text-white rounded-lg">
+        <button className="mt-5 w-fit px-6 cursor-pointer py-2.5 text-sm sm:text-base font-medium bg-[#2F6B4F] hover:bg-[#24563F] transition-all text-white rounded-lg">
           Shop Now
         </button>
 
