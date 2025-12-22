@@ -7,7 +7,7 @@ const About = () => {
     <>
       <Navbar />
 
-      <div className="min-h-screen bg-gradient-to-b from-green-50 to-white px-4 sm:px-6 md:px-16 lg:px-24 py-16">
+      <div className="min-h-screen bg-linear-to-b from-green-50 to-white px-4 sm:px-6 md:px-16 lg:px-24 py-16">
 
         {/* HERO HEADING */}
         <div className="text-center max-w-3xl mx-auto">

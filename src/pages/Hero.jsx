@@ -3,16 +3,12 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 import logo from "../assets/heroImg.png";
-import Hero1 from "../assets/HeroImg1.png";
-import Hero2 from "../assets/HeroImg2.png";
-import Hero3 from "../assets/HeroImg3.png";
-import Hero4 from "../assets/HeroImg4.png";
-import Hero5 from '../assets/HeroImg5.png'
-import Hero6 from '../assets/HeroImg6.png'
+import Hero2 from '../assets/Hero2.png'
 import Hero7 from '../assets/HeroImg7.png'
 import Hero8 from '../assets/HeroImg8.png'
+import Hero10 from '../assets/HeroImg10.png'
 
-const heroImages = [logo, Hero1, Hero2, Hero8, Hero4, Hero5, Hero6, Hero7];
+const heroImages = [logo, Hero2, Hero8, Hero7, Hero10];
 
 const Hero = () => {
   return (
@@ -20,7 +16,7 @@ const Hero = () => {
       <Swiper
         modules={[Autoplay]}
         loop
-        speed={2000}
+        speed={1600}
         autoplay={{
           delay: 1000,
           disableOnInteraction: false,
