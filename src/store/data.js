@@ -40,23 +40,41 @@ import blazerD from '../assets/blazerD.webp'
 import kurta from '../assets/kurta.webp'
 import kurtaD from '../assets/kurtaD.webp'
 import menShirt from '../assets/menShirt.avif'
+import menShirtD from '../assets/menShirt.webp'
 import menTshirt from '../assets/menTshirt.webp'
+import menTshirtD from '../assets/menTshirtD.webp'
 import menJeans from '../assets/menStraightJeans.jpeg'
+import menJeansD from '../assets/menStraightJeansD.webp'
 import menKurta from '../assets/menKurta.jpg'
+import menKurtaD from '../assets/menKurtaD.webp'
 import menWaist from '../assets/mwnWaistCoat.webp'
+import menWaistD from '../assets/menWaistCoat.webp'
 import menShirts from '../assets/menShirt.jpg'
+import menShirtsD from '../assets/menShirtsD.webp'
 import rcbJearsy from '../assets/MenJersey.jpg'
+import rcbJerseyD from '../assets/rcbjersey.webp'
 import menLower from '../assets/MenLower.jpeg'
+import menSportLowerD from '../assets/menSportLowerD.webp'
 import menSneaker from '../assets/MenWhiteSneakers.jpg'
+import menSneakerD from '../assets/menWhiteSneakerD.webp'
 import menBoot from '../assets/MenBoot.avif'
+import menBootD from '../assets/menBootD.webp'
 import womenLehenga from '../assets/WomenLehenga.jpg'
+import womenLehengaD from '../assets/womenLehengaD.webp'
 import womenKurti from '../assets/WomenDupata.webp'
+import womenKurtiD from '../assets/WomenDupataD.webp'
 import womenSarree from '../assets/WomenSarrree.webp'
+import womenSarreeD from '../assets/WomenSareeD.webp'
 import womenJewel from '../assets/womenJewel.webp'
+import womenJewelD from '../assets/WomenJewelD.webp'
 import womenKurtaSharara from '../assets/WomenKurtaSharara.jpg'
+import womenKurtiShararaD from '../assets/womenKurtiSharaD.webp'
 import womenBlouse2 from '../assets/womenBlouse2.webp'
+import womenBouseD from '../assets/womenBlouseD.webp'
 import womenJeans from '../assets/WomenJeans2.webp'
+import womenJeansD from '../assets/womenJeansD.webp'
 import womenRRSa from '../assets/WomenRRSa.webp'
+import womenRRSaD from '../assets/womenRRsaD.webp'
 import kidsTshirt from '../assets/kidsTshirts.webp'
 import kidsJersey from '../assets/KidsDhoniJersey.webp'
 import kidsOverSizedTshirt from '../assets/kidsOverSizeTshirt.webp'
@@ -68,6 +86,7 @@ import kidsCrocks from '../assets/KidsCrocks.webp'
 import kidsFootwear from '../assets/kidsSandles.webp'
 import kidsToys from '../assets/kidsTOys.webp'
 import womenTrouser from '../assets/WomenLooseTrousers.webp'
+import womenTrouserD from '../assets/womenLooseTrouserD.webp'
 
 export const data = [
   {
@@ -345,7 +364,10 @@ export const menData = [
     rating: 4.6,
     price: 24,
     discountPrice: 36,
-    image: menShirt,
+    image: {
+      mobile: menShirt,
+      desktop: menShirtD
+    },
     category: 'Man',
   },
   {
@@ -355,7 +377,10 @@ export const menData = [
     rating: 4.3,
     price: 18,
     discountPrice: 29,
-    image: menTshirt,
+    image: {
+      mobile: menTshirt,
+      desktop: menTshirtD
+    },
     category: 'Man',
   },
   {
@@ -365,7 +390,10 @@ export const menData = [
     rating: 4.8,
     price: 32,
     discountPrice: 45,
-    image: menJeans,
+    image: {
+      mobile: menJeans,
+      desktop: menJeansD
+    },
     category: 'Man',
   },
   {
@@ -375,7 +403,10 @@ export const menData = [
     rating: 4.2,
     price: 38,
     discountPrice: 58,
-    image: menKurta,
+    image: {
+      mobile: menKurta,
+      desktop: menKurtaD
+    },
     category: 'Man',
   },
   {
@@ -385,7 +416,10 @@ export const menData = [
     rating: 4.5,
     price: 45,
     discountPrice: 68,
-    image: menWaist,
+    image: {
+      mobile: menWaist,
+      desktop: menWaistD
+    },
     category: 'Man',
   },
   {
@@ -395,7 +429,10 @@ export const menData = [
     rating: 4.4,
     price: 34,
     discountPrice: 52,
-    image: menShirts,
+    image: {
+      mobile: menShirts,
+      desktop: menShirtsD
+    },
     category: 'Man',
   },
   {
@@ -405,7 +442,10 @@ export const menData = [
     rating: 4.7,
     price: 14,
     discountPrice: 22,
-    image: rcbJearsy,
+    image: {
+      mobile: rcbJearsy,
+      desktop: rcbJerseyD
+    },
     category: 'Man',
   },
   {
@@ -415,7 +455,10 @@ export const menData = [
     rating: 4.3,
     price: 27,
     discountPrice: 35,
-    image: menLower,
+    image: {
+      mobile: menLower,
+      desktop: menSportLowerD
+    },
     category: 'Man',
   },
   {
@@ -425,7 +468,10 @@ export const menData = [
     rating: 4.8,
     price: 36,
     discountPrice: 60,
-    image: menSneaker,
+    image: {
+      mobile: menSneaker,
+      desktop: menSneakerD
+    },
     category: 'Man',
   },
   {
@@ -435,7 +481,10 @@ export const menData = [
     rating: 4.9,
     price: 48,
     discountPrice: 65,
-    image: menBoot,
+    image: {
+      mobile: menBoot,
+      desktop: menBootD
+    },
     category: 'Man',
   },
 ];
@@ -449,7 +498,10 @@ export const womenData = [
     rating: 4.2,
     price: 28,
     discountPrice: 35,
-    image: womenLehenga,
+    image: {
+      mobile: womenLehenga,
+      desktop: womenLehengaD
+    },
     category: 'Women'
   },
   {
@@ -459,7 +511,10 @@ export const womenData = [
     rating: 4.1,
     price: 22,
     discountPrice: 27,
-    image: womenKurti,
+    image: {
+      mobile: womenKurti,
+      desktop: womenKurtiD
+    },
     category: 'Women'
   },
   {
@@ -469,7 +524,10 @@ export const womenData = [
     rating: 4.3,
     price: 20,
     discountPrice: 30,
-    image: womenSarree,
+    image: {
+      mobile: womenSarree,
+      desktop: womenSarreeD
+    },
     category: 'Women'
   },
   {
@@ -479,7 +537,10 @@ export const womenData = [
     rating: 4.6,
     price: 26,
     discountPrice: 37,
-    image: womenJewel,
+    image: {
+      mobile: womenJewel,
+      desktop: womenJewelD
+    },
     category: 'Women'
   },
   {
@@ -489,7 +550,10 @@ export const womenData = [
     rating: 4.2,
     price: 30,
     discountPrice: 45,
-    image: womenKurtaSharara,
+    image: {
+      mobile: womenKurtaSharara,
+      desktop: womenKurtiShararaD
+    },
     category: 'Women'
   },
   {
@@ -499,7 +563,10 @@ export const womenData = [
     rating: 4.3,
     price: 15,
     discountPrice: 25,
-    image: womenBlouse2,
+    image: {
+      mobile: womenBlouse2,
+      desktop: womenBouseD
+    },
     category: 'Women'
   },
   {
@@ -509,7 +576,10 @@ export const womenData = [
     rating: 4.1,
     price: 18,
     discountPrice: 28,
-    image: womenRRSa,
+    image: {
+      mobile: womenRRSa,
+      desktop: womenRRSaD
+    },
     category: 'Women'
   },
   {
@@ -519,7 +589,10 @@ export const womenData = [
     rating: 4.8,
     price: 24,
     discountPrice: 29,
-    image: womenJeans,
+    image: {
+      mobile: womenJeans,
+      desktop: womenJeansD
+    },
     category: 'Women'
   },
   {
@@ -529,7 +602,10 @@ export const womenData = [
     rating: 4.5,
     price: 31,
     discountPrice: 43,
-    image: womenTrouser,
+    image: {
+      mobile: womenTrouser,
+      desktop: womenTrouserD
+    },
     category: 'Women'
   },
   {
@@ -539,7 +615,10 @@ export const womenData = [
     rating: 4.9,
     price: 21,
     discountPrice: 35,
-    image: womenSkirts,
+    image: {
+      mobile: womenSkirts,
+      desktop: 
+    },
     category: 'Women'
   },
 ]

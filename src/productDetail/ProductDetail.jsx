@@ -46,7 +46,7 @@ const ProductDetail = () => {
             {[1, 2, 3].map((_, i) => (
               <img
                 key={i}
-                src={product.image.desktop}
+                src={product.image.mobile}
                 alt=""
                 className="w-16 h-16 lg:w-20 lg:h-20 rounded-lg object-cover cursor-pointer"
               />
@@ -60,7 +60,7 @@ const ProductDetail = () => {
                 srcSet={product.image.desktop}
               />
               <img
-                src={product.image.desktop}
+                src={product.image.mobile}
                 alt={product.title}
                 loading="lazy"
                 fetchPriority="high"
