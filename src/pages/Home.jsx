@@ -25,23 +25,22 @@ const Home = () => {
       <Navbar />
       <Hero />
 
-      <section ref={popularRef}>
+      <section className="bg-[#F5F1EB]" ref={popularRef}>
         <Popular />
       </section>
 
-      <section ref={offerRef}>
+      <section className="bg-[#F5F1EB]" ref={offerRef}>
         <OfferPage />
       </section>
 
-      <section ref={collectionRef}>
+      <section className="bg-[#FAF8F5]" ref={collectionRef}>
         <NewCollection />
       </section>
 
-      <section ref={footerGreetRef}>
+      <section className="bg-[#FAF8F5]" ref={footerGreetRef}>
         <FooterGreets />
       </section>
         <Footer />
-      
     </>
   );
 };
