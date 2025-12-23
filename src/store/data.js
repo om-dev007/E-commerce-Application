@@ -1,5 +1,5 @@
 import formalShirt from '../assets/formalShirt.webp'
-import saree from '../assets/women2.jpg'
+import saree from '../assets/women2.webp'
 import jacket from '../assets/menFormalPant.jpg'
 import tshirt from '../assets/men3.webp'
 import dress from '../assets/womenDress.webp'
