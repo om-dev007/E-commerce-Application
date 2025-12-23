@@ -27,7 +27,7 @@ const Hero = () => {
       >
         {heroImages.map((img, index) => (
           <SwiperSlide key={index}>
-            <div className="relative sm:min-h-[90vh] flex items-center px-4 sm:px-10 md:px-20">
+            <div className="relative sm:min-h-[90vh] py-20 sm:py-0 flex items-center px-4 sm:px-10 md:px-20">
 
               <img
                 src={img}
