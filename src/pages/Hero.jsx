@@ -33,10 +33,9 @@ const Hero = () => {
               "
               style={{ backgroundImage: `url(${img})` }}
             >
-              {/* Overlay */}
+
               <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/30 to-black/10"></div>
 
-              {/* Content */}
               <div className="relative z-10 flex flex-col font-playfair gap-3 max-w-xl animate-heroText">
                 <h1 className="text-2xl sm:text-4xl lg:text-6xl xl:text-7xl font-extrabold text-[#f3f2f2ea]">
                   Effortlessly Chic.
