@@ -20,15 +20,25 @@ import hoodieD from '../assets/hoodieD.webp'
 import KidsDresses from '../assets/KidsDresses.webp'
 import KidsDressesD from '../assets/KidsDressesD.webp'
 import gown from '../assets/gown.webp'
+import gownD from '../assets/gownD.webp'
 import denimMen from '../assets/denimMen.webp'
+import denimMenD from '../assets/denimMenD.webp'
 import jacketMen from '../assets/jacketMen.webp'
+import jacketMenD from '../assets/jacketMenD.webp'
 import jeans from '../assets/jeans.webp'
+import jeansD from '../assets/jeansD.webp'
 import chain from '../assets/chain.webp'
+import chainD from '../assets/chainD.webp'
 import palazoo from '../assets/plazo.webp'
+import palazooD from '../assets/plazoD.webp'
 import topWomen from '../assets/topWomen.webp'
+import topWomenD from '../assets/topWomenD.webp'
 import kneeDress from '../assets/kneeDress.webp'
+import kneeDressD from '../assets/kneeDressD.webp'
 import blazer from '../assets/blazer.webp'
+import blazerD from '../assets/blazerD.webp'
 import kurta from '../assets/kurta.webp'
+import kurtaD from '../assets/kurtaD.webp'
 import menShirt from '../assets/menShirt.avif'
 import menTshirt from '../assets/menTshirt.webp'
 import menJeans from '../assets/menStraightJeans.jpeg'
@@ -200,7 +210,10 @@ export const collectionData = [
     description: "Premium denim jeans with strong stitching and modern street-style fit.",
     rating: 4.5,
     price: 35,
-    image: denimMen,
+    image: {
+      mobile: denimMen,
+      desktop: denimMenD
+    },
     category: 'Men',
     discountPrice: 45
   },
@@ -210,7 +223,10 @@ export const collectionData = [
     description: "Windproof winter jacket with padded heating layer for cold protection.",
     rating: 4.2,
     price: 32,
-    image: jacketMen,
+    image: {
+      mobile: jacketMen,
+      desktop: jacketMenD
+    },
     category: 'Men',
     discountPrice: 44
   },
@@ -220,7 +236,10 @@ export const collectionData = [
     description: "Slim-fit men jeans with flexible fabric for daily and casual wear.",
     rating: 4.6,
     price: 34,
-    image: jeans,
+    image: {
+      mobile: jeans,
+      desktop: jeansD
+    },
     category: 'Men',
     discountPrice: 50
   },
@@ -230,7 +249,10 @@ export const collectionData = [
     description: "Stylish polished chain for trendy casual and party fashion.",
     rating: 4.2,
     price: 18,
-    image: chain,
+    image: {
+      mobile: chain,
+      desktop: chainD
+    },
     category: 'Men',
     discountPrice: 28
   },
@@ -240,7 +262,10 @@ export const collectionData = [
     description: "Loose-fit palazzo pants with breathable fabric for summer fashion.",
     rating: 4.4,
     price: 25,
-    image: palazoo,
+    image: {
+      mobile: palazoo,
+      desktop: palazooD
+    },
     category: 'Women',
     discountPrice: 32
   },
@@ -250,7 +275,10 @@ export const collectionData = [
     description: "Trendy crop top with smooth fabric and party-ready design.",
     rating: 4.0,
     price: 21,
-    image: topWomen,
+    image: {
+      mobile: topWomen,
+      desktop: topWomenD
+    },
     category: 'Women',
     discountPrice: 30
   },
@@ -260,7 +288,10 @@ export const collectionData = [
     description: "Elegant knee-length dress for parties, dinner dates, and events.",
     rating: 4.3,
     price: 29,
-    image: kneeDress,
+    image: {
+      mobile: kneeDress,
+      desktop: kneeDressD
+    },
     category: 'Women',
     discountPrice: 40
   },
@@ -270,7 +301,10 @@ export const collectionData = [
     description: "Designer evening gown with luxurious fabric and royal finish.",
     rating: 4.1,
     price: 39,
-    image: gown,
+    image: {
+      mobile: gown,
+      desktop: gownD
+    },
     category: 'Women',
     discountPrice: 59
   },
@@ -280,7 +314,10 @@ export const collectionData = [
     description: "Formal blazer for office and events with sharp tailoring.",
     rating: 4.5,
     price: 31,
-    image: blazer,
+    image: {
+      mobile: blazer,
+      desktop: blazerD
+    },
     category: 'Men',
     discountPrice: 40
   },
@@ -290,7 +327,10 @@ export const collectionData = [
     description: "Classic traditional kurta with lightweight cotton fabric.",
     rating: 4.8,
     price: 30,
-    image: kurta,
+    image: {
+      mobile: kurta,
+      desktop: kurtaD
+    },
     category: 'Men',
     discountPrice: 35
   }
