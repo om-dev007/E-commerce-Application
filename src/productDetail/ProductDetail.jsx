@@ -46,7 +46,7 @@ const ProductDetail = () => {
             {[1, 2, 3].map((_, i) => (
               <img
                 key={i}
-                src={product.image}
+                src={product.image.desktop}
                 alt=""
                 className="w-16 h-16 lg:w-20 lg:h-20 rounded-lg object-cover cursor-pointer"
               />
@@ -54,14 +54,20 @@ const ProductDetail = () => {
           </div>
 
           <div className="flex order-1 lg:order-2 justify-center items-center">
-            <img
-              src={product.image}
-              alt={product.title}
-              loading="lazy"
-              fetchPriority="high"
-              className="w-full max-w-[260px] sm:max-w-[300px] md:max-w-[320px] lg:max-w-[380px]
-                   aspect-3/4 object-contain rounded-xl"
-            />
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcSet={product.image.desktop}
+              />
+              <img
+                src={product.image.mobile}
+                alt={product.title}
+                loading="lazy"
+                fetchPriority="high"
+                className="w-full max-w-[260px] sm:max-w-[300px] md:max-w-[320px] lg:max-w-[380px] object-cover rounded-xl"
+              />
+            </picture>
+
           </div>
 
           <div className="space-y-5 order-3 md:order-3 text-center lg:text-start md:text-left">
@@ -76,10 +82,10 @@ const ProductDetail = () => {
               </div>
               <div>
                 <span className="text-sm text-gray-600 font-medium">
-                {product.rating}
-              </span>
+                  {product.rating}
+                </span>
               </div>
-              
+
             </div>
 
             <div className="flex gap-4 justify-center lg:justify-start items-center">

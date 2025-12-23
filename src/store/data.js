@@ -1,14 +1,24 @@
 import formalShirt from '../assets/formalShirt.webp'
+import formalShirtD from '../assets/formalShirtD.webp'
 import saree from '../assets/women2.webp'
-import jacket from '../assets/menFormalPant.jpg'
+import sareeD from '../assets/women2D.webp'
+import formalPant from '../assets/menFormalPant.jpg'
+import formalPantD from '../assets/menFormalPantD.webp'
 import tshirt from '../assets/men3.webp'
+import tshirtD from '../assets/men3D.webp'
 import dress from '../assets/womenDress.webp'
+import dressD from '../assets/womenDressD.webp'
 import lower from '../assets/menLower.webp'
+import lowerD from '../assets/menLowerD.webp'
 import leggis from '../assets/womenHeels.webp'
+import leggisD from '../assets/womenHeelsD.webp'
 import womenSkirts from '../assets/womenSkirtts.webp'
 import kurti from '../assets/kurti.webp'
+import kurtiD from '../assets/kurtiD.webp'
 import hoodie from '../assets/hoodie.webp'
+import hoodieD from '../assets/hoodieD.webp'
 import KidsDresses from '../assets/KidsDresses.webp'
+import KidsDressesD from '../assets/KidsDressesD.webp'
 import gown from '../assets/gown.webp'
 import denimMen from '../assets/denimMen.webp'
 import jacketMen from '../assets/jacketMen.webp'
@@ -54,17 +64,23 @@ export const data = [
     id: 41,
     title: "Kurti",
     rating: 4.5,
-    image: kurti,
-    description: "Soft rayon fabric kurti with elegant ethnic prints. Perfect for office wear, daily use, and festive styling.",
-    category: 'Women',
+    image: {
+      mobile: kurti,
+      desktop: kurtiD
+    },
+    category: "Women",
     price: 22,
-    discountPrice: 35
+    discountPrice: 35,
+    description: "Soft rayon fabric kurti with elegant ethnic prints. Perfect for office wear, daily use, and festive styling.",
   },
   {
     id: 42,
     title: "Formal Shirt",
     rating: 4.2,
-    image: formalShirt,
+    image: {
+      mobile: formalShirt,
+      desktop: formalShirtD
+    },
     description: "Premium cotton formal shirt with sharp fitting and breathable fabric for office and meetings.",
     category: 'Men',
     price: 28,
@@ -74,7 +90,10 @@ export const data = [
     id: 43,
     title: 'Saree',
     rating: 4.3,
-    image: saree,
+    image: {
+      mobile: saree,
+      desktop: sareeD
+    },
     description: "Lightweight saree with rich borders and smooth texture for graceful traditional looks.",
     category: 'Women',
     price: 30,
@@ -84,7 +103,10 @@ export const data = [
     id: 44,
     title: 'Formal Pant',
     rating: 4.3,
-    image: jacket,
+    image: {
+      mobile: formalPant,
+      desktop: formalPantD
+    },
     description: "Slim-fit formal trousers with stretch comfort for long office hours and professional use.",
     category: 'Men',
     price: 25,
@@ -94,7 +116,10 @@ export const data = [
     id: 45,
     title: 'T-shirt',
     rating: 4.6,
-    image: tshirt,
+    image: {
+      mobile: tshirt,
+      desktop: tshirtD
+    },
     description: "Trendy casual t-shirt made from soft cotton fabric for daily wear and casual outings.",
     category: 'Men',
     price: 24,
@@ -104,7 +129,10 @@ export const data = [
     id: 46,
     title: 'Women Dress',
     rating: 4.3,
-    image: dress,
+    image: {
+      mobile: dress,
+      desktop: dressD
+    },
     description: "Stylish women dress with smooth fall and modern fitting for parties and casual events.",
     category: 'Women',
     price: 29,
@@ -114,7 +142,10 @@ export const data = [
     id: 47,
     title: 'Lower',
     rating: 4.1,
-    image: lower,
+    image: {
+      mobile: lower,
+      desktop: lowerD
+    },
     description: "Comfort fit casual lower for jogging, gym workouts, and daily home wear.",
     category: 'Men',
     price: 20,
@@ -124,7 +155,10 @@ export const data = [
     id: 48,
     title: 'Heels',
     rating: 4.3,
-    image: leggis,
+    image: {
+      mobile: leggis,
+      desktop: leggisD
+    },
     description: "Stretchable leggings with smooth fabric for perfect comfort and daily flexibility.",
     category: 'Women',
     price: 18,
@@ -134,7 +168,10 @@ export const data = [
     id: 49,
     title: 'Hoodie',
     rating: 4.5,
-    image: hoodie,
+    image: {
+      mobile: hoodie,
+      desktop: hoodieD
+    },
     description: "Warm winter hoodie with premium fleece lining for street style and winter protection.",
     category: 'Men',
     price: 35,
@@ -144,7 +181,10 @@ export const data = [
     id: 50,
     title: 'Tunic Pant Set',
     rating: 4.4,
-    image: KidsDresses,
+    image: {
+      mobile: KidsDresses,
+      desktop: KidsDressesD
+    },
     description: "Ultra-soft breathable women innerwear designed for daily comfort and hygiene.",
     category: 'Women',
     price: 15,
