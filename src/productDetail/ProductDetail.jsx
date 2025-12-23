@@ -60,7 +60,7 @@ const ProductDetail = () => {
                 srcSet={product.image.desktop}
               />
               <img
-                src={product.image.mobile}
+                src={product.image.desktop}
                 alt={product.title}
                 loading="lazy"
                 fetchPriority="high"
