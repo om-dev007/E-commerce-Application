@@ -2,11 +2,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-import logo from "../assets/heroImg.png";
-import Hero2 from '../assets/Hero2.png'
-import Hero7 from '../assets/HeroImg7.png'
-import Hero8 from '../assets/HeroImg8.png'
-import Hero10 from '../assets/HeroImg10.png'
+import logo from "../assets/heroImg.webp";
+import Hero2 from '../assets/Hero2.webp'
+import Hero7 from '../assets/HeroImg7.webp'
+import Hero8 from '../assets/HeroImg8.webp'
+import Hero10 from '../assets/HeroImg10.webp'
 
 const heroImages = [logo, Hero2, Hero8, Hero7, Hero10];
 
