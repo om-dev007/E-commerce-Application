@@ -6,7 +6,8 @@ const Cards = ({ data }) => {
 ">
       
       <div className="aspect-6/5 overflow-hidden rounded-t-2xl">
-        <img
+        <img 
+          loading="lazy"
           src={data.image}
           alt={data.title}
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
