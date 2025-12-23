@@ -8,12 +8,12 @@ const Navbar = () => {
       <nav className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between px-4 sm:px-6 lg:px-10 py-3">
 
         <div className="flex items-center justify-between w-full sm:w-auto">
-          <NavLink to="/" className="flex items-center gap-1">
+          <NavLink to="/" className="flex items-center">
             <span className="font-serif text-4xl sm:text-5xl text-[#1F3D2B]">
               V
             </span>
             <span className="font-semibold text-xl sm:text-2xl text-[#1F3D2B]">
-              Velnixa
+              elnixa
             </span>
           </NavLink>
 

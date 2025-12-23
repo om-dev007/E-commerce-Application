@@ -12,9 +12,9 @@ const Footer = () => {
             >
 
                 <div className="space-y-4 flex flex-col items-center md:items-start">
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center">
                         <span className="font-serif text-4xl sm:text-5xl text-white">V</span>
-                        <h2 className="text-2xl font-semibold text-white">Velnixa</h2>
+                        <h2 className="text-2xl font-semibold text-white">elnixa</h2>
                     </div>
 
                     <p className="text-sm leading-relaxed max-w-xs">
