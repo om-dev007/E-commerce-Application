@@ -57,6 +57,8 @@ const ProductDetail = () => {
             <img
               src={product.image}
               alt={product.title}
+              loading="lazy"
+              fetchPriority="high"
               className="w-full max-w-[260px] sm:max-w-[300px] md:max-w-[320px] lg:max-w-[380px]
                    aspect-3/4 object-contain rounded-xl"
             />
