@@ -1,14 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom";
 import "swiper/css";
 
 import Hero1 from "../assets/heroImg.webp";
 import Hero2 from "../assets/Hero2.webp";
-import Hero7 from "../assets/HeroImg7.webp";
 import Hero8 from "../assets/HeroImg8.webp";
-import Hero10 from "../assets/HeroImg10.webp";
 
-const heroImages = [Hero1, Hero2, Hero8, Hero7, Hero10];
+const heroImages = [Hero1, Hero2, Hero8];
 
 const Hero = () => {
   return (
@@ -52,9 +51,9 @@ const Hero = () => {
                   Fashion that fits your life
                 </p>
 
-                <button className="mt-5 w-fit px-6 py-2.5 bg-[#2F6B4F] hover:bg-[#24563F] transition-all text-white rounded-lg">
+                <Link to="/womens" className="mt-5 w-fit px-6 py-2.5 bg-[#2F6B4F] hover:bg-[#24563F] transition-all text-white rounded-lg cursor-pointer">
                   Shop Now
-                </button>
+                </Link>
               </div>
             </div>
           </SwiperSlide>
