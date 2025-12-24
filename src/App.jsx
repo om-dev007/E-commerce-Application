@@ -11,6 +11,7 @@ import Offices from "./pages/Offices"
 import ScrollToTop from "./components/ScrollToTop"
 import Login from "./LoginSignUp/Login"
 import Cart from "./pages/Cart"
+import NewArrival from "./pages/NewArrival"
 import Like from "./pages/Like"
 
 const isMaintenance = import.meta.env.VITE_MAINTENANCE === "true";
@@ -49,6 +50,7 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/like" element={<Like />} />
         <Route path="/offices" element={<Offices />} />
+        <Route path="/new-arrivals" element={<NewArrival/>} />
       </Routes>
     </div>
   )

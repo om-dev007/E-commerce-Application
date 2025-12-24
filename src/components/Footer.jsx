@@ -39,12 +39,10 @@ const Footer = () => {
                             <li><NavLink to="/mens" className="hover:text-white">Men</NavLink></li>
                             <li><NavLink to="/womens" className="hover:text-white">Women</NavLink></li>
                             <li><NavLink to="/kids" className="hover:text-white">Kids</NavLink></li>
-                            <li><NavLink to="/" className="hover:text-white">New Arrivals</NavLink></li>
+                            <li><NavLink to="/new-arrivals" className="hover:text-white">New Arrivals</NavLink></li>
                         </ul>
                     </div>
                 </div>
-
-
 
             </div>
 
