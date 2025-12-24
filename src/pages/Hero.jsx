@@ -51,7 +51,7 @@ const Hero = () => {
                   Fashion that fits your life
                 </p>
 
-                <Link to="/womens" className="mt-5 w-fit px-6 py-2.5 bg-[#2F6B4F] hover:bg-[#24563F] transition-all text-white rounded-lg cursor-pointer">
+                <Link to="/mens" className="mt-5 w-fit px-6 py-2.5 bg-[#2F6B4F] hover:bg-[#24563F] transition-all text-white rounded-lg cursor-pointer">
                   Shop Now
                 </Link>
               </div>

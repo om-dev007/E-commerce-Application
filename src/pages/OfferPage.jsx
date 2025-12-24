@@ -1,5 +1,6 @@
 import React from "react";
 import offerGirl from "../assets/offerGirl.webp";
+import { Link } from "react-router-dom";
 
 const OfferPage = () => {
   return (
@@ -24,8 +25,8 @@ const OfferPage = () => {
             On select styles
           </p>
 
-          <button className="
-            mt-5
+          <Link to="/womens" className="
+            mt-5 inline-block
             bg-[#2F6B4F]
             hover:bg-[#24563F]
             text-white cursor-pointer
@@ -34,9 +35,7 @@ const OfferPage = () => {
             shadow-md
             transition-all duration-300
             hover:translate-y-0.5
-          ">
-            Grab the Deal
-          </button>
+          ">Grab the Deal</Link>
         </div>
 
         <div className="flex relative bg-white rounded-2xl shadow-lg justify-center md:justify-end w-auto md:w-auto">
