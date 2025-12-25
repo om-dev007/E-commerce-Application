@@ -1,9 +1,12 @@
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useCart } from "../context/CartContext";
+import { CreditCard, Wallet, Truck } from "lucide-react";
 
 const Checkout = () => {
   const { cartItems } = useCart();
+  const [paymentMethod, setPaymentMethod] = useState("");
 
   const subtotal = cartItems.reduce(
     (acc, item) => acc + item.price * item.quantity,
@@ -17,15 +20,12 @@ const Checkout = () => {
       <section className="min-h-screen bg-[#FAF8F5] px-4 sm:px-8 md:px-16 py-12">
         <div className="max-w-4xl mx-auto">
 
-          {/* PAGE TITLE */}
           <h1 className="text-3xl md:text-4xl font-semibold text-[#1F3D2B] text-center mb-12">
             Checkout
           </h1>
 
-          {/* MAIN CARD */}
           <div className="bg-white rounded-3xl shadow-sm p-6 sm:p-10">
 
-            {/* ORDER ITEMS */}
             <div className="mb-10">
               <h2 className="text-lg font-semibold text-gray-900 mb-6">
                 Order Summary
@@ -52,7 +52,55 @@ const Checkout = () => {
               </div>
             </div>
 
-            {/* PRICE BREAKDOWN */}
+            <div className="mb-10">
+              <h2 className="text-lg font-semibold text-gray-900 mb-6">
+                Payment Method
+              </h2>
+
+              <div className="space-y-4">
+
+                <button
+                  onClick={() => setPaymentMethod("upi")}
+                  className={`w-full flex items-center gap-4 p-4 rounded-xl border transition
+                    ${paymentMethod === "upi"
+                      ? "border-[#2F6B4F] bg-[#E6EEE8]"
+                      : "border-gray-200 hover:border-gray-300"}`}
+                >
+                  <Wallet className="text-[#2F6B4F]" />
+                  <span className="font-medium text-gray-800">
+                    UPI / Wallets
+                  </span>
+                </button>
+
+                <button
+                  onClick={() => setPaymentMethod("card")}
+                  className={`w-full flex items-center gap-4 p-4 rounded-xl border transition
+                    ${paymentMethod === "card"
+                      ? "border-[#2F6B4F] bg-[#E6EEE8]"
+                      : "border-gray-200 hover:border-gray-300"}`}
+                >
+                  <CreditCard className="text-[#2F6B4F]" />
+                  <span className="font-medium text-gray-800">
+                    Credit / Debit Card
+                  </span>
+                </button>
+
+                <button
+                  onClick={() => setPaymentMethod("cod")}
+                  className={`w-full flex items-center gap-4 p-4 rounded-xl border transition
+                    ${paymentMethod === "cod"
+                      ? "border-[#2F6B4F] bg-[#E6EEE8]"
+                      : "border-gray-200 hover:border-gray-300"}`}
+                >
+                  <Truck className="text-[#2F6B4F]" />
+                  <span className="font-medium text-gray-800">
+                    Cash on Delivery
+                  </span>
+                </button>
+
+              </div>
+            </div>
+
             <div className="border-t pt-6 space-y-3 text-sm text-gray-700">
               <div className="flex justify-between">
                 <span>Subtotal</span>
@@ -70,18 +118,20 @@ const Checkout = () => {
               </div>
             </div>
 
-            {/* PAYMENT BUTTON */}
             <button
-              disabled
-              className="mt-10 w-full bg-[#2F6B4F]/80 text-white py-4 rounded-xl
-                         text-sm font-medium cursor-not-allowed"
+              disabled={!paymentMethod}
+              className={`mt-10 w-full py-4 rounded-xl text-sm font-medium transition
+                ${paymentMethod
+                  ? "bg-[#2F6B4F] hover:bg-[#24563F] text-white"
+                  : "bg-gray-300 text-gray-500 cursor-not-allowed"}`}
             >
-              Payment Coming Soon
+              {paymentMethod
+                ? "Proceed to Payment"
+                : "Select a Payment Method"}
             </button>
 
-            {/* INFO TEXT */}
             <p className="mt-4 text-center text-xs text-gray-400">
-              Secure payment integration will be available soon.
+              Secure payment gateway will be integrated soon.
             </p>
 
           </div>
