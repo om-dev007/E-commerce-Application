@@ -6,13 +6,20 @@ import {
   data,
   collectionData,
 } from "../store/data";
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { ArrowRight } from "lucide-react";
 import { Star } from "lucide-react";
+import { useCart } from "../context/CartContext";
+import Toast from "../components/Toast";
 
 const ProductDetail = () => {
   const { id } = useParams();
+
+  const [quantity, setQuantity] = useState(1);
+  const { addToCart } = useCart();
+  const [toast, setToast] = useState(null);
 
   const product =
     menData.find((item) => item.id == id) ||
@@ -120,6 +127,12 @@ const ProductDetail = () => {
             </div>
 
             <button
+              onClick={() => {
+                addToCart(product, quantity);
+                setQuantity(1);
+                setToast({ message: "Added to cart successfully", type: "success" });
+                setTimeout(() => setToast(null), 2000);
+              }}
               className="mt-4 flex justify-self-center lg:justify-self-start bg-[#2F6B4F] hover:bg-[#24563F] 
                          text-white px-8 py-3 rounded-lg font-medium
                          transition-all cursor-pointer outline-0"
@@ -130,6 +143,11 @@ const ProductDetail = () => {
 
         </div>
       </section>
+      {toast && (
+        <div className="fixed top-5 right-5 z-50">
+          <Toast message={toast.message} type={toast.type} />
+        </div>
+      )}
 
       <Footer />
     </>
