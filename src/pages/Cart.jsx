@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import { useCart } from "../context/CartContext";
 import { Minus, Plus, Trash2 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const {
@@ -16,6 +17,8 @@ const Cart = () => {
     (acc, item) => acc + item.price * item.quantity,
     0
   );
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -120,7 +123,7 @@ const Cart = () => {
                 <span>${subtotal.toFixed(2)}</span>
               </div>
 
-              <button className="mt-6 w-full bg-[#2F6B4F] hover:bg-[#24563F] text-white py-3 rounded-xl font-medium transition">
+              <button onClick={() => navigate("/checkout")} className="mt-6 w-full bg-[#2F6B4F] hover:bg-[#24563F] text-white py-3 rounded-xl font-medium transition cursor-pointer">
                 Proceed to Checkout
               </button>
             </div>
