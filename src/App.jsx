@@ -13,6 +13,7 @@ import Login from "./LoginSignUp/Login"
 import Cart from "./pages/Cart"
 import NewArrival from "./pages/NewArrival"
 import Like from "./pages/Like"
+import Checkout from "./pages/Checkout"
 
 const isMaintenance = import.meta.env.VITE_MAINTENANCE === "true";
 
@@ -51,6 +52,7 @@ const App = () => {
         <Route path="/like" element={<Like />} />
         <Route path="/offices" element={<Offices />} />
         <Route path="/new-arrivals" element={<NewArrival/>} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </div>
   )
