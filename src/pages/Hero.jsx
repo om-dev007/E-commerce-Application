@@ -12,6 +12,7 @@ const heroImages = [Hero1, Hero2, Hero8];
 const Hero = () => {
   return (
     <section className="relative w-full sm:min-h-[90vh] overflow-hidden">
+
       <Swiper
         modules={[Autoplay]}
         loop
@@ -26,39 +27,41 @@ const Hero = () => {
       >
         {heroImages.map((img, index) => (
           <SwiperSlide key={index}>
-            <div className="relative sm:min-h-[90vh] py-20 sm:py-0 flex items-center px-4 sm:px-10 md:px-20">
-
-              <img
-                src={img}
-                alt="Hero background"
-                className="absolute inset-0 w-full h-full object-cover"
-                loading={index === 0 ? "eager" : "lazy"}
-                fetchpriority={index === 0 ? "high" : "auto"}
-              />
-
-              <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/30 to-black/10"></div>
-
-              <div className="relative z-10 flex flex-col font-playfair gap-3 max-w-xl">
-                <h1 className="text-2xl sm:text-4xl lg:text-6xl xl:text-7xl font-extrabold text-[#f3f2f2ea]">
-                  Effortlessly Chic.
-                </h1>
-
-                <h2 className="text-sm sm:text-xl lg:text-3xl font-semibold text-[#f3f2f2ea]">
-                  Explore New Collections
-                </h2>
-
-                <p className="text-xs sm:text-sm lg:text-lg text-white max-w-md">
-                  Fashion that fits your life
-                </p>
-
-                <Link to="/mens" className="mt-5 w-fit px-6 py-2.5 bg-[#2F6B4F] hover:bg-[#24563F] transition-all text-white rounded-lg cursor-pointer">
-                  Shop Now
-                </Link>
-              </div>
-            </div>
+            <img
+              src={img}
+              alt="Hero background"
+              className="w-full h-[90vh] object-cover"
+              loading={index === 0 ? "eager" : "lazy"}
+              fetchPriority={index === 0 ? "high" : "auto"}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
+
+      <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/30 to-black/10 z-10" />
+
+      <div className="absolute inset-0 z-20 flex items-center px-4 sm:px-10 md:px-20">
+        <div className="flex flex-col font-playfair gap-3 max-w-xl">
+          <h1 className="text-2xl sm:text-4xl lg:text-6xl xl:text-7xl font-extrabold text-[#f3f2f2ea]">
+            Effortlessly Chic.
+          </h1>
+
+          <h2 className="text-sm sm:text-xl lg:text-3xl font-semibold text-[#f3f2f2ea]">
+            Explore New Collections
+          </h2>
+
+          <p className="text-xs sm:text-sm lg:text-lg text-white max-w-md">
+            Fashion that fits your life
+          </p>
+
+          <Link
+            to="/mens"
+            className="mt-5 w-fit px-6 py-2.5 bg-[#2F6B4F] hover:bg-[#24563F] transition-all text-white rounded-lg"
+          >
+            Shop Now
+          </Link>
+        </div>
+      </div>
     </section>
   );
 };
