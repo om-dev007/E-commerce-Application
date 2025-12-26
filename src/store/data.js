@@ -102,7 +102,7 @@ import womenTrouserD from '../assets/womenLooseTrouserD.webp'
 export const data = [
   {
     id: 41,
-    title: "Kurti",
+    title: "Kurti new data changes for the offices usages so will ou ualdf take it or not now tell me ",
     rating: 4.5,
     image: {
       mobile: kurti,
