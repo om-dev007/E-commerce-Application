@@ -51,23 +51,29 @@ const Cart = () => {
                   className="bg-white rounded-2xl p-5 flex gap-5 items-center shadow-sm"
                 >
 
-                  <img
-                    src={item.image?.desktop || item.image}
-                    alt={item.title}
-                    className="w-24 h-28 object-cover rounded-xl"
-                  />
+                  <Link to={`/product/${item.id}`}>
+                    <img
+                      src={item.image?.desktop || item.image}
+                      alt={item.title}
+                      className="w-24 h-28 object-cover rounded-xl"
+                    />
+                  </Link>
 
                   <div className="flex-1">
                     <h3 className="font-medium text-gray-900">
                       {item.title}
                     </h3>
+                    <p className="text-xs text-gray-500 mt-1">
+                      Size: <span className="font-medium">{item.size}</span>
+                    </p>
+
                     <p className="text-sm text-gray-500 mt-1">
                       ${item.price} each
                     </p>
 
                     <div className="flex items-center gap-3 mt-4">
                       <button
-                        onClick={() => decreaseQty(item.id)}
+                        onClick={() => decreaseQty(item.id, item.size)}
                         disabled={item.quantity === 1}
                         className="w-8 h-8 flex items-center justify-center border border-[#1F3D2B] cursor-pointer outline-0 rounded-full disabled:opacity-40 disabled:cursor-default"
                       >
@@ -79,7 +85,7 @@ const Cart = () => {
                       </span>
 
                       <button
-                        onClick={() => increaseQty(item.id)}
+                        onClick={() => increaseQty(item.id, item.size)}
                         disabled={item.quantity === 10}
                         className="w-8 h-8 flex items-center cursor-pointer outline-0 justify-center border border-[#1F3D2B] rounded-full disabled:opacity-40 disabled:cursor-default"
                       >
@@ -93,7 +99,7 @@ const Cart = () => {
                       ${(item.price * item.quantity)}
                     </p>
                     <button
-                      onClick={() => removeFromCart(item.id)}
+                      onClick={() => removeFromCart(item.id, item.size)}
                       className="text-gray-400 hover:text-red-500 transition"
                     >
                       <Trash2 size={18} />

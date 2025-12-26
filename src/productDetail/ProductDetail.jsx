@@ -20,6 +20,8 @@ const ProductDetail = () => {
   const [quantity, setQuantity] = useState(1);
   const { addToCart } = useCart();
   const [toast, setToast] = useState(null);
+  const [selectedSize, setSelectedSize] = useState(null);
+
 
   const product =
     menData.find((item) => item.id == id) ||
@@ -116,29 +118,33 @@ const ProductDetail = () => {
                 {["S", "M", "L", "XL", "XXL"].map((size) => (
                   <button
                     key={size}
-                    className="border border-gray-300 px-4 py-2 rounded-lg text-sm
-                               hover:border-[#1F3D2B] hover:bg-[#E6EEE8]
-                               transition-all cursor-pointer outline-0"
+                    onClick={() => setSelectedSize(size)}
+                    className={`px-4 outline-0 py-2 cursor-pointer rounded-lg text-sm border transition-all ${selectedSize === size ? "border-[#1F3D2B] bg-[#E6EEE8] text-[#1F3D2B] font-medium" : "border-gray-300 hover:border-[#1F3D2B]"}`}
                   >
                     {size}
                   </button>
                 ))}
               </div>
+
             </div>
 
             <button
+              disabled={!selectedSize}
               onClick={() => {
-                addToCart(product, quantity);
+                addToCart({ ...product, size: selectedSize }, quantity);
                 setQuantity(1);
+                setSelectedSize(null);
                 setToast({ message: "Added to cart successfully", type: "success" });
                 setTimeout(() => setToast(null), 2000);
               }}
-              className="mt-4 flex justify-self-center lg:justify-self-start bg-[#2F6B4F] hover:bg-[#24563F] 
-                         text-white px-8 py-3 rounded-lg font-medium
-                         transition-all cursor-pointer outline-0"
+              className={`mt-4 px-8 py-3 outline-0 rounded-lg font-medium transition ${selectedSize 
+                  ? "bg-[#2F6B4F] hover:bg-[#24563F] cursor-pointer text-white"
+                  : "bg-gray-300 text-gray-500 cursor-not-allowed"
+                }`}
             >
               Add to Cart
             </button>
+
           </div>
 
         </div>
