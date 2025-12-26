@@ -100,7 +100,7 @@ const Cart = () => {
                     </p>
                     <button
                       onClick={() => removeFromCart(item.id, item.size)}
-                      className="text-gray-400 hover:text-red-500 transition"
+                      className="text-gray-400 hover:text-red-500 cursor-pointer transition"
                     >
                       <Trash2 size={18} />
                     </button>
