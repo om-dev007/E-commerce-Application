@@ -1,16 +1,27 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Heart, ShoppingCart, Menu, X, UserRound } from "lucide-react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+  if (open) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+
+  return () => {
+    document.body.style.overflow = "auto";
+  };
+}, [open]);
+
 
   return (
     <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 md:px-16">
         <div className="flex items-center justify-between h-16">
 
-          {/* LOGO */}
           <NavLink to="/" className="flex items-center">
             <span className="font-serif text-4xl sm:text-5xl text-[#1F3D2B]">
               V
@@ -20,7 +31,6 @@ const Navbar = () => {
             </span>
           </NavLink>
 
-          {/* DESKTOP LINKS */}
           <div className="hidden gap-6 sm:flex sm:gap-8 mt-3 sm:mt-0 text-sm sm:text-base font-medium">
             <NavItem to="/" label="Home" />
             <NavItem to="/mens" label="Men" />
@@ -28,14 +38,12 @@ const Navbar = () => {
             <NavItem to="/kids" label="Kids" />
           </div>
 
-          {/* DESKTOP ICONS */}
           <div className="hidden sm:flex items-center gap-5">
             <NavIcon to="/like" icon={<Heart />} />
             <NavIcon to="/login" icon={<UserRound />} />
             <NavIcon to="/cart" icon={<ShoppingCart />} />
           </div>
 
-          {/* HAMBURGER */}
           <button
             onClick={() => setOpen(!open)}
             className="sm:hidden outline-0 text-[#1F3D2B]"
@@ -46,8 +54,6 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* MOBILE MENU */}
-      {/* MOBILE MENU */}
 <div
   className={`
     sm:hidden fixed top-0 left-0 w-full h-screen bg-white z-40
@@ -55,18 +61,17 @@ const Navbar = () => {
     ${open ? "translate-y-0" : "-translate-y-full"}
   `}
 >
-  {/* Header */}
-  <div className="flex items-center justify-between px-5 h-16 border-b">
+
+  <div className="flex items-center justify-between px-5 h-16 border-b border-gray-200 shadow-sm">
     <div className="flex items-center">
       <span className="font-serif text-3xl text-[#1F3D2B]">V</span>
       <span className="font-semibold text-lg text-[#1F3D2B]">elnixa</span>
     </div>
     <button onClick={() => setOpen(false)}>
-      <X size={24} />
+      <X className="text-[#1F3D2B]" size={24} />
     </button>
   </div>
 
-  {/* Links */}
   <div className="px-6 pt-8 flex flex-col gap-6 text-base font-medium">
     <MobileNavItem to="/" label="Home" onClick={() => setOpen(false)} />
     <MobileNavItem to="/mens" label="Men" onClick={() => setOpen(false)} />
@@ -74,8 +79,7 @@ const Navbar = () => {
     <MobileNavItem to="/kids" label="Kids" onClick={() => setOpen(false)} />
   </div>
 
-  {/* Icons */}
-  <div className="mt-10 px-6 pt-6 border-t flex gap-8">
+  <div className="mt-10 px-6 pt-6 border-t border-gray-200 flex gap-8">
     <NavIcon to="/like" icon={<Heart size={22} />} />
     <NavIcon to="/login" icon={<UserRound size={22} />} />
     <NavIcon to="/cart" icon={<ShoppingCart size={22} />} />
