@@ -61,10 +61,10 @@ const Checkout = () => {
 
                 <button
                   onClick={() => setPaymentMethod("upi")}
-                  className={`w-full flex items-center gap-4 p-4 rounded-xl border transition
+                  className={`w-full flex items-center cursor-pointer outline-0 gap-4 p-4 rounded-xl border transition
                     ${paymentMethod === "upi"
                       ? "border-[#2F6B4F] bg-[#E6EEE8]"
-                      : "border-gray-200 hover:border-gray-300"}`}
+                      : "border-gray-200 hover:border-gray-400"}`}
                 >
                   <Wallet className="text-[#2F6B4F]" />
                   <span className="font-medium text-gray-800">
@@ -74,10 +74,10 @@ const Checkout = () => {
 
                 <button
                   onClick={() => setPaymentMethod("card")}
-                  className={`w-full flex items-center gap-4 p-4 rounded-xl border transition
+                  className={`w-full flex items-center gap-4 cursor-pointer outline-0 p-4 rounded-xl border transition
                     ${paymentMethod === "card"
                       ? "border-[#2F6B4F] bg-[#E6EEE8]"
-                      : "border-gray-200 hover:border-gray-300"}`}
+                      : "border-gray-200 hover:border-gray-400"}`}
                 >
                   <CreditCard className="text-[#2F6B4F]" />
                   <span className="font-medium text-gray-800">
@@ -87,10 +87,10 @@ const Checkout = () => {
 
                 <button
                   onClick={() => setPaymentMethod("cod")}
-                  className={`w-full flex items-center gap-4 p-4 rounded-xl border transition
+                  className={`w-full flex items-center gap-4 cursor-pointer outline-0 p-4 rounded-xl border transition
                     ${paymentMethod === "cod"
                       ? "border-[#2F6B4F] bg-[#E6EEE8]"
-                      : "border-gray-200 hover:border-gray-300"}`}
+                      : "border-gray-200 hover:border-gray-400"}`}
                 >
                   <Truck className="text-[#2F6B4F]" />
                   <span className="font-medium text-gray-800">
