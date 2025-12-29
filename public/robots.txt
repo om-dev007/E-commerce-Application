@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /login
+Disallow: /checkout
+Disallow: /cart
+Disallow: /like
+
+Sitemap: https://velnixa.vercel.app/sitemap.xml
