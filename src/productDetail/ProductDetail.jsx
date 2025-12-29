@@ -13,6 +13,7 @@ import { ArrowRight } from "lucide-react";
 import { Star } from "lucide-react";
 import { useCart } from "../context/CartContext";
 import Toast from "../components/Toast";
+import { Helmet } from "react-helmet-async";
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -32,8 +33,57 @@ const ProductDetail = () => {
 
   if (!product) return null;
 
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.title,
+    image: [
+      product.image.desktop || product.image.mobile
+    ],
+    description: product.description,
+    brand: {
+      "@type": "Brand",
+      name: "Velnixa"
+    },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "INR",
+      price: product.price,
+      availability: "https://schema.org/InStock",
+      url: `https://velnixa.vercel.app/product/${id}`
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: product.rating,
+      reviewCount: "20"
+    }
+  };
+
+
   return (
     <>
+      <Helmet>
+        <title>{product.title} | Buy Online at Velnixa</title>
+
+        <meta
+          name="description"
+          content={product.description}
+        />
+
+        <link
+          rel="canonical"
+          href={`https://velnixa.vercel.app/product/${id}`}
+        />
+
+        <meta property="og:title" content={product.title} />
+        <meta property="og:description" content={product.description} />
+        <meta property="og:url" content={`https://velnixa.vercel.app/product/${id}`} />
+        <meta property="og:type" content="product" />
+
+        <script type="application/ld+json">
+          {JSON.stringify(productSchema)}
+        </script>
+      </Helmet>
       <Navbar />
 
       <div className="bg-[#FAF8F5] py-4text-sm text-gray-500 px-6 md:px-16">
@@ -137,9 +187,9 @@ const ProductDetail = () => {
                 setToast({ message: "Added to cart successfully", type: "success" });
                 setTimeout(() => setToast(null), 2000);
               }}
-              className={`mt-4 px-8 py-3 outline-0 rounded-lg font-medium transition ${selectedSize 
-                  ? "bg-[#2F6B4F] hover:bg-[#24563F] cursor-pointer text-white"
-                  : "bg-gray-300 text-gray-500 cursor-not-allowed"
+              className={`mt-4 px-8 py-3 outline-0 rounded-lg font-medium transition ${selectedSize
+                ? "bg-[#2F6B4F] hover:bg-[#24563F] cursor-pointer text-white"
+                : "bg-gray-300 text-gray-500 cursor-not-allowed"
                 }`}
             >
               Add to Cart
