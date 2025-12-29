@@ -1,10 +1,20 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   return (
     <>
+      <Helmet>
+        <title>About Velnixa | Premium Fashion Brand in India</title>
+        <meta
+          name="description"
+          content="Know more about Velnixa – a premium fashion brand offering trendy men, women and kids wear across India."
+        />
+        <link rel="canonical" href="https://velnixa.vercel.app/about" />
+      </Helmet>
+
       <Navbar />
 
       <div className="min-h-screen bg-linear-to-b from-green-50 to-white px-4 sm:px-6 md:px-16 lg:px-24 py-16">
@@ -21,7 +31,7 @@ const About = () => {
 
         {/* CONTENT */}
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-          
+
           {/* LEFT TEXT */}
           <div className="space-y-5">
             <h2 className="text-xl sm:text-2xl font-semibold text-[#1F3D2B]">

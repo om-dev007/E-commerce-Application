@@ -1,10 +1,20 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet-async";
 
 const Help = () => {
   return (
     <>
+      <Helmet>
+        <title>Help & Support | Velnixa</title>
+        <meta
+          name="description"
+          content="Get help with orders, delivery, returns and payments at Velnixa support center."
+        />
+        <link rel="canonical" href="https://velnixa.vercel.app/help" />
+      </Helmet>
+
       <Navbar />
 
       <div className="min-h-screen bg-linear-to-b from-green-50 to-white px-4 sm:px-6 md:px-16 lg:px-24 py-16">

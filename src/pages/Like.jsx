@@ -3,10 +3,16 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Heart } from "lucide-react";
 import { NavLink } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Like = () => {
   return (
     <>
+      <Helmet>
+        <title>Wishlist | Velnixa</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
+
       <Navbar />
 
       <div className="min-h-[80vh] bg-linear-to-b from-green-50 to-white flex items-center justify-center px-4">

@@ -4,6 +4,7 @@ import { useCart } from "../context/CartContext";
 import { Minus, Plus, Trash2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Cart = () => {
   const {
@@ -22,6 +23,11 @@ const Cart = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Your Cart | Velnixa</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
+
       <Navbar />
 
       <section className="bg-[#FAF8F5] min-h-screen px-4 sm:px-8 md:px-16 py-12">

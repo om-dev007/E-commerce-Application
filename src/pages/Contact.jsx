@@ -1,10 +1,20 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   return (
     <>
+      <Helmet>
+        <title>Contact Us | Velnixa Support</title>
+        <meta
+          name="description"
+          content="Contact Velnixa for order support, queries and business enquiries. We are here to help you."
+        />
+        <link rel="canonical" href="https://velnixa.vercel.app/contact" />
+      </Helmet>
+
       <Navbar />
 
       <section className="relative bg-linear-to-b from-[#FAF8F5] to-[#F2EFEA] min-h-screen px-4 sm:px-8 md:px-16 py-20">

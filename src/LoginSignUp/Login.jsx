@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Toast from "../components/Toast";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
     const [input, setInput] = useState({
@@ -40,6 +41,11 @@ const Login = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Login | Velnixa</title>
+                <meta name="robots" content="noindex, nofollow" />
+            </Helmet>
+
             <Navbar />
 
             <div className="min-h-[80vh] bg-linear-to-b from-green-50 to-white flex items-center justify-center px-4">
@@ -113,7 +119,7 @@ const Login = () => {
                     ))}
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     );
 };

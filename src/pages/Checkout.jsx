@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useCart } from "../context/CartContext";
 import { CreditCard, Wallet, Truck } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const Checkout = () => {
   const { cartItems } = useCart();
@@ -15,6 +16,11 @@ const Checkout = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Checkout | Secure Payment | Velnixa</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
+
       <Navbar />
 
       <section className="min-h-screen bg-[#FAF8F5] px-4 sm:px-8 md:px-16 py-12">

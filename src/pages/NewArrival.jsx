@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Cards from "../components/Cards";
@@ -13,9 +13,17 @@ const NewArrival = () => {
         ...womenData.slice(-3),
         ...kidsData.slice(-3),
     ];
-
     return (
         <>
+            <Helmet>
+                <title>New Arrivals | Latest Fashion Collection | Velnixa</title>
+                <meta
+                    name="description"
+                    content="Explore the latest fashion arrivals at Velnixa. Trendy styles, premium quality & best prices."
+                />
+                <link rel="canonical" href="https://velnixa.vercel.app/new-arrivals" />
+            </Helmet>
+
             <Navbar />
 
             <section className="bg-[#FAF8F5] px-5 sm:px-10 md:px-16 py-10 sm:py-14">
