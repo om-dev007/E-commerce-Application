@@ -14,6 +14,7 @@ import Cart from "./pages/Cart"
 import NewArrival from "./pages/NewArrival"
 import Like from "./pages/Like"
 import Checkout from "./pages/Checkout"
+import Contact from "./pages/Contact"
 
 const isMaintenance = import.meta.env.VITE_MAINTENANCE === "true";
 
@@ -50,6 +51,7 @@ const App = () => {
         <Route path="/offices" element={<Offices />} />
         <Route path="/new-arrivals" element={<NewArrival/>} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
     </div>
   )
