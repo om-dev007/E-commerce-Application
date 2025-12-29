@@ -33,12 +33,7 @@ const NewArrival = () => {
                     {newArrivals.map((item) => (
                         <Link
                             key={item.id}
-                            to={`/${item.category === "Man"
-                                    ? "mens"
-                                    : item.category === "Woman"
-                                        ? "womens"
-                                        : "kids"
-                                }/${item.id}`}
+                            to={`/product/${item.id}`}
                         >
                             <Cards data={item} />
                         </Link>
