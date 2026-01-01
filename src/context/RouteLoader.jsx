@@ -11,10 +11,10 @@ const RouteLoader = () => {
 
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 250);
+    }, 400);
 
     return () => clearTimeout(timer);
-  }, [pathname]);
+  }, [pathname, setLoading]);
 
   return null;
 };
