@@ -11,12 +11,15 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { ArrowRight } from "lucide-react";
 import { Star } from "lucide-react";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/useCart";
 import Toast from "../components/Toast";
 import { Helmet } from "react-helmet-async";
+import { Heart } from "lucide-react";
+import { useWishlist } from "../context/useWishlist";
 
 const ProductDetail = () => {
   const { id } = useParams();
+  const { addToWishlist } = useWishlist()
 
   const [quantity, setQuantity] = useState(1);
   const { addToCart } = useCart();
@@ -123,7 +126,7 @@ const ProductDetail = () => {
                 alt={product.title}
                 loading="lazy"
                 fetchPriority="high"
-                className="w-full max-w-[260px] sm:max-w-[300px] md:max-w-[320px] lg:max-w-[380px] object-cover rounded-xl"
+                className="w-full max-w-65 sm:max-w-75 md:max-w-[320px] lg:max-w-95 object-cover rounded-xl"
               />
             </picture>
 
@@ -178,29 +181,46 @@ const ProductDetail = () => {
 
             </div>
 
-            <button
-              disabled={!selectedSize}
-              onClick={() => {
-                addToCart({ ...product, size: selectedSize }, quantity);
-                setQuantity(1);
-                setSelectedSize(null);
-                setToast({ message: "Added to cart successfully", type: "success" });
-                setTimeout(() => setToast(null), 2000);
-              }}
-              className={`mt-4 px-8 py-3 outline-0 rounded-lg font-medium transition ${selectedSize
-                ? "bg-[#2F6B4F] hover:bg-[#24563F] cursor-pointer text-white"
-                : "bg-gray-300 text-gray-500 cursor-not-allowed"
-                }`}
-            >
-              Add to Cart
-            </button>
+            <div className="flex gap-4 justify-center lg:justify-start items-center">
+              <button
+                disabled={!selectedSize}
+                onClick={() => {
+                  addToCart({ ...product, size: selectedSize }, quantity);
+                  setQuantity(1);
+                  setSelectedSize(null);
+                  setToast({ message: "Added to cart successfully", type: "success" });
+                  setTimeout(() => setToast(null), 2000);
+                }}
+                className={`mt-4 px-5 sm:px-8 py-3 outline-0 rounded-lg font-medium transition ${selectedSize
+                  ? "bg-[#2F6B4F] hover:bg-[#24563F] cursor-pointer text-white"
+                  : "bg-gray-300 text-gray-500 cursor-not-allowed"
+                  }`}
+              >
+                Add to Cart
+              </button>
+
+              <button
+                disabled={!selectedSize}
+                onClick={() => {
+                  addToWishlist({ ...product, size: selectedSize });
+                  setToast({ message: "Added to wishlist ❤️", type: "success" });
+                  setTimeout(() => setToast(null), 2000);
+                }}
+                className={`mt-4 px-4 py-3 outline-0 rounded-lg font-medium transition ${selectedSize
+                  ? "bg-[#2F6B4F] hover:bg-[#24563F] cursor-pointer text-white"
+                  : "bg-gray-300 text-gray-500 cursor-not-allowed"
+                  }`}
+              >
+                <Heart />
+              </button>
+            </div>
 
           </div>
 
         </div>
       </section>
       {toast && (
-        <div className="fixed top-5 right-5 z-50">
+        <div className="fixed top-5 right-5 z-50 animate-toast-in">
           <Toast message={toast.message} type={toast.type} />
         </div>
       )}

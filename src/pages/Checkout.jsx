@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/useCart";
 import { CreditCard, Wallet, Truck } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 

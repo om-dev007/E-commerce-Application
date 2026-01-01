@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/useCart";
 import { Minus, Plus, Trash2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
