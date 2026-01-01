@@ -19,7 +19,6 @@ const About = () => {
 
       <div className="min-h-screen bg-linear-to-b from-green-50 to-white px-4 sm:px-6 md:px-16 lg:px-24 py-16">
 
-        {/* HERO HEADING */}
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#1F3D2B]">
             About Velnixa
@@ -29,10 +28,8 @@ const About = () => {
           </p>
         </div>
 
-        {/* CONTENT */}
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
 
-          {/* LEFT TEXT */}
           <div className="space-y-5">
             <h2 className="text-xl sm:text-2xl font-semibold text-[#1F3D2B]">
               What is Velnixa?
@@ -56,7 +53,6 @@ const About = () => {
             </p>
           </div>
 
-          {/* RIGHT CARD */}
           <div className="
             bg-white 
             rounded-2xl 
