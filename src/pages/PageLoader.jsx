@@ -14,7 +14,7 @@ const PageLoader = () => {
                         border-t-[#1F3D2B]
                         rounded-full animate-spin" />
         <p className="text-sm text-gray-600 tracking-wide">
-          Loading
+          Loading...
         </p>
       </div>
     </div>
