@@ -8,17 +8,20 @@ import 'swiper/css/pagination'
 import { CartProvider } from "./context/CartContext"
 import { WishlistProvider } from './context/WishlistContext.jsx'
 import { HelmetProvider } from 'react-helmet-async'
+import { PageLoaderProvider } from './context/PageLoaderContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <WishlistProvider>
-      <HelmetProvider>
-        <BrowserRouter>
-          <CartProvider>
-            <App />
-          </CartProvider>
-        </BrowserRouter>
-      </HelmetProvider>
-    </WishlistProvider>
+    <PageLoaderProvider>
+      <WishlistProvider>
+        <HelmetProvider>
+          <BrowserRouter>
+            <CartProvider>
+              <App />
+            </CartProvider>
+          </BrowserRouter>
+        </HelmetProvider>
+      </WishlistProvider>
+    </PageLoaderProvider>
   </StrictMode>
 )
