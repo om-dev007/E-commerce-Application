@@ -31,11 +31,13 @@ const Like = () => {
                 className="bg-white rounded-2xl p-4 shadow-sm hover:shadow-md transition
              flex gap-4 items-center"
               >
-                <img
+                <Link to={`/product/${item.id}`} >
+                  <img
                   src={item.image?.desktop || item.image}
                   alt={item.title}
                   className="w-24 h-28 rounded-xl object-cover"
                 />
+                </Link>
 
                 <div className="flex-1 space-y-1">
                   <h3 className="font-semibold text-gray-900 leading-tight">
