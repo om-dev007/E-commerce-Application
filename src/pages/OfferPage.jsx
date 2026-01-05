@@ -43,10 +43,10 @@ const OfferPage = () => {
             src={offerGirl}
             alt="Exclusive Offer"
             className="
-              w-[260px]
-              sm:w-[300px]
-              md:w-[360px]
-              lg:w-[400px]
+              w-65
+              sm:w-75
+              md:w-90
+              lg:w-100
               object-contain
               drop-shadow-lg
             "

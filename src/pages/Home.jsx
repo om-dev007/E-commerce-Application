@@ -44,7 +44,6 @@ const Home = () => {
         <meta property="og:url" content="https://velnixa.vercel.app/" />
         <meta property="og:type" content="website" />
       </Helmet>
-      {/* 🔥 SEO END */}
 
       <Navbar />
       <Hero />

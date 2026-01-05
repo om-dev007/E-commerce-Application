@@ -90,7 +90,6 @@ const Navbar = () => {
   );
 };
 
-/* NAV ITEM */
 const NavItem = ({ to, label, mobile = false, onClick }) => (
   <NavLink
     to={to}
@@ -108,7 +107,7 @@ const NavItem = ({ to, label, mobile = false, onClick }) => (
 
       ${
         mobile
-          ? "" // ❌ MOBILE: no underline, no hover border
+          ? "" 
           : `
             after:content-['']
             after:absolute
@@ -149,7 +148,6 @@ const MobileNavItem = ({ to, label, onClick }) => (
   </NavLink>
 );
 
-/* NAV ICON */
 const NavIcon = ({ to, icon }) => (
   <NavLink
     to={to}

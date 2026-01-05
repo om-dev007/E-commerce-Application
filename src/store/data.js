@@ -273,7 +273,7 @@ export const collectionData = [
     title: "Trendy Women’s Crop Top",
     description:
       "Trendy crop top with smooth fabric and a modern party-ready design, perfect for casual and stylish looks.",
-    rating: 4.0,
+    rating: 4.7,
     price: 21,
     image: { mobile: topWomen, desktop: topWomenD },
     category: "Women",
@@ -569,7 +569,7 @@ export const kidsData = [
     title: "Kids Dhoni Cricket Jersey",
     description:
       "Breathable cricket jersey inspired by Dhoni, perfect for sports, playtime, and casual wear.",
-    rating: 4.0,
+    rating: 4.3,
     price: 20,
     discountPrice: 28,
     image: { mobile: kidsJersey, desktop: kidsJerseyD },
