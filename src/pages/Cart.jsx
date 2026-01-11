@@ -42,7 +42,7 @@ const Cart = () => {
             </p>
             <Link
               to="/"
-              className="inline-block bg-[#2F6B4F] text-white px-6 py-3 rounded-lg"
+              className="inline-block bg-[#2F6B4F] hover:bg-[#24563F] text-white px-6 py-3 rounded-lg"
             >
               Continue Shopping
             </Link>
